@@ -1,0 +1,99 @@
+@import '../utilis/variable';
+@import '../utilis/mixin';
+
+/* Button */
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: relative;
+    user-select: none;
+    transition: .15s ease;
+    padding: 12px 12px;
+    z-index: 1;
+    @include font($font-md, $fw-500, $cadet-blue, _, _, _);
+
+
+    //________  Button Fill Dark  ________
+    &.btn-fill-dark {
+        background-color: $cadet-blue;
+        color: $white;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background-color: $blue;
+            transition: .5s;
+        }
+
+        // Hover
+        &:hover::after {
+            width: calc(100% - 8px);
+            left: 0;
+            border-left: 4px solid $khaki;
+            border-right: 4px solid $khaki;
+        }
+
+        span {
+            position: relative;
+            z-index: 2;
+        }
+
+
+        // focus before
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background-color: $khaki;
+            transition-delay: 1s;
+            transition: .5s linear;
+        }
+
+        // foucs
+        &:focus::before {
+            top: 0;
+            height: 100%;
+            background-color: $khaki;
+            transition-delay: 1s;
+        }
+
+    }
+
+    // ________  Button Close  ________
+    &.close-btn {
+        width: 32px;
+        height: 32px;
+        @include border(1px, solid, $dark-white);
+        border-radius: 3px;
+        font-size: $font-xl;
+        color: $gray-off;
+
+        &:active {
+            color: $cadet-blue;
+            transform: translateY(-5px);
+        }
+
+        &:hover {
+            background-color: $white-off;
+        }
+    }
+
+
+    // ________  Button Close  ________
+}

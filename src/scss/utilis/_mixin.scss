@@ -1,0 +1,111 @@
+// Flex
+@mixin flex ($justify_, $align_, $gap_, $direction_) {
+    display: flex;
+
+    @if($justify_ !=_) {
+        justify-content: $justify_
+    }
+
+    @if(align_ !=_) {
+        align-items: $align_;
+    }
+
+    @if($gap_ !=_) {
+        gap: $gap_;
+    }
+
+    @if($direction_ !=_) {
+        flex-direction: $direction_;
+    }
+}
+
+
+// Grid
+@mixin grid ($cols, $col_gap, $row_gap) {
+    display: grid;
+    row-gap: $row_gap;
+    column-gap: $col_gap;
+
+    grid-template-columns: $cols;
+}
+
+// Responsive
+@mixin responsive($breakpoint) {
+    @if $breakpoint ==xs {
+        @media (max-width: 480px) {
+            @content
+        }
+    }
+
+    @if $breakpoint ==sm {
+        @media (max-width: 799px) {
+            @content
+        }
+    }
+
+    @if $breakpoint ==md {
+        @media (max-width: 1080px) {
+            @content
+        }
+    }
+
+    @if $breakpoint ==lg {
+        @media (max-width: 1400px) {
+            @content
+        }
+    }
+
+    @if $breakpoint ==xl {
+        @media (max-width: 1500px) {
+            @content
+        }
+    }
+}
+
+
+// Font
+@mixin font($fs_, $fw_, $color_, $transform_, $align_, $line_) {
+    @if ($fs_ !=_) {
+        font-size: $fs_;
+    }
+
+    @if ($fw_ !=_) {
+        font-weight: $fw_;
+    }
+
+    @if ($color_ !=_) {
+        color: $color_;
+    }
+
+    @if ($align_ !=_) {
+        text-align: $align_;
+    }
+
+    @if ($line_ !=_) {
+        line-height: $line_;
+    }
+}
+
+
+// Border
+@mixin border ($width, $type, $color) {
+    border: $width $type $color;
+}
+
+@mixin padding($top_, $right_, $bottom_, $left_) {
+    @if($top_ !=_) {
+        padding-top: $top_;
+    }
+
+    @if($right_ !=_) {
+        padding-right: $right_;
+    }
+
+    @if($bottom_ !=_) {
+        padding-bottom: $bottom_;
+    }
+
+    @if($left_ !=_) {
+        padding-left: $left_;
+    }
+}

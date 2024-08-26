@@ -1,0 +1,422 @@
+.header {
+    .header-area {
+
+        //________  Header Top  ________
+        .header-top {
+            background-color: $dark;
+            color: $white;
+
+
+            .header-top-area {
+
+                // Header Top Left
+                .header-top-left {
+                    padding: 20px 0;
+
+                    &.flex-start {
+                        align-items: flex-end;
+                    }
+
+                    a {
+                        &:hover {
+                            color: $red;
+                        }
+                    }
+                }
+
+                // Header Top Right
+                .header-top-right {
+
+                    // Pages
+                    .pages {
+                        span {
+                            display: inline-block;
+                            margin-top: -1px;
+                        }
+
+                        a {
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    // SearchButton
+                    .search {
+                        height: 61px;
+
+                        // Search Frield Area
+                        .search-frield-area {
+                            transition: .3s linear;
+                            background-color: $rgba-1;
+                            height: 61px;
+                            width: 0;
+                            padding: 0px;
+
+                            input {
+                                background-color: transparent;
+                                padding: 2px;
+                                color: $gray-off;
+
+                                &:hover {
+                                    border-bottom: 1px solid $gray-off;
+                                }
+
+                                &::placeholder {
+                                    color: $gray-off;
+                                }
+                            }
+                        }
+
+
+                        // Search hover in open input
+                        &:hover .search-frield-area {
+                            width: 280px;
+                            padding: 0 25px;
+                        }
+
+
+                        // Search Button
+                        .search-btn {
+                            background-color: $rgba-1;
+                            height: 61px;
+                            width: 65px;
+                            display: block;
+                        }
+                    }
+
+
+                    // cart button area
+                    .cart-btn-area {
+                        position: relative;
+
+
+                        // Cart Button
+                        .cart-btn {
+                            height: 61px;
+                            position: relative;
+
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: -15px;
+                                width: 0px;
+                                height: 100%;
+                                background-color: $rgba-1;
+                            }
+
+                            &:hover::after {
+                                width: 45px;
+                            }
+                        }
+
+                        // cart btn end
+
+                        // cart dropdown
+                        .cart-dropdown {
+                            position: absolute;
+                            right: -15px;
+                            bottom: -70px;
+                            box-shadow: $shadow-1;
+                            background-color: $white;
+                            width: fit-content;
+                            text-wrap: nowrap;
+                            color: $gray;
+                            transition: .3s linear;
+                            transform: scale(0);
+                            transform-origin: top;
+                            padding: 25px;
+                            opacity: 0;
+                        }
+
+                        // Hover
+                        .cart-dropdown.active {
+                            transform: scale(1);
+                            opacity: 1;
+                            z-index: 5;
+                            border: 1px solid $white-off
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+        //________  Header Main   ________
+        .header-main {
+            position: absolute;
+            top: 60px;
+            left: 0;
+            z-index: 5;
+            width: 100%;
+            background-image: linear-gradient(to right, rgba(247, 199, 199, 0.507), rgba(241, 210, 210, 0.556));
+            color: $white;
+
+            .header-main-area {
+                padding: 10px 0;
+
+                // Logo
+                .logo {
+                    img {
+                        height: 60px;
+                    }
+                }
+
+                // header main menu
+                .header-main-menu {
+
+                    .menu-items {
+                        .menu-item {
+                            position: relative;
+                            padding: 20px 0;
+                            color: $dark;
+
+                            // Dropdown
+                            .dropdown {
+                                height: 0;
+                                overflow: hidden;
+                                position: absolute;
+                                top: 50px;
+                                left: 0;
+                                background-color: $white;
+                                width: 250px;
+                                z-index: 5;
+                                box-shadow: $shadow-1;
+                                transition: .2s linear;
+
+                                ul {
+                                    li {
+                                        padding: 0px 20px;
+                                        transition: .3s linear;
+
+                                        a {
+                                            border-bottom: 1px solid $dark-white;
+                                            display: block;
+                                            padding: 15px 0;
+                                        }
+
+                                        // hover
+                                        &:hover {
+                                            background-color: $white-off2;
+                                            font-weight: $fw-600;
+                                            padding-left: 36px;
+                                        }
+                                    }
+
+                                    li:last-child a {
+                                        border: none;
+                                    }
+                                }
+                            }
+
+                            // resource-dropdown
+                            &:hover .dropdown {
+                                height: 405px;
+                                border: 1px solid $white-off;
+                            }
+
+                            &:hover .resource-dropdown {
+                                height: 250px;
+                            }
+                        }
+
+                        // View all
+                        .view-all {
+                            background-color: $red;
+                            padding: 25px;
+                            color: $white;
+                            font-weight: $fw-600;
+
+                            &:hover {
+                                color: $dark-white;
+                            }
+                        }
+
+
+                        // modal What new
+                        .what-new-btn {
+                            position: relative;
+
+                            span {
+                                position: absolute;
+                                top: -8px;
+                                right: -18px;
+                                width: 16px;
+                                height: 16px;
+                                background-color: $red;
+                                color: white;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-size: $font-xs;
+                                animation: topBottom .4s linear infinite;
+                            }
+                        }
+
+                        .what-new-modal {
+                            position: fixed;
+                            top: 0px;
+                            right: -120%;
+                            width: 400px;
+                            height: 100dvh;
+                            background-color: $white-off;
+                            box-shadow: $shadow-2;
+                            z-index: 5;
+                            transition: 1s ease-in-out;
+                            opacity: 0;
+
+                            // Header
+                            .head {
+                                height: 60px;
+                                background-image: linear-gradient(to right, $red, $green);
+                                padding: 0 20px;
+
+                                .close-btn {
+                                    color: $white;
+
+                                    &:hover {
+                                        color: $dark;
+                                        background-color: transparent;
+                                    }
+                                }
+                            }
+
+                            // body
+                            .body {
+                                height: calc(100dvh - 110px);
+                                padding: 15px 12px;
+                                overflow: auto;
+
+                                .body-items {
+                                    .body-item {
+                                        background-color: $white;
+                                        border: 1px solid $white-off;
+                                        padding-top: 10px;
+                                        box-shadow: $shadow-1;
+                                        border-radius: 4px;
+
+                                        // top
+                                        .top {
+                                            padding: 0 10px;
+
+                                            .date-area {
+
+                                                .tag {
+                                                    font-size: $font-xs - 1px;
+                                                    background-color: $red;
+                                                    padding: 4px 8px;
+                                                    border-radius: 10px;
+                                                    color: $white;
+                                                    font-weight: $fw-400;
+                                                }
+
+                                                .date {
+                                                    color: $gray-off;
+                                                    font-size: $font-sm;
+                                                    font-weight: $fw-500;
+                                                }
+                                            }
+
+                                            .body-item-title {
+                                                font-size: $font-2xl;
+                                                color: $blue;
+
+                                                &:hover a {
+                                                    text-decoration: underline;
+                                                }
+                                            }
+                                        }
+
+                                        // Desc
+                                        .desc {
+                                            padding: 0 10px;
+                                            font-size: $font-md;
+                                            border-bottom: 2px solid $white-off2;
+
+                                            .course-link {
+                                                text-decoration: underline;
+                                                color: $blue;
+                                            }
+
+                                            // video
+                                            .video {
+                                                .video-title {
+                                                    color: $blue;
+                                                    margin: 10px 0;
+                                                    padding-bottom: 10px;
+                                                    font-size: $font-lg;
+
+                                                    &:hover {
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+
+                                                .icons {
+                                                    margin-bottom: -11px;
+                                                    font-size: $font-2xl;
+                                                }
+                                            }
+
+
+                                        }
+
+                                        // feedback
+                                        .feedback {
+                                            background-color: $white-off2;
+                                            padding: 20px 10px 15px;
+
+                                            .feedback-area {
+                                                background-color: $white;
+                                                display: grid;
+                                                padding: 8px 10px;
+                                                grid-template-columns: 1fr 20px;
+                                                border: 1px solid $dark-white;
+
+                                                button {
+                                                    font-size: $font-3xl;
+
+                                                    &:hover {
+                                                        color: $blue;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+
+                            }
+
+                            // footer
+                            .footer {
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                width: 100%;
+                                height: 50px;
+                                text-align: center;
+                                background-color: $dark-white;
+                                box-shadow: $shadow-2;
+                                border-top: 1px solid $white-off2;
+                            }
+
+
+                            // active
+                            &.active {
+                                display: block;
+                                right: 0;
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MBS LEARNING</title>
+        <link rel="stylesheet" href="dist/css/main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <div class="header-area">
+                    <!-- Header Top -->
+                    <div class="header-top">
+                        <div class="container">
+                            <div class="header-top-area flex-between ">
+                                <!--============  Header Top Left  ============ -->
+                                <div class="header-top-left flex-start gap-15">
+                                    <p>Have any Question?</p>
+                                    <a href="#">📲 0155-6677-23</a>
+                                    <a href="#">📧 msbsupport@gmail.com</a>
+                                </div>
+
+                                <!--============  Header Top Right  ============-->
+                                <div class="header-top-right flex-center gap-20">
+                                    <!-- Login Pages -->
+                                    <div class="flex-center gap-5 pages">
+                                        <a href="pages/register.html">Register</a> <span>|</span>
+                                        <a href="pages/login.html">Login</a>
+                                    </div>
+
+                                    <!-- Search -->
+                                    <div class="search flex-start">
+                                        <div class="search-frield-area flex-center">
+                                            <input type="search" placeholder="Search courses">
+                                        </div>
+
+                                        <button class="search-btn">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- Cart Button -->
+                                    <div class="cart-btn-area">
+                                        <button class="cart-btn" id="cart-btn">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+
+                                        <div class="cart-dropdown" id="cart-dropdown">
+                                            <div class="empty-cart">No product in this cart</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> <!-- Header Top End-->
+
+                    <!--=============  Header Main  =============-->
+                    <div class="header-main">
+                        <div class="container">
+                            <div class="header-main-area flex-between">
+                                <!-- Header main Logo -->
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img height="50px" src="./src/image/logo.png" alt="Logo">
+                                    </a>
+                                </div>
+
+                                <!-- Header main menu -->
+                                <div class="header-main-menu">
+                                    <ul class="menu-items flex-between gap-35">
+
+                                        <!-- All courses Item -->
+                                        <li class="menu-item courses">
+                                            <a class="courses-btn" href="./pages/courses.html">
+                                                ALL COURSES <span><i class="fa-solid fa-caret-down"></i></span>
+                                            </a>
+
+                                            <!-- Courses Dropdown -->
+                                            <div class="courses-dropdown dropdown">
+                                                <ul>
+                                                    <li><a href="./pages/courses.html">Development</a></li>
+                                                    <li><a href="./pages/courses.html">Business</a></li>
+                                                    <li><a href="./pages/courses.html">Online Learning</a></li>
+                                                    <li><a href="./pages/courses.html">Web Design</a></li>
+                                                    <li><a href="./pages/courses.html">UI Design</a></li>
+                                                    <li><a href="./pages/courses.html">Marketing</a></li>
+                                                    <li><a href="./pages/courses.html">Hacking</a></li>
+                                                </ul>
+                                                <a href="./pages/courses.html" class="justify-start gap-5 view-all">
+                                                    <div>View all courses</div> <i class='bx bxs-send'></i>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="menu-item blog">
+                                            <a href="./pages/blog.html">BLOG</a>
+                                        </li>
+
+                                        <!-- Resource -->
+                                        <li class="menu-item">
+                                            <a class="resource-btn" href="./pages/resource.html">
+                                                <div class="d-flex gap-10">
+                                                    RESOURCE
+                                                    <span><i class="fa-solid fa-caret-down"></i></span>
+                                                </div>
+                                            </a>
+
+                                            <!-- Resource dropdown -->
+                                            <div class="resource-dropdown dropdown">
+                                                <ul>
+                                                    <li><a href="./pages/resource.html">Software & Tool</a></li>
+                                                    <li><a href="./pages/resource.html">Mdn TV</a></li>
+                                                    <li><a href="./pages/resource.html">Free Courses</a></li>
+                                                    <li><a href="./pages/resource.html">Learning</a></li>
+                                                    <li><a href="./pages/resource.html">Teachers</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="what-new menu-item " id="what-new">
+                                            <button class="what-new-btn" id="what-new-btn">WHAT'S NEW <span
+                                                    id="tag">1</span>
+                                            </button>
+
+                                            <!-- Modal in What the new -->
+                                            <div class="what-new-modal active " id="what-new-modal">
+                                                <div class="modal-content">
+
+                                                    <!-- Header -->
+                                                    <div class="head color-white flex-between">
+                                                        <div class="xl-font">What is new on Our Academy</div>
+                                                        <button class="close-btn btn" id="what-new-close">
+                                                            <i class="fa-solid fa-xmark">
+
+                                                            </i>
+                                                        </button>
+                                                    </div>
+
+                                                    <!-- body -->
+                                                    <div class="body">
+                                                        <div class="body-items flex-column gap-30">
+                                                            <!-- body item -->
+                                                            <div class="body-item">
+                                                                <div class="top">
+                                                                    <!-- Top -->
+                                                                    <div class="date-area justify-start gap-10">
+                                                                        <div class="tag uppercase">New Course</div>
+                                                                        <div class="date">Aug 25, 2024</div>
+                                                                    </div>
+                                                                    <!-- title -->
+                                                                    <h3 class="body-item-title mt-2">
+                                                                        <a href="./pages/courses.html">
+                                                                            কোডিং ছাড়াই গেইম
+                                                                            ডেভেলপ করে $2000/Month আয় করুন
+                                                                        </a>
+                                                                    </h3>
+                                                                </div>
+
+                                                                <!-- Desc -->
+                                                                <div class="desc mt-3 flex-column gap-15">
+                                                                    <p>বাংলাদেশে এই প্রথম কোডিং ছাড়াই প্রজেক্ট
+                                                                        ভিত্তিক
+                                                                        গেইম ডেভেলপমেন্ট কোর্স নিয়ে আসল MSB
+                                                                        Academy!!
+                                                                        <strong>কোন রকম পূর্ব অভিজ্ঞতা এবং
+                                                                            প্রোগ্রামিং নলেজ ছাড়াই আপনি এই কোর্সটি
+                                                                            শেখা
+                                                                            শুরু
+                                                                            করতে পারবেন এবং কোর্স শেষে নিজের মত
+                                                                            প্রফেশনাল
+                                                                            মানের PC + Mobile গেইম
+                                                                            ডেভেলপ করতে পারবেন।
+                                                                        </strong>
+                                                                    </p>
+                                                                    <p>
+                                                                        <strong>
+                                                                            কোন রকম পূর্ব অভিজ্ঞতা এবং
+                                                                            প্রোগ্রামিং নলেজ ছাড়াই আপনি এই কোর্সটি
+                                                                            শেখা
+                                                                            শুরু
+                                                                            করতে পারবেন এবং কোর্স শেষে নিজের মত
+                                                                            প্রফেশনাল
+                                                                            মানের PC + Mobile গেইম
+                                                                            ডেভেলপ করতে পারবেন।
+                                                                        </strong>
+                                                                    </p>
+
+                                                                    <div>
+                                                                        <div class="link-text">কোর্সের লিংক চেক
+                                                                            করুন,
+                                                                            কোর্স সম্পর্কে বিস্তারিত জানার জন্যঃ
+                                                                        </div>
+                                                                        <a class="mt-1 course-link"
+                                                                            href="https://www.msbacademy.com/course/game-development-masterclass">https://www.msbacademy.com/course/game-development-masterclass</a>
+                                                                    </div>
+
+                                                                    <!-- Video -->
+                                                                    <div class="video">
+                                                                        <div class="video-area">
+                                                                            <iframe width="100%" height="200"
+                                                                                src="https://www.youtube.com/embed/W4326cPpe2w"
+                                                                                title="YouTube video player"
+                                                                                frameborder="0"
+                                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                                allowfullscreen>
+                                                                            </iframe>
+                                                                        </div>
+                                                                        <a href="your-page-link"
+                                                                            class="video-title">Project Based
+                                                                            No-Code
+                                                                            Game Development Masterclass in Bangla
+                                                                        </a>
+
+                                                                        <div class="icons flex-center gap-10">
+                                                                            <div class="icon">🤎</div>
+                                                                            <div class="icon">😃</div>
+                                                                            <div class="icon">😐</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Feedback -->
+                                                                <div class="feedback">
+                                                                    <div class="feedback-area">
+                                                                        <input type="text" placeholder="Send Feedback">
+                                                                        <button><i class="bx bxs-send"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- body item -->
+                                                            <div class="body-item">
+                                                                <div class="top">
+                                                                    <!-- Top -->
+                                                                    <div class="date-area justify-start gap-10">
+                                                                        <div class="tag uppercase">New Course</div>
+                                                                        <div class="date">Aug 25, 2024</div>
+                                                                    </div>
+                                                                    <!-- title -->
+                                                                    <h3 class="body-item-title mt-2">
+                                                                        <a href="./pages/courses.html">
+                                                                            কোডিং ছাড়াই গেইম
+                                                                            ডেভেলপ করে $2000/Month আয় করুন
+                                                                        </a>
+                                                                    </h3>
+                                                                </div>
+
+                                                                <!-- Desc -->
+                                                                <div class="desc mt-3 flex-column gap-15">
+                                                                    <p>বাংলাদেশে এই প্রথম কোডিং ছাড়াই প্রজেক্ট
+                                                                        ভিত্তিক
+                                                                        গেইম ডেভেলপমেন্ট কোর্স নিয়ে আসল MSB
+                                                                        Academy!!
+                                                                        <strong>কোন রকম পূর্ব অভিজ্ঞতা এবং
+                                                                            প্রোগ্রামিং নলেজ ছাড়াই আপনি এই কোর্সটি
+                                                                            শেখা
+                                                                            শুরু
+                                                                            করতে পারবেন এবং কোর্স শেষে নিজের মত
+                                                                            প্রফেশনাল
+                                                                            মানের PC + Mobile গেইম
+                                                                            ডেভেলপ করতে পারবেন।
+                                                                        </strong>
+                                                                    </p>
+                                                                    <p>
+                                                                        <strong>
+                                                                            কোন রকম পূর্ব অভিজ্ঞতা এবং
+                                                                            প্রোগ্রামিং নলেজ ছাড়াই আপনি এই কোর্সটি
+                                                                            শেখা
+                                                                            শুরু
+                                                                            করতে পারবেন এবং কোর্স শেষে নিজের মত
+                                                                            প্রফেশনাল
+                                                                            মানের PC + Mobile গেইম
+                                                                            ডেভেলপ করতে পারবেন।
+                                                                        </strong>
+                                                                    </p>
+
+                                                                    <div>
+                                                                        <div class="link-text">কোর্সের লিংক চেক
+                                                                            করুন,
+                                                                            কোর্স সম্পর্কে বিস্তারিত জানার জন্যঃ
+                                                                        </div>
+                                                                        <a class="mt-1 course-link"
+                                                                            href="https://www.msbacademy.com/course/game-development-masterclass">https://www.msbacademy.com/course/game-development-masterclass</a>
+                                                                    </div>
+
+                                                                    <!-- Video -->
+                                                                    <div class="video">
+                                                                        <div class="video-area">
+                                                                            <iframe width="100%" height="200"
+                                                                                src="https://www.youtube.com/embed/W4326cPpe2w"
+                                                                                title="YouTube video player"
+                                                                                frameborder="0"
+                                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                                allowfullscreen>
+                                                                            </iframe>
+                                                                        </div>
+                                                                        <a href="your-page-link"
+                                                                            class="video-title">Project Based
+                                                                            No-Code
+                                                                            Game Development Masterclass in Bangla
+                                                                        </a>
+
+                                                                        <div class="icons flex-center gap-10">
+                                                                            <div class="icon">🤎</div>
+                                                                            <div class="icon">😃</div>
+                                                                            <div class="icon">😐</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Feedback -->
+                                                                <div class="feedback">
+                                                                    <div class="feedback-area">
+                                                                        <input type="text" placeholder="Send Feedback">
+                                                                        <button><i class="bx bxs-send"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- footer -->
+                                                    <div class="footer flex-center">
+                                                        We are ⚡ by Beamer.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+        <main>
+
+            <!--===============   Banner   ================ -->
+            <section>
+                <div class="banner">
+                    <video autoplay muted loop class="banner-video">
+                        <source src="./video.mp4" type="video/mp4">
+                    </video>
+                    <div class="container">
+                        <div class="banner-area flex-start gap-30">
+                            <h1 class="uppercase color-white">Welcome to lear academy</h1>
+                            <div>
+                                <p class="xl-font">It is Born For Quality Education in Bangla and English. </p>
+                                <p class="mt-1">Live A Good Life!</p>
+                            </div>
+                            <button class="btn-fill-dark btn  flex-center gap-10">
+                                <span>
+                                    check all courses <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!--===============   Brand   ================ -->
+            <section>
+                <div class="brand">
+                    <div class="brand-area flex-center gap-35">
+                        <div class="brand-item"><img src="src/image/bikash.png" alt=""></div>
+                        <div class="brand-item"><img src="src/image/facebook.png" alt=""></div>
+                        <div class="brand-item"><img src="src/image/nogod.png" alt=""></div>
+                        <div class="brand-item"><img src="src/image/google.png" alt=""></div>
+                        <div class="brand-item"><img src="src/image/payonee.png" alt=""></div>
+                        <div class="brand-item"><img src="src/image/paypal.png" alt=""></div>
+                        <div class="brand-item"><img src="src/image/youtube.png" alt=""></div>
+                        <div class="brand-item"><img src="src/image/buffer.png" alt=""></div>
+                        <div class="brand-item"><img src="src/image/google.png" alt=""></div>
+                        <div class="brand-item"><img src="src/image/payonee.png" alt=""></div>
+                        <div class="brand-item"><img src="src/image/paypal.png" alt=""></div>
+                        <div class="brand-item"><img src="src/image/youtube.png" alt=""></div>
+                        <div class="brand-item"><img src="src/image/buffer.png" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--===============   big video   ================ -->
+            <section>
+                <div class="big-video my-50">
+                    <div class="container">
+                        <div class="big-video-area flex-center">
+                            <div class=" btn-area">
+                                <div class="big-video-play-btn flex-center">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--===============   Featured Courses  ================ -->
+            <section>
+                <div class="featured-courses mt-80">
+                    <div class="container">
+                        <div class="featured-area">
+                            <!-- head -->
+                            <div class="featured-head flex-between">
+                                <h2 class="uppercase text-left">featured courses</h2>
+                                <div><a class="uppercase all-courses fw-bold" href="#">view all courses</a></div>
+
+                            </div>
+                            <div class="featured-items grid-3 gap-25 mt-4 ">
+
+                                <!-- Single Feature item -->
+                                <div class="featured-item">
+                                    <!-- Top -->
+                                    <div class="top">
+                                        <a href="#" class="img-area">
+                                            <img src="https://www.msbacademy.com/storage/2024/05/Artificial-Intelligence-Cover-1000x550.jpg"
+                                                alt="">
+                                        </a>
+                                        <!-- Tag -->
+                                        <div class="tag">sale</div>
+                                        <!-- Absolute -->
+                                        <div class="absulate">
+                                            <div class="flex-between">
+                                                <!-- Price -->
+                                                <div class="price flex-start gap-15">
+                                                    <div class="new-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 4,500
+                                                    </div>
+                                                    <div class="old-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 9,400
+                                                    </div>
+                                                </div>
+                                                <!-- Rating -->
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- body -->
+                                    <div class="body">
+                                        <a href="#" class="title">
+                                            Latest Master in Artificial Intelligence (AI) and Earn Money $$$ From Online
+                                        </a>
+                                        <div class="bottom justify-start gap-5">
+                                            <a href="#">Rasel Ahmed</a> /
+                                            <div> 300 students</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Repeat similar structure for each item with different content -->
+
+                                <!-- Feature Item 2 -->
+                                <div class="featured-item">
+                                    <!-- Top -->
+                                    <div class="top">
+                                        <a href="#" class="img-area">
+                                            <img src="https://www.msbacademy.com/storage/2019/11/Print-on-Demand-Course-Cover-1000x550.jpg"
+                                                alt="">
+                                        </a>
+                                        <!-- Tag -->
+                                        <div class="tag">new</div>
+                                        <!-- Absolute -->
+                                        <div class="absulate">
+                                            <div class="flex-between">
+                                                <!-- Price -->
+                                                <div class="price flex-start gap-15">
+                                                    <div class="new-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 6,000
+                                                    </div>
+                                                    <div class="old-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 10,000
+                                                    </div>
+                                                </div>
+                                                <!-- Rating -->
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- body -->
+                                    <div class="body">
+                                        <a href="#" class="title">
+                                            Comprehensive Data Science Bootcamp
+                                        </a>
+                                        <div class="bottom justify-start gap-5">
+                                            <a href="#">John Doe</a> /
+                                            <div> 250 students</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Feature Item 2 -->
+                                <div class="featured-item">
+                                    <!-- Top -->
+                                    <div class="top">
+                                        <a href="#" class="img-area">
+                                            <img src="https://www.msbacademy.com/storage/2019/11/Print-on-Demand-Course-Cover-1000x550.jpg"
+                                                alt="">
+                                        </a>
+                                        <!-- Tag -->
+                                        <div class="tag">new</div>
+                                        <!-- Absolute -->
+                                        <div class="absulate">
+                                            <div class="flex-between">
+                                                <!-- Price -->
+                                                <div class="price flex-start gap-15">
+                                                    <div class="new-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 6,000
+                                                    </div>
+                                                    <div class="old-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 10,000
+                                                    </div>
+                                                </div>
+                                                <!-- Rating -->
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- body -->
+                                    <div class="body">
+                                        <a href="#" class="title">
+                                            Comprehensive Data Science Bootcamp
+                                        </a>
+                                        <div class="bottom justify-start gap-5">
+                                            <a href="#">John Doe</a> /
+                                            <div> 250 students</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Feature Item 2 -->
+                                <div class="featured-item">
+                                    <!-- Top -->
+                                    <div class="top">
+                                        <a href="#" class="img-area">
+                                            <img src="https://www.msbacademy.com/storage/2019/11/Print-on-Demand-Course-Cover-1000x550.jpg"
+                                                alt="">
+                                        </a>
+                                        <!-- Tag -->
+                                        <div class="tag">new</div>
+                                        <!-- Absolute -->
+                                        <div class="absulate">
+                                            <div class="flex-between">
+                                                <!-- Price -->
+                                                <div class="price flex-start gap-15">
+                                                    <div class="new-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 6,000
+                                                    </div>
+                                                    <div class="old-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 10,000
+                                                    </div>
+                                                </div>
+                                                <!-- Rating -->
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- body -->
+                                    <div class="body">
+                                        <a href="#" class="title">
+                                            Comprehensive Data Science Bootcamp
+                                        </a>
+                                        <div class="bottom justify-start gap-5">
+                                            <a href="#">John Doe</a> /
+                                            <div> 250 students</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Feature Item 2 -->
+                                <div class="featured-item">
+                                    <!-- Top -->
+                                    <div class="top">
+                                        <a href="#" class="img-area">
+                                            <img src="https://www.msbacademy.com/storage/2019/11/Print-on-Demand-Course-Cover-1000x550.jpg"
+                                                alt="">
+                                        </a>
+                                        <!-- Tag -->
+                                        <div class="tag">new</div>
+                                        <!-- Absolute -->
+                                        <div class="absulate">
+                                            <div class="flex-between">
+                                                <!-- Price -->
+                                                <div class="price flex-start gap-15">
+                                                    <div class="new-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 6,000
+                                                    </div>
+                                                    <div class="old-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 10,000
+                                                    </div>
+                                                </div>
+                                                <!-- Rating -->
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- body -->
+                                    <div class="body">
+                                        <a href="#" class="title">
+                                            Comprehensive Data Science Bootcamp
+                                        </a>
+                                        <div class="bottom justify-start gap-5">
+                                            <a href="#">John Doe</a> /
+                                            <div> 250 students</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Feature Item 3 -->
+                                <div class="featured-item">
+                                    <!-- Top -->
+                                    <div class="top">
+                                        <a href="#" class="img-area">
+                                            <img src="https://www.msbacademy.com/storage/2024/02/Blogging-with-AI-Cover-Photo-1000x550.jpg"
+                                                alt="">
+                                        </a>
+                                        <!-- Tag -->
+                                        <div class="tag">hot</div>
+                                        <!-- Absolute -->
+                                        <div class="absulate">
+                                            <div class="flex-between">
+                                                <!-- Price -->
+                                                <div class="price flex-start gap-15">
+                                                    <div class="new-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 5,500
+                                                    </div>
+                                                    <div class="old-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 9,000
+                                                    </div>
+                                                </div>
+                                                <!-- Rating -->
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- body -->
+                                    <div class="body">
+                                        <a href="#" class="title">
+                                            Complete Web Development Masterclass
+                                        </a>
+                                        <div class="bottom justify-start gap-5">
+                                            <a href="#">Jane Smith</a> /
+                                            <div> 400 students</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Feature Item 4 -->
+                                <div class="featured-item">
+                                    <!-- Top -->
+                                    <div class="top">
+                                        <a href="#" class="img-area">
+                                            <img src="https://www.msbacademy.com/storage/2023/06/YouTube-Animation-Course-1000x550.jpg"
+                                                alt="">
+                                        </a>
+                                        <!-- Tag -->
+                                        <div class="tag">sale</div>
+                                        <!-- Absolute -->
+                                        <div class="absulate">
+                                            <div class="flex-between">
+                                                <!-- Price -->
+                                                <div class="price flex-start gap-15">
+                                                    <div class="new-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 7,500
+                                                    </div>
+                                                    <div class="old-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 12,000
+                                                    </div>
+                                                </div>
+                                                <!-- Rating -->
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- body -->
+                                    <div class="body">
+                                        <a href="#" class="title">
+                                            Advanced Cyber Security Certification
+                                        </a>
+                                        <div class="bottom justify-start gap-5">
+                                            <a href="#">Michael Brown</a> /
+                                            <div> 200 students</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Feature Item 5 -->
+                                <div class="featured-item">
+                                    <!-- Top -->
+                                    <div class="top">
+                                        <a href="#" class="img-area">
+                                            <img src="https://www.msbacademy.com/storage/2023/05/Game-Development-Course-1000x550.jpg"
+                                                alt="">
+                                        </a>
+                                        <!-- Tag -->
+                                        <div class="tag">new</div>
+                                        <!-- Absolute -->
+                                        <div class="absulate">
+                                            <div class="flex-between">
+                                                <!-- Price -->
+                                                <div class="price flex-start gap-15">
+                                                    <div class="new-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 4,000
+                                                    </div>
+                                                    <div class="old-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 8,000
+                                                    </div>
+                                                </div>
+                                                <!-- Rating -->
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- body -->
+                                    <div class="body">
+                                        <a href="#" class="title">
+                                            Professional Graphic Design Course
+                                        </a>
+                                        <div class="bottom justify-start gap-5">
+                                            <a href="#">Emily Clark</a> /
+                                            <div> 150 students</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Feature Item 5 -->
+                                <div class="featured-item">
+                                    <!-- Top -->
+                                    <div class="top">
+                                        <a href="#" class="img-area">
+                                            <img src="https://www.msbacademy.com/storage/2019/11/Print-on-Demand-Course-Cover-1000x550.jpg"
+                                                alt="">
+                                        </a>
+                                        <!-- Tag -->
+                                        <div class="tag">new</div>
+                                        <!-- Absolute -->
+                                        <div class="absulate">
+                                            <div class="flex-between">
+                                                <!-- Price -->
+                                                <div class="price flex-start gap-15">
+                                                    <div class="new-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 4,000
+                                                    </div>
+                                                    <div class="old-price">
+                                                        <i class="fa-solid fa-bangladeshi-taka-sign"></i> 8,000
+                                                    </div>
+                                                </div>
+                                                <!-- Rating -->
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- body -->
+                                    <div class="body">
+                                        <a href="#" class="title">
+                                            Professional Graphic Design Course
+                                        </a>
+                                        <div class="bottom justify-start gap-5">
+                                            <a href="#">Emily Clark</a> /
+                                            <div> 150 students</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!--===============   How To Work Courses  ================ -->
+            <section>
+                <div class="how-to-work mt-80">
+                    <div class="container">
+                        <div class="how-to-work-area flex-between">
+                            <!-- Left -->
+                            <div class="left w-50 flex-column gap-35">
+                                <h2 class="color-white text-right fw-bold">How Does This Website Work?</h2>
+                                <div class="steps flex-column text-right  gap-35">
+
+                                    <!-- Step Buttons -->
+                                    <div class="step-buttons justify-start gap-5">
+                                        <button class="btn btn-fill-dark active">
+                                            <span>
+                                                <strong>1</strong>
+                                                <div class="mt-1 xs-font">STEP</div>
+                                            </span>
+                                        </button>
+
+                                        <div>.......</div>
+
+                                        <button class="btn btn-fill-dark ">
+                                            <span>
+                                                <strong>2</strong>
+                                                <div class="mt-1 xs-font">STEP</div>
+                                            </span>
+                                        </button>
+
+                                        <div>.......</div>
+
+                                        <button class="btn btn-fill-dark ">
+                                            <span>
+                                                <strong>3</strong>
+                                                <div class="mt-1 xs-font">STEP</div>
+                                            </span>
+                                        </button>
+
+                                        <div>.......</div>
+
+                                        <button class="btn btn-fill-dark ">
+                                            <span>
+                                                <strong>4</strong>
+                                                <div class="mt-1 xs-font">STEP</div>
+                                            </span>
+                                        </button>
+                                    </div>
+
+                                    <!-- Step Content -->
+                                    <div class="step-content-item ">
+
+                                        <div class="step-content flex-column gap-25">
+                                            <div class="title text-white xxx-font ">Choose a Course</div>
+                                            <div class="flex-column gap-10">
+                                                <p>
+                                                    Choose your favorite course from the largest collection of
+                                                    High-Quality
+                                                </p>
+                                                <p>Bangla courses. We accept payment in BDT, INR and usd Doller.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="step-content flex-column gap-25">
+                                            <div class="title text-white xxx-font ">Stydy Anytime & Anywhere</div>
+                                            <div class="flex-column gap-10">
+                                                <p>
+                                                    watch course video , take quizzes and complete interactive asigments
+                                                    your
+                                                </p>
+                                                <p>from anywhere in the world.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="step-content flex-column gap-25">
+                                            <div class="title text-white xxx-font ">Get Certified</div>
+                                            <div class="flex-column gap-10">
+                                                <p>
+                                                    Choose your favorite course from the largest collection of
+                                                    High-Quality
+                                                </p>
+                                                <p>Bangla courses. We accept payment in BDT, INR and usd Doller.</p>
+                                            </div>
+                                        </div>
+                                        <div class="step-content flex-column gap-25">
+                                            <div class="title text-white xxx-font ">Boost Your Career</div>
+                                            <div class="flex-column gap-10">
+                                                <p>
+                                                    Get verifiable certificates by completing Courses. course from the
+                                                </p>
+                                                <p>Bangla courses. We accept payment in BDT, INR and usd Doller.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- right -->
+                            <div class="right">
+                                <div class="right-area">
+                                    <div class="video">
+                                        <iframe width="100%" height="100%"
+                                            src="https://www.youtube.com/embed/jQyZbaef8Gg?start=8" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--===============   Best Collection  ================ -->
+            <section>
+                <div class="best-collections mt-80">
+                    <div class="container">
+                        <div class="best-colletioins-area">
+                            <div class="head">
+                                <h2 class="uppercase text-center fw-medium">Best collections of bangla courses</h2>
+                                <div class="mt-4 text-center">সম্পূর্ণ বাংলায় দেশের সেরা অনলাইন কোর্স ও ক্যারিয়ার
+                                    ট্র্যাক প্রোগ্রাম
+                                </div>
+                            </div>
+
+                            <!-- body -->
+                            <div class="best-collection-body has-scrollbar">
+                                <div class="best-collection-items  flex-start gap-25">
+
+                                    <!-- Single Item -->
+                                    <div class="best-collection-item">
+                                        <a href="#">
+                                            <!-- image -->
+                                            <img src="https://www.msbacademy.com/storage/2022/04/online-business-271x177.jpg"
+                                                alt="">
+
+                                            <!-- content -->
+                                            <div class="content flex-center">
+                                                <div class="sub-title">Start Online Business Today</div>
+                                                <div class="mt-2">10 courses</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Single Item -->
+                                    <div class="best-collection-item">
+                                        <a href="#">
+                                            <!-- image -->
+                                            <img src="https://www.msbacademy.com/storage/2020/11/hacking-msb-academy-271x177.jpg"
+                                                alt="">
+
+                                            <!-- content -->
+                                            <div class="content flex-center">
+                                                <div class="sub-title">Best hacking & Securit courses</div>
+                                                <div class="mt-2">2 courses</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Single Item -->
+                                    <div class="best-collection-item">
+                                        <a href="#">
+                                            <!-- image -->
+                                            <img src="https://www.msbacademy.com/storage/2022/04/online-business-271x177.jpg"
+                                                alt="">
+
+                                            <!-- content -->
+                                            <div class="content flex-center">
+                                                <div class="sub-title">Start Online Business Today</div>
+                                                <div class="mt-2">10 courses</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Single Item 1 -->
+                                    <div class="best-collection-item">
+                                        <a href="#">
+                                            <!-- image -->
+                                            <img src="https://www.msbacademy.com/storage/2019/03/digital-marketing4-271x177.jpg"
+                                                alt="Web Development Course">
+
+                                            <!-- content -->
+                                            <div class="content flex-center">
+                                                <div class="sub-title">Master Web Development</div>
+                                                <div class="mt-2">15 courses</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Single Item 2 -->
+                                    <div class="best-collection-item">
+                                        <a href="#">
+                                            <!-- image -->
+                                            <img src="https://www.msbacademy.com/storage/2019/03/digital-marketing4-271x177.jpg"
+                                                alt="Data Science Course">
+
+                                            <!-- content -->
+                                            <div class="content flex-center">
+                                                <div class="sub-title">Learn Data Science</div>
+                                                <div class="mt-2">12 courses</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Single Item 3 -->
+                                    <div class="best-collection-item">
+                                        <a href="#">
+                                            <!-- image -->
+                                            <img src="https://www.msbacademy.com/storage/2022/04/dollar-271x177.jpg"
+                                                alt="Graphic Design Course">
+
+                                            <!-- content -->
+                                            <div class="content flex-center">
+                                                <div class="sub-title">Graphic Design Essentials</div>
+                                                <div class="mt-2">8 courses</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- button all collection -->
+                            <div class="text-center btn-area w-100">
+                                <button class="btn-fill-dark btn fw-bold uppercase">
+                                    <span>View all collections</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!--===============   Students Reviews  ================ -->
+            <section>
+                <div class="students-review mt-80">
+                    <div class="container">
+                        <div class="students-review-area">
+                            <div class="head">
+                                <h2 class="uppercase text-center after">Our thousands of happy students</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+
+
+
+
+
+
+
+
+        <div class=" overlay" id="overlay"></div>
+
+        <!-- Discount Modal -->
+        <div class="modal" id="discount-modal">
+            <div class="modal-content">
+                <button class="modal-close btn close-btn"><i class="fa-solid fa-xmark"></i></button>
+
+
+                <div class="mt-4 flex-column gap-10">
+                    <h2 class="uppercase">Get 10% off</h2>
+                    <div class="sub-title">subcribe to our newsletter & receive
+                        a coupon</div>
+                </div>
+
+                <form action="#" class="flex-column gap-20 mt-4">
+                    <div class="input-group mt-3">
+                        <label for="discount-modal-name">Name</label>
+                        <input type="text" id="discount-modal-name">
+                    </div>
+                    <div class="input-group">
+                        <label for="discount-modal-email">Email</label>
+                        <input type="text" id="discount-modal-email">
+                    </div>
+                    <button class="btn btn-fill-dark" type="submit">
+                        <span>GET IT NOW</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="notification" id="notification">
+            <div class="three-box"></div>
+            <div class="notifiaction-content flex-center gap-20">
+                <div class="text">Hi, you have one notification?</div>
+                <button class="btn btn-fill-dark" id="close-notification">
+                    <span>Nope</span>
+                </button>
+            </div>
+        </div>
+
+
+        <script src="app.js"></script>
+    </body>
+
+</html>
