@@ -11,7 +11,21 @@
     justify-content: center;
     display: none;
 
+    // Video Modal
+    &.video-modal {
+        display: none;
+    }
 
+
+    // big-video-modal
+    &.big-video-modal {
+        display: none;
+
+    }
+
+    &.active {
+        display: flex;
+    }
 
     .modal-content {
         transform: scale(1);
@@ -20,9 +34,18 @@
         padding: 50px 25px;
         border: 1px solid $white-off;
         width: 80%;
-        max-width: 550px;
         text-align: center;
         position: relative;
+
+        // big video modal content
+        &.big-video-modal-content {
+            @include modalRepeat($dark);
+        }
+
+        // Video modal content
+        &.video-modal-content {
+            @include modalRepeat($dark);
+        }
 
 
         // responsive

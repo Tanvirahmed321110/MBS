@@ -43,7 +43,6 @@ notificationClose.addEventListener('click', function () {
 
 
 
-
 // video
 document.addEventListener('DOMContentLoaded', function () {
     const video = document.querySelector('.banner-video');
@@ -89,3 +88,78 @@ buttons.forEach((button, index) => {
 
 // Initially, show the first content and hide the rest
 showContent(0);
+
+
+
+// See more modal
+const seeMoreButtons = document.querySelectorAll('.students-reviews-item .see-more-btn');
+const closeButtons = document.querySelectorAll('.students-reviews-item .close-btn');
+
+
+seeMoreButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        const modal = this.closest('.students-reviews-item').querySelector('.modal-message');
+        modal.classList.add('active')
+    })
+})
+
+closeButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        const modal = this.closest('.students-reviews-item').querySelector('.modal-message');
+        modal.classList.remove('active')
+    })
+})
+
+
+
+// big video modal
+const bigVideoModal = document.getElementById('big-video-modal')
+const bigVidePlayBtn = document.getElementById('big-video-play-btn');
+const bigVideoElement = bigVideoModal.querySelector('video');
+
+
+bigVidePlayBtn.addEventListener('click', function () {
+    bigVideoModal.classList.add('active')
+    bigVideoElement.play()
+})
+
+
+
+
+
+// students reviews video
+const playButtons = document.querySelectorAll('.students-reviews-items .play-btn');
+const videoModal = document.querySelector('.video-modal');
+const videoElement = videoModal.querySelector('video');
+
+playButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        const videoSrc = this.closest('.video').querySelector('video source').src;
+
+        // set video in the modal
+        videoElement.querySelector('source').src = videoSrc;
+
+        // load and play
+        videoElement.load()
+        videoElement.play()
+
+        videoModal.classList.add('active')
+    })
+})
+
+
+// modal close
+const modalClose = document.querySelectorAll('.modal .close-btn');
+
+modalClose.forEach(button => {
+    button.addEventListener('click', function () {
+        const modal = this.closest('.modal')
+        const video = modal.querySelector('video'); // Find the video element inside the modal
+
+        if (video) {
+            video.pause(); // Pause the video
+        }
+        bigVideoModal.classList.remove('active')
+        videoModal.classList.remove('active')
+    })
+})

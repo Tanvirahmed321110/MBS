@@ -76,6 +76,7 @@ h2 {
 
 h2.after {
     position: relative;
+    margin-bottom: 80px;
     // overflow: hidden;
 
     &::after {
@@ -86,7 +87,7 @@ h2.after {
         transform: translateX(-50%);
         width: 150px;
         height: 3px;
-        background-color: $dark;
+        background-color: $rgba-2;
         border-radius: 20%;
         z-index: 1;
     }
@@ -98,7 +99,7 @@ h2.after {
         bottom: -24px;
         transform: translateX(-50%);
         width: 30px;
-        height: 5px;
+        height: 2px;
         background-color: $rgba-2;
         animation: rightLeft 3s ease-in-out infinite alternate;
         z-index: 3px;
@@ -124,7 +125,7 @@ h2.after {
 }
 
 h3 {
-    @include font($font-4xl, $fw-600, dark, _, center, _)
+    @include font($font-4xl, $fw-600, dark, _, center, _);
 }
 
 
@@ -132,11 +133,11 @@ h3 {
 .container {
     max-width: 1460px;
     width: 100%;
-    padding: 0 30px;
+    padding: 0 40px;
     margin: 0 auto;
 
     @include responsive(lg) {
-        max-width: 1240px;
+        max-width: 1240px ;
     }
 }
 
@@ -409,6 +410,32 @@ h-100 {
     grid-template-columns: repeat(3, 1fr);
 }
 
+
+
+// Hover Toltip
+.btn-toltip {
+    position: relative;
+    cursor: pointer;
+
+    .hover-toltip {
+        display: none;
+        position: absolute;
+        right: -60px;
+        bottom: -4px;
+        background-color: $white-off2;
+        color: $dark;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-weight: $fw-500;
+        border: 1px solid $white-off;
+        opacity: 0;
+    }
+
+    &:hover .hover-toltip {
+        display: block;
+        opacity: 1;
+    }
+}
 
 .has-scrollbar {
     padding: 5px;
