@@ -161,5 +161,32 @@ modalClose.forEach(button => {
         }
         bigVideoModal.classList.remove('active')
         videoModal.classList.remove('active')
+        modal.classList.remove('active')
     })
+})
+
+
+
+
+// Message and chat
+const messageBtn = document.getElementById('message-btn')
+const messageModal = document.getElementById('message-modal')
+
+const chatBtn = document.getElementById('chat-btn')
+const chatToltip = document.getElementById('chat-toltip')
+
+messageBtn.addEventListener('click', function () {
+    messageBtn.classList.remove('active')
+    messageModal.classList.add('active')
+})
+
+// chat
+chatBtn.addEventListener('click', function () {
+    chatToltip.classList.toggle('active')
+})
+
+// chose message
+document.getElementById('message-close').addEventListener('click', function () {
+    messageModal.classList.remove('active')
+    messageBtn.classList.add('active')
 })

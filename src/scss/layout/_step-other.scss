@@ -344,7 +344,7 @@
 
 
 /**************************
-****  Student Reviews  *****
+****  Latest Articles  *****
 ***************************/
 .latest-articles {
     .latest-articles-area {
@@ -523,6 +523,64 @@
                 &:hover .hide-content {
                     transition: .2s linear;
                     transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/**************************
+****  Newsletter Area  *****
+***************************/
+.newsletter {
+    background-color: $white-off2;
+    padding: 50px 0;
+
+    .newsletter-area {
+
+        // Left
+        .newsletter-left {
+            .sub-title {
+                font-size: $font-5xl;
+            }
+        }
+
+        // Right
+        .newsletter-right {
+            .newsletter-right-area {
+                background-color: $white;
+                width: 100%;
+                min-width: 600px;
+                padding: 20px;
+
+                div {
+                    input {
+                        padding: 15px 10px;
+                        padding-bottom: 10px;
+                        font-size: $font-lg;
+                        border-bottom: 1px solid transparent;
+
+                        &::placeholder {
+                            font-size: $font-lg;
+                        }
+
+                        &:focus {
+                            border-bottom: 1px solid $gray;
+                        }
+                    }
+                }
+
+                .btn {
+                    padding: 15px 30px;
+                }
+
+                &:hover input {
+                    border-bottom: 1px solid $dark-white;
                 }
             }
         }

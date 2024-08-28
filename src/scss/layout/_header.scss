@@ -57,6 +57,7 @@
                                 background-color: transparent;
                                 padding: 2px;
                                 color: $gray-off;
+                                border-bottom: 1px solid transparent;
 
                                 &:hover {
                                     border-bottom: 1px solid $gray-off;
@@ -135,7 +136,7 @@
                         .cart-dropdown.active {
                             transform: scale(1);
                             opacity: 1;
-                            z-index: 5;
+                            z-index: 6;
                             border: 1px solid $white-off
                         }
                     }
@@ -258,161 +259,6 @@
                             }
                         }
 
-                        .what-new-modal {
-                            position: fixed;
-                            top: 0px;
-                            right: -120%;
-                            width: 400px;
-                            height: 100dvh;
-                            background-color: $white-off;
-                            box-shadow: $shadow-2;
-                            z-index: 5;
-                            transition: 1s ease-in-out;
-                            opacity: 0;
-
-                            // Header
-                            .head {
-                                height: 60px;
-                                background-image: linear-gradient(to right, $red, $green);
-                                padding: 0 20px;
-
-                                .close-btn {
-                                    color: $white;
-
-                                    &:hover {
-                                        color: $dark;
-                                        background-color: transparent;
-                                    }
-                                }
-                            }
-
-                            // body
-                            .body {
-                                height: calc(100dvh - 110px);
-                                padding: 15px 12px;
-                                overflow: auto;
-
-                                .body-items {
-                                    .body-item {
-                                        background-color: $white;
-                                        border: 1px solid $white-off;
-                                        padding-top: 10px;
-                                        box-shadow: $shadow-1;
-                                        border-radius: 4px;
-
-                                        // top
-                                        .top {
-                                            padding: 0 10px;
-
-                                            .date-area {
-
-                                                .tag {
-                                                    font-size: $font-xs - 1px;
-                                                    background-color: $red;
-                                                    padding: 4px 8px;
-                                                    border-radius: 10px;
-                                                    color: $white;
-                                                    font-weight: $fw-400;
-                                                }
-
-                                                .date {
-                                                    color: $gray-off;
-                                                    font-size: $font-sm;
-                                                    font-weight: $fw-500;
-                                                }
-                                            }
-
-                                            .body-item-title {
-                                                font-size: $font-2xl;
-                                                color: $blue;
-
-                                                &:hover a {
-                                                    text-decoration: underline;
-                                                }
-                                            }
-                                        }
-
-                                        // Desc
-                                        .desc {
-                                            padding: 0 10px;
-                                            font-size: $font-md;
-                                            border-bottom: 2px solid $white-off2;
-
-                                            .course-link {
-                                                text-decoration: underline;
-                                                color: $blue;
-                                            }
-
-                                            // video
-                                            .video {
-                                                .video-title {
-                                                    color: $blue;
-                                                    margin: 10px 0;
-                                                    padding-bottom: 10px;
-                                                    font-size: $font-lg;
-
-                                                    &:hover {
-                                                        text-decoration: underline;
-                                                    }
-                                                }
-
-                                                .icons {
-                                                    margin-bottom: -11px;
-                                                    font-size: $font-2xl;
-                                                }
-                                            }
-
-
-                                        }
-
-                                        // feedback
-                                        .feedback {
-                                            background-color: $white-off2;
-                                            padding: 20px 10px 15px;
-
-                                            .feedback-area {
-                                                background-color: $white;
-                                                display: grid;
-                                                padding: 8px 10px;
-                                                grid-template-columns: 1fr 20px;
-                                                border: 1px solid $dark-white;
-
-                                                button {
-                                                    font-size: $font-3xl;
-
-                                                    &:hover {
-                                                        color: $blue;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-
-
-                            }
-
-                            // footer
-                            .footer {
-                                position: absolute;
-                                bottom: 0;
-                                right: 0;
-                                width: 100%;
-                                height: 50px;
-                                text-align: center;
-                                background-color: $dark-white;
-                                box-shadow: $shadow-2;
-                                border-top: 1px solid $white-off2;
-                            }
-
-
-                            // active
-                            &.active {
-                                display: block;
-                                right: 0;
-                                opacity: 1;
-                            }
-                        }
                     }
 
                 }

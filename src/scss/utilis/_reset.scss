@@ -137,7 +137,7 @@ h3 {
     margin: 0 auto;
 
     @include responsive(lg) {
-        max-width: 1240px ;
+        max-width: 1240px;
     }
 }
 
@@ -282,6 +282,10 @@ h-100 {
     margin-top: 30px;
 }
 
+.mt-7 {
+    margin-top: 36px;
+}
+
 
 .mt-50 {
     margin-top: 50px;
@@ -408,6 +412,11 @@ h-100 {
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 
