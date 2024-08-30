@@ -20,6 +20,11 @@
 
     //________  Button Fill Dark  ________
     &.btn-fill-dark {
+
+        &.btn-round {
+            border-radius: 30px;
+        }
+
         background-color: $cadet-blue;
         color: $white;
         position: relative;

@@ -23,6 +23,9 @@
   overflow: hidden;
   z-index: 1;
 }
+.btn.btn-fill-dark.btn-round {
+  border-radius: 30px;
+}
 .btn.btn-fill-dark::after {
   content: "";
   position: absolute;

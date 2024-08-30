@@ -44,10 +44,14 @@ notificationClose.addEventListener('click', function () {
 
 
 // video
-document.addEventListener('DOMContentLoaded', function () {
-    const video = document.querySelector('.banner-video');
-    video.playbackRate = 0.5; // Set the video speed to 75%
-});
+if (document.querySelector('.banner-video')) {
+    document.addEventListener('DOMContentLoaded', function () {
+        const video = document.querySelector('.banner-video');
+        video.playbackRate = 0.5; // Set the video speed to 75%
+
+    });
+}
+
 
 
 
@@ -112,16 +116,37 @@ closeButtons.forEach(button => {
 
 
 
+
+
+
 // big video modal
 const bigVideoModal = document.getElementById('big-video-modal')
 const bigVidePlayBtn = document.getElementById('big-video-play-btn');
 const bigVideoElement = bigVideoModal.querySelector('video');
 
+if (bigVidePlayBtn) {
+    bigVidePlayBtn.addEventListener('click', function () {
+        bigVideoModal.classList.add('active')
+        bigVideoElement.play()
+    })
+}
 
-bigVidePlayBtn.addEventListener('click', function () {
-    bigVideoModal.classList.add('active')
-    bigVideoElement.play()
-})
+
+
+
+const messageVideoBtns = document.querySelectorAll('.body-resources-items .message-course-video');
+
+messageVideoBtns.forEach(button => {
+    button.addEventListener('click', function () {
+        const videoElement = button.querySelector('video source');
+        const videoSrc = videoElement.getAttribute('src');
+
+        bigVideoElement.querySelector('source').setAttribute('src', videoSrc);
+        bigVideoElement.load(); // Reload the video with the new source
+        bigVideoModal.classList.add('active');
+        bigVideoElement.play();
+    });
+});
 
 
 
@@ -178,6 +203,7 @@ const chatToltip = document.getElementById('chat-toltip')
 messageBtn.addEventListener('click', function () {
     messageBtn.classList.remove('active')
     messageModal.classList.add('active')
+    alert('clicked')
 })
 
 // chat
@@ -185,8 +211,35 @@ chatBtn.addEventListener('click', function () {
     chatToltip.classList.toggle('active')
 })
 
-// chose message
+// close message
 document.getElementById('message-close').addEventListener('click', function () {
     messageModal.classList.remove('active')
     messageBtn.classList.add('active')
+})
+
+
+
+
+
+// Message and platform
+const otherPlatfromBtn = document.getElementById('other-platfrom')
+const otherPlatfromBody = document.getElementById('other-platfrom-body')
+const messageModalBody = document.querySelector('.message-body  .body-items')
+const platfromBody = document.querySelector('.message-body .platfrom-body')
+const messageFooterBtn = document.getElementById('chat-btn')
+const platfromFooterBtn = document.getElementById('platfrom-back-btn')
+
+otherPlatfromBtn.addEventListener('click', () => {
+    messageModalBody.classList.add('active');
+    platfromBody.classList.add('active')
+    messageFooterBtn.classList.add('active')
+    platfromFooterBtn.classList.add('active')
+})
+
+// Back button
+platfromFooterBtn.addEventListener('click', function () {
+    messageModalBody.classList.remove('active');
+    platfromBody.classList.remove('active')
+    messageFooterBtn.classList.remove('active')
+    platfromFooterBtn.classList.remove('active')
 })

@@ -3,7 +3,6 @@
     // Footer Top
     .footer-top {
         background-color: $dark;
-        color: $gray;
         padding: 60px 0;
 
         .footer-top-area {
@@ -29,6 +28,9 @@
                 }
 
                 li {
+                    color: $gray-off;
+                    opacity: .8;
+
                     a {
                         &:hover {
                             transition: .1s ease-in-out;
@@ -61,7 +63,7 @@
     .footer-bottom {
         padding: 60px 0;
         background-color: $dark;
-        opacity: .95;
+        opacity: .96;
 
         .footer-bottom-area {
 

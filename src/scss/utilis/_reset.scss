@@ -21,10 +21,7 @@ body {
     font-size: $font-md;
     background-color: $white;
     color: $cadet-blue;
-    padding-bottom: 50px;
 }
-
-
 
 
 
@@ -255,6 +252,19 @@ h-100 {
     color: $white;
 }
 
+
+/*_____ Padding  _____*/
+.p-1 {
+    padding: 5;
+}
+
+.p-2 {
+    padding: 10px;
+}
+
+.px-2 {
+    padding: 0 10px;
+}
 
 
 /*_____ Margin  _____*/
