@@ -203,7 +203,6 @@ const chatToltip = document.getElementById('chat-toltip')
 messageBtn.addEventListener('click', function () {
     messageBtn.classList.remove('active')
     messageModal.classList.add('active')
-    alert('clicked')
 })
 
 // chat

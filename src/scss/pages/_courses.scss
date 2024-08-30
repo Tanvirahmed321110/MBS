@@ -91,102 +91,337 @@
         }
 
     }
-}
 
+    // price cart
+    .price-cart-wrapper {
+        position: sticky;
+        background-color: $white;
+        box-shadow: $shadow-2;
+        width: 350px;
+        height: fit-content;
+        z-index: 3;
+        margin-left: auto;
+        margin-right: 30px;
+        margin-top: -600px;
 
-
-// price cart
-.price-cart-wrapper {
-    position: sticky;
-    top: 30px;
-    background-color: $white;
-    box-shadow: $shadow-2;
-    right: 0;
-    width: 350px;
-    height: fit-content;
-    z-index: 3;
-    margin-left: auto;
-    margin-right: 30px;
-
-
-    .price-cart {
-        .border {
-            margin: 30px 20px;
-            border-top: 1px solid $white-off2;
+        &.active {
+            position: fixed;
+            top: 50px;
+            right: 0px;
+            margin-top: 0;
         }
 
-        .head {
-            background-color: $red;
-            padding: 15px;
-            text-align: center;
-
-            .new-price {
-                color: $white;
-                font-size: $font-5xl;
+        .price-cart {
+            .border {
+                margin: 30px 20px;
+                border-top: 1px solid $white-off2;
             }
 
-            del {
-                font-size: $font-3xl;
-                color: $dark-white;
-                opacity: .8;
-                font-weight: 300;
-                font-style: italic;
-            }
-        }
-
-        .btn-area {
-            padding: 0 25px;
-            text-align: center;
-
-            .btn {
-                width: 100%;
+            .head {
                 background-color: $red;
-                text-transform: uppercase;
-                padding: 17px;
+                padding: 15px;
+                text-align: center;
+
+                .new-price {
+                    color: $white;
+                    font-size: $font-5xl;
+                }
+
+                del {
+                    font-size: $font-3xl;
+                    color: $dark-white;
+                    opacity: .8;
+                    font-weight: 300;
+                    font-style: italic;
+                }
             }
-        }
 
-        .advantages {
-            padding: 0 10px;
-
-            .sub-title {
+            .btn-area {
                 padding: 0 25px;
+                text-align: center;
+
+                .btn {
+                    width: 100%;
+                    background-color: $red;
+                    text-transform: uppercase;
+                    padding: 17px;
+                }
             }
 
-            .advantages-items {
-                padding: 0 25px;
-                font-size: $font-xl;
+            .advantages {
+                padding: 0 10px;
 
-                li {
-                    &.flex-start {
-                        align-items: flex-start;
-                        justify-content: flex-start;
+                .sub-title {
+                    padding: 0 25px;
+                }
+
+                .advantages-items {
+                    padding: 0 25px;
+                    font-size: $font-xl;
+
+                    li {
+                        &.flex-start {
+                            align-items: flex-start;
+                            justify-content: flex-start;
+                        }
+
+                        i {
+                            color: $dark;
+                            font-size: $font-2xl;
+                        }
                     }
+                }
+            }
 
-                    i {
-                        color: $dark;
-                        font-size: $font-2xl;
+            .footer {
+                padding-bottom: 25px;
+
+                a {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: $white-off2;
+                    font-size: $font-3xl;
+
+                    &:hover {
+                        background-color: $red;
+                        color: $white;
                     }
                 }
             }
         }
+    }
 
-        .footer {
-            padding-bottom: 25px;
+
+    // Teacher Data
+    .teacher {
+        display: grid;
+        grid-template-columns: 180px 350px 200px 200px;
+        color: $dark;
+        padding-bottom: 25px;
+        border-bottom: 1px solid $white-off2;
+        max-width: calc(100% - 400px);
+
+        .item {
+            position: relative;
+            height: 100%;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 1%;
+                top: 0px;
+                background-color: $dark-white;
+                width: 1px;
+                height: 100px;
+            }
+        }
+
+        .profile {
+            a {
+                &:hover {
+                    color: $orange;
+                }
+            }
+
+            img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                padding-bottom: 4px;
+            }
+        }
+
+        .categories {
+            padding-right: 20px;
 
             a {
-                width: 50px;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                background-color: $white-off2;
-                font-size: $font-3xl;
+                padding: 4px;
+
 
                 &:hover {
-                    background-color: $red;
-                    color: $white;
+                    color: $orange;
+                }
+            }
+        }
+
+        .review {
+            i {
+                color: $orange;
+                margin-left: -5px;
+            }
+        }
+    }
+}
+
+
+
+
+
+// ===============   course desc  ================
+.course-desc {
+    margin-top: 50px;
+    max-width: calc(100% - 400px);
+
+    .course-desc-area {
+        .course-desc-items {
+            .course-desc-item {
+                margin-top: 40px;
+
+                &.question {
+                    li {
+                        font-weight: $fw-500;
+                        color: $dark;
+                        margin: 15px 0;
+
+                        a {
+                            font-weight: $fw-600;
+                            color: $red;
+                        }
+
+                        &::before {
+                            content: '';
+                        }
+                    }
+                }
+
+                .sub-title {
+                    font-size: $font-4xl;
+                    color: $dark;
+                }
+
+                p,
+                li {
+                    font-size: $font-xl;
+                    line-height: 30px;
+                    padding: 20px;
+                }
+
+                li {
+                    padding: 5px 20px;
+                    font-weight: $fw-600;
+                    position: relative;
+                    color: $dark;
+
+                    &::before {
+                        content: "*";
+                        font-size: $font-2xl;
+                        margin-right: 4px;
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// ===============   course playlist  ================
+.course-playlist {
+
+    .course-playlist-area {
+        width: 900px;
+        border: 1px solid $dark-white;
+        background-color: $white;
+        border-radius: 10px;
+        overflow: hidden;
+
+        // head
+        .head {
+            background-color: $white-off;
+            padding: 25px;
+
+
+            .search {
+                height: 50px;
+                width: 300px;
+                background-color: $white;
+                border: 1px solid $dark-white;
+                padding: 10px 18px;
+                border-radius: 25px;
+
+                input {
+                    padding: 5px;
+                    font-size: $font-xl;
+                    font-style: italic;
+                }
+
+                button:hover {
+                    color: $dark;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        // course playlist items
+        .course-playlist-items {
+
+            // single course playlist item
+            .course-playlist-item {
+                .playlist-head {
+                    background-color: $white-off;
+                    padding: 30px;
+                    cursor: pointer;
+                    border-top: 1px solid $dark-white;
+                }
+
+                // playlist-videos
+                .playlist-videos {
+                    padding: 0 30px;
+
+                    .playlist-video {
+                        padding: 30px 0;
+                        border-bottom: 1px solid $dark-white;
+                        font-size: $font-xl;
+                        cursor: pointer;
+
+                        // left
+                        .left {
+                            padding-left: 25px;
+                        }
+
+                        .right {
+                            width: 150px;
+                            text-align: right;
+
+                            .preview {
+                                padding: 5px 20px;
+                                background-color: $red;
+                                color: $white;
+                                border-radius: 20px;
+                                width: fit-content;
+                                margin-left: auto;
+                            }
+
+                            // lock btn
+                            .lock {
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                border: 3px solid $dark-white;
+                                margin-left: auto;
+                                font-size: $font-md;
+                            }
+                        }
+
+                        // hover in playlist video
+                        &:hover .video-name {
+                            color: $khaki;
+                            transition: .1s linear;
+                        }
+
+                        &:hover .lock {
+                            border-color: $cadet-blue;
+                            transition: .1s linear;
+                        }
+
+                        &:last-child {
+                            border: none;
+                        }
+                    }
                 }
             }
         }

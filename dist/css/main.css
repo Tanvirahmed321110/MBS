@@ -143,7 +143,13 @@ h3 {
 .sub-title {
   font-size: 20px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 28px;
+}
+
+.title-2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
 }
 
 h-100 {
@@ -2036,71 +2042,75 @@ h-100 {
     transform: scale(1);
   }
 }
-
-.price-cart-wrapper {
+.c-banner .price-cart-wrapper {
   position: sticky;
-  top: 30px;
   background-color: #fff;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
-  right: 0;
   width: 350px;
   height: fit-content;
   z-index: 3;
   margin-left: auto;
   margin-right: 30px;
+  margin-top: -600px;
 }
-.price-cart-wrapper .price-cart .border {
+.c-banner .price-cart-wrapper.active {
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  margin-top: 0;
+}
+.c-banner .price-cart-wrapper .price-cart .border {
   margin: 30px 20px;
   border-top: 1px solid #faeeee;
 }
-.price-cart-wrapper .price-cart .head {
+.c-banner .price-cart-wrapper .price-cart .head {
   background-color: #d22121;
   padding: 15px;
   text-align: center;
 }
-.price-cart-wrapper .price-cart .head .new-price {
+.c-banner .price-cart-wrapper .price-cart .head .new-price {
   color: #fff;
   font-size: 36px;
 }
-.price-cart-wrapper .price-cart .head del {
+.c-banner .price-cart-wrapper .price-cart .head del {
   font-size: 22px;
   color: #e9e6ed;
   opacity: 0.8;
   font-weight: 300;
   font-style: italic;
 }
-.price-cart-wrapper .price-cart .btn-area {
+.c-banner .price-cart-wrapper .price-cart .btn-area {
   padding: 0 25px;
   text-align: center;
 }
-.price-cart-wrapper .price-cart .btn-area .btn {
+.c-banner .price-cart-wrapper .price-cart .btn-area .btn {
   width: 100%;
   background-color: #d22121;
   text-transform: uppercase;
   padding: 17px;
 }
-.price-cart-wrapper .price-cart .advantages {
+.c-banner .price-cart-wrapper .price-cart .advantages {
   padding: 0 10px;
 }
-.price-cart-wrapper .price-cart .advantages .sub-title {
+.c-banner .price-cart-wrapper .price-cart .advantages .sub-title {
   padding: 0 25px;
 }
-.price-cart-wrapper .price-cart .advantages .advantages-items {
+.c-banner .price-cart-wrapper .price-cart .advantages .advantages-items {
   padding: 0 25px;
   font-size: 18px;
 }
-.price-cart-wrapper .price-cart .advantages .advantages-items li.flex-start {
+.c-banner .price-cart-wrapper .price-cart .advantages .advantages-items li.flex-start {
   align-items: flex-start;
   justify-content: flex-start;
 }
-.price-cart-wrapper .price-cart .advantages .advantages-items li i {
+.c-banner .price-cart-wrapper .price-cart .advantages .advantages-items li i {
   color: #1e1e1e;
   font-size: 20px;
 }
-.price-cart-wrapper .price-cart .footer {
+.c-banner .price-cart-wrapper .price-cart .footer {
   padding-bottom: 25px;
 }
-.price-cart-wrapper .price-cart .footer a {
+.c-banner .price-cart-wrapper .price-cart .footer a {
   width: 50px;
   height: 50px;
   display: flex;
@@ -2110,9 +2120,172 @@ h-100 {
   background-color: #faeeee;
   font-size: 22px;
 }
-.price-cart-wrapper .price-cart .footer a:hover {
+.c-banner .price-cart-wrapper .price-cart .footer a:hover {
   background-color: #d22121;
   color: #fff;
+}
+.c-banner .teacher {
+  display: grid;
+  grid-template-columns: 180px 350px 200px 200px;
+  color: #1e1e1e;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #faeeee;
+  max-width: calc(100% - 400px);
+}
+.c-banner .teacher .item {
+  position: relative;
+  height: 100%;
+}
+.c-banner .teacher .item::after {
+  content: "";
+  position: absolute;
+  right: 1%;
+  top: 0px;
+  background-color: #e9e6ed;
+  width: 1px;
+  height: 100px;
+}
+.c-banner .teacher .profile a:hover {
+  color: #ffba00;
+}
+.c-banner .teacher .profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding-bottom: 4px;
+}
+.c-banner .teacher .categories {
+  padding-right: 20px;
+}
+.c-banner .teacher .categories a {
+  padding: 4px;
+}
+.c-banner .teacher .categories a:hover {
+  color: #ffba00;
+}
+.c-banner .teacher .review i {
+  color: #ffba00;
+  margin-left: -5px;
+}
+
+.course-desc {
+  margin-top: 50px;
+  max-width: calc(100% - 400px);
+}
+.course-desc .course-desc-area .course-desc-items .course-desc-item {
+  margin-top: 40px;
+}
+.course-desc .course-desc-area .course-desc-items .course-desc-item.question li {
+  font-weight: 500;
+  color: #1e1e1e;
+  margin: 15px 0;
+}
+.course-desc .course-desc-area .course-desc-items .course-desc-item.question li a {
+  font-weight: 600;
+  color: #d22121;
+}
+.course-desc .course-desc-area .course-desc-items .course-desc-item.question li::before {
+  content: "";
+}
+.course-desc .course-desc-area .course-desc-items .course-desc-item .sub-title {
+  font-size: 24px;
+  color: #1e1e1e;
+}
+.course-desc .course-desc-area .course-desc-items .course-desc-item p,
+.course-desc .course-desc-area .course-desc-items .course-desc-item li {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 20px;
+}
+.course-desc .course-desc-area .course-desc-items .course-desc-item li {
+  padding: 5px 20px;
+  font-weight: 600;
+  position: relative;
+  color: #1e1e1e;
+}
+.course-desc .course-desc-area .course-desc-items .course-desc-item li::before {
+  content: "*";
+  font-size: 20px;
+  margin-right: 4px;
+  color: #ffba00;
+}
+
+.course-playlist .course-playlist-area {
+  width: 900px;
+  border: 1px solid #e9e6ed;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.course-playlist .course-playlist-area .head {
+  background-color: #f8f8f8;
+  padding: 25px;
+}
+.course-playlist .course-playlist-area .head .search {
+  height: 50px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #e9e6ed;
+  padding: 10px 18px;
+  border-radius: 25px;
+}
+.course-playlist .course-playlist-area .head .search input {
+  padding: 5px;
+  font-size: 18px;
+  font-style: italic;
+}
+.course-playlist .course-playlist-area .head .search button:hover {
+  color: #1e1e1e;
+  transform: scale(1.1);
+}
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-head {
+  background-color: #f8f8f8;
+  padding: 30px;
+  cursor: pointer;
+  border-top: 1px solid #e9e6ed;
+}
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos {
+  padding: 0 30px;
+}
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos .playlist-video {
+  padding: 30px 0;
+  border-bottom: 1px solid #e9e6ed;
+  font-size: 18px;
+  cursor: pointer;
+}
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos .playlist-video .left {
+  padding-left: 25px;
+}
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos .playlist-video .right {
+  width: 150px;
+  text-align: right;
+}
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos .playlist-video .right .preview {
+  padding: 5px 20px;
+  background-color: #d22121;
+  color: #fff;
+  border-radius: 20px;
+  width: fit-content;
+  margin-left: auto;
+}
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos .playlist-video .right .lock {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #e9e6ed;
+  margin-left: auto;
+  font-size: 16px;
+}
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos .playlist-video:hover .video-name {
+  color: #b3af54;
+  transition: 0.1s linear;
+}
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos .playlist-video:hover .lock {
+  border-color: #515151;
+  transition: 0.1s linear;
+}
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos .playlist-video:last-child {
+  border: none;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -16,3 +16,18 @@ courseBannerBtn.addEventListener("click", function () {
     bigVideoModals.classList.add('active')
 
 });
+
+
+
+// scroll in the page
+window.addEventListener('scroll', function () {
+    const element = document.querySelector('.price-cart-wrapper')
+    if (element) {
+        if (window.scrollY >= 900) {
+            element.classList.add('active')
+        }
+        else {
+            element.classList.remove('active')
+        }
+    }
+})
