@@ -1,4 +1,6 @@
-// Banner
+/**************************
+****  Course Banner  *****
+***************************/
 .c-banner {
     margin-top: 80px;
 
@@ -49,7 +51,9 @@
     }
 
 
-    // Banner video
+    /**************************
+    ****  Banner Video  *****
+    ***************************/
     .banner-video {
         position: relative;
         margin-top: -200px;
@@ -106,7 +110,7 @@
 
         &.active {
             position: fixed;
-            top: 50px;
+            top: 10px;
             right: 0px;
             margin-top: 0;
         }
@@ -196,7 +200,9 @@
     }
 
 
-    // Teacher Data
+    /**************************
+    ****  Teacher Data  *****
+    ***************************/
     .teacher {
         display: grid;
         grid-template-columns: 180px 350px 200px 200px;
@@ -261,7 +267,9 @@
 
 
 
-// ===============   course desc  ================
+/*****************************
+****  Course Description  *****
+******************************/
 .course-desc {
     margin-top: 50px;
     max-width: calc(100% - 400px);
@@ -319,15 +327,13 @@
 }
 
 
-// ===============   course playlist  ================
+/**************************
+****  Course Playlist  *****
+***************************/
 .course-playlist {
 
     .course-playlist-area {
-        width: 900px;
-        border: 1px solid $dark-white;
-        background-color: $white;
-        border-radius: 10px;
-        overflow: hidden;
+        @include courses-container;
 
         // head
         .head {
@@ -423,6 +429,327 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/**************************
+****  Teacher Instructs  *****
+***************************/
+.instructor {
+    .instructor-area {
+        @include courses-container;
+
+        .head {
+            .title-2 {
+                font-size: $font-4xl;
+            }
+
+            border-bottom: 1px solid $dark-white;
+            padding-bottom: 15px;
+        }
+
+        .instructor-body {
+            padding: 40px 0;
+
+            // left
+            .left-area {
+                width: 200px;
+
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+
+                // social
+                .social {
+                    a {
+                        color: $red;
+                        font-size: $font-2xl;
+
+                        &:hover {
+                            color: $dark;
+                        }
+                    }
+                }
+            }
+
+            // right
+            .right-area {
+                .name-post {
+                    .name {
+                        color: $dark;
+                        font-size: $font-3xl
+                    }
+                }
+
+                .border {
+                    width: 50px;
+                    height: 1px;
+                    background-color: $dark;
+                }
+
+                p {
+                    font-size: $font-xl;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/************************
+**** Review Section  *****
+*************************/
+.review {
+
+    .review-area {
+        @include courses-container;
+
+        .head {
+
+            // head-left
+            .head-left {
+                width: 200px;
+                border-radius: 6px;
+                border: 4px solid $green;
+
+                &.flex-center {
+                    flex-direction: column;
+                    padding: 20px;
+                }
+
+                // h2
+                h2 {
+                    font-size: $font-6xl + 20px;
+                    font-weight: $fw-600;
+                    color: $green;
+                }
+
+                .star {
+                    color: $orange;
+
+                    i {
+                        margin-left: -5px;
+                    }
+                }
+            }
+
+            // head right
+            .head-right {
+                flex-grow: 1;
+
+                ul {
+
+                    .start-line:nth-child(1) .long {
+                        width: 90%;
+                        height: 100%;
+                        border-radius: 15px;
+                        background-color: $green;
+                    }
+
+                    .start-line:nth-child(4) .long {
+                        width: 10%;
+                        height: 100%;
+                        border-radius: 15px;
+                        background-color: $green;
+                    }
+
+                    .star-name {
+                        width: 70px;
+                        font-size: $font-2xl;
+                        color: $dark;
+                    }
+
+                    .color {
+                        flex-grow: 1;
+                        height: 16px;
+                        border-radius: 15px;
+                        background-color: $dark-white;
+                    }
+
+                    .percent {
+                        width: 65px;
+                    }
+                }
+            }
+
+        }
+
+        .review-body {
+            .review-items {
+                position: relative;
+
+                // comment hide
+                .comment-hide {
+                    position: absolute;
+                    top: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: $green;
+                    color: $white;
+                    height: 45px;
+                    width: 45px;
+                    border-radius: 50%;
+                    font-size: $font-2xl;
+
+                    &:hover {
+                        background-color: $gray;
+                    }
+                }
+
+                // single review item
+                .review-item {
+                    padding: 50px 0;
+                    border-top: 1px solid $dark-white;
+
+                    &.flex-between {
+                        align-items: flex-start;
+                    }
+
+                    .img {
+                        width: 150px;
+
+                        img {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .name {
+                        color: $dark;
+                    }
+
+                    // star
+                    .star {
+                        i {
+                            margin-left: -5px;
+                            color: $orange;
+                        }
+                    }
+
+                    // title
+                    .title {
+                        color: $dark;
+                        font-style: italic;
+                        font-size: $font-2xl;
+                    }
+                }
+
+            }
+
+            // load more
+            .load-more {
+                width: fit-content !important;
+                padding: 12px 20px;
+            }
+
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/**************************
+****  Related Course  *****
+***************************/
+.related-course {
+    .related-course-area {
+        @include courses-container;
+        padding: 30px 15px;
+
+        .head {
+            border-bottom: 1px solid $dark-white;
+            height: 60px;
+        }
+
+        .body {
+            .related-items {
+                .featured-item {
+                    @include cart-course;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.course-header-bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    background-color: $white;
+    z-index: 6;
+    border-top: 1px solid $dark-white;
+    box-shadow: $shadow-1;
+
+    .course-header-bottom-area {
+
+        &.flex-between {
+            align-items: center;
+            height: 65px;
+        }
+
+        .left {
+            font-size: $font-xl;
+            color: $dark;
+
+            a {
+                position: relative;
+
+                &.active {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: -20px;
+                        left: 0;
+                        width: 100%;
+                        height: 3px;
+                        background-color: $red;
+                    }
+                }
+            }
+        }
+
+        .right {
+            .btn {
+                margin-right: 50px;
+                padding: 12px 20px;
+                background-color: $red;
+            }
+
+            .new-price {
+                font-size: $font-4xl + 5px;
+                color: $red;
+                font-weight: $fw-600;
             }
         }
     }

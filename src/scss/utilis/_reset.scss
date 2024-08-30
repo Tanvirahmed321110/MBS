@@ -37,6 +37,11 @@ a {
     color: inherit;
 }
 
+p {
+    font-size: $font-xl;
+    line-height: 28px;
+}
+
 img {
     display: block;
     width: 100%;
@@ -163,6 +168,7 @@ h3 {
     font-size: $font-4xl;
     font-weight: $fw-500;
     line-height: 30px;
+    letter-spacing: .3px;
 }
 
 // height
@@ -302,6 +308,9 @@ h-100 {
     margin-top: 36px;
 }
 
+.mb-65 {
+    margin-bottom: 65px;
+}
 
 .mt-50 {
     margin-top: 50px;
@@ -313,6 +322,10 @@ h-100 {
 
 .mt-80 {
     margin-top: 110px;
+}
+
+.my-5 {
+    margin: 28px 0;
 }
 
 .my-50 {
