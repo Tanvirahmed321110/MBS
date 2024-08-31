@@ -10,6 +10,10 @@
 }
 
 /*________  Tag Style  ________ */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -1015,10 +1019,10 @@ h-100 {
   transition: 0.5s;
 }
 .btn.btn-fill-dark:hover::after {
-  width: calc(100% - 8px);
+  width: calc(100% - 11px);
   left: 0;
-  border-left: 4px solid #b3af54;
-  border-right: 4px solid #b3af54;
+  border-left: 6px solid #b3af54;
+  border-right: 6px solid #b3af54;
 }
 .btn.btn-fill-dark span {
   position: relative;
@@ -1065,7 +1069,7 @@ h-100 {
   padding: 20px 0;
 }
 .header .header-area .header-top .header-top-area .header-top-left.flex-start {
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .header .header-area .header-top .header-top-area .header-top-left a:hover {
   color: #d22121;
@@ -1151,7 +1155,7 @@ h-100 {
 }
 .header .header-area .header-main {
   position: absolute;
-  top: 60px;
+  top: 66px;
   left: 0;
   z-index: 5;
   width: 100%;
@@ -2247,6 +2251,8 @@ h-100 {
   overflow: hidden;
   padding: 35px;
   font-size: 18px;
+  padding: 0;
+  user-select: none;
 }
 .course-playlist .course-playlist-area .head {
   background-color: #f8f8f8;
@@ -2275,8 +2281,24 @@ h-100 {
   cursor: pointer;
   border-top: 1px solid #e9e6ed;
 }
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-head.active i {
+  transition: 0.3s ease;
+  transform: rotate(180deg);
+}
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-head i {
+  transition: 0.3s ease;
+}
 .course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos {
   padding: 0 30px;
+  max-height: 400px;
+  transition: 0.3s ease;
+  overflow-y: auto;
+}
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos::-webkit-scrollbar {
+  display: none;
+}
+.course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos.active {
+  max-height: 0;
 }
 .course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos .playlist-video {
   padding: 30px 0;
@@ -2431,10 +2453,10 @@ h-100 {
 .review .review-area .head .head-right ul .percent {
   width: 65px;
 }
-.review .review-area .review-body .review-items {
+.review .review-area .review-body {
   position: relative;
 }
-.review .review-area .review-body .review-items .comment-hide {
+.review .review-area .review-body .comment-hide {
   position: absolute;
   top: -20px;
   left: 50%;
@@ -2446,8 +2468,24 @@ h-100 {
   border-radius: 50%;
   font-size: 20px;
 }
-.review .review-area .review-body .review-items .comment-hide:hover {
+.review .review-area .review-body .comment-hide:hover {
   background-color: #767676;
+}
+.review .review-area .review-body .comment-hide i {
+  transition: 0.3s ease;
+}
+.review .review-area .review-body .comment-hide.active i {
+  transform: rotate(180deg);
+  transition: 0.3s ease;
+}
+.review .review-area .review-body .review-items {
+  transition: 0.3s ease;
+  max-height: 1000px;
+}
+.review .review-area .review-body .review-items.active {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
 }
 .review .review-area .review-body .review-items .review-item {
   padding: 50px 0;

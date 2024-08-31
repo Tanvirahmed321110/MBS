@@ -31,3 +31,32 @@ window.addEventListener('scroll', function () {
         }
     }
 })
+
+
+
+
+
+
+
+
+// Playlist hide open
+const allPlaylists = document.querySelectorAll('.course-playlist .playlist-videos');
+const allPlaylistBtn = document.querySelectorAll('.course-playlist-item .playlist-head')
+
+allPlaylistBtn.forEach((btn, index) => {
+    btn.addEventListener('click', function () {
+        allPlaylists[index].classList.toggle('active')
+        btn.classList.toggle('active')
+    })
+})
+
+
+
+// reviews hide open
+const reviewHideOpenBtn = document.getElementById('reviews-hide-open')
+const reviewsBody = document.getElementById('reviews-items')
+
+reviewHideOpenBtn.addEventListener('click', function () {
+    reviewsBody.classList.toggle('active')
+    reviewHideOpenBtn.classList.toggle('active')
+})

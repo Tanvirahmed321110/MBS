@@ -16,6 +16,10 @@
 
 
 /*________  Tag Style  ________ */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $font-roboto;
     font-size: $font-md;
