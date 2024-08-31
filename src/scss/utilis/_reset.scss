@@ -142,9 +142,9 @@ h3 {
     padding: 0 40px;
     margin: 0 auto;
 
-    @include responsive(lg) {
-        max-width: 1240px;
-    }
+    // @include responsive(lg) {
+    //     max-width: 1240px;
+    // }
 }
 
 

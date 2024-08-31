@@ -129,11 +129,6 @@ h3 {
   padding: 0 40px;
   margin: 0 auto;
 }
-@media (max-width: 1400px) {
-  .container {
-    max-width: 1240px;
-  }
-}
 
 /* Text Alignment */
 .text-center {
