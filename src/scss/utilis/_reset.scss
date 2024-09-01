@@ -42,7 +42,7 @@ a {
 }
 
 p {
-    font-size: $font-xl;
+    font-size: $font-lg;
     line-height: 28px;
 }
 
@@ -137,9 +137,9 @@ h3 {
 
 /*____________  Reused Class  ____________*/
 .container {
-    max-width: 1460px;
+    max-width: 1500px;
     width: 100%;
-    padding: 0 40px;
+    padding: 0 70px;
     margin: 0 auto;
 
     // @include responsive(lg) {
@@ -480,7 +480,7 @@ h-100 {
 }
 
 .has-scrollbar {
-    padding: 5px;
+    // padding: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar {

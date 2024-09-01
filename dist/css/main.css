@@ -34,7 +34,7 @@ a {
 }
 
 p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 28px;
 }
 
@@ -124,9 +124,9 @@ h3 {
 
 /*____________  Reused Class  ____________*/
 .container {
-  max-width: 1460px;
+  max-width: 1500px;
   width: 100%;
-  padding: 0 40px;
+  padding: 0 70px;
   margin: 0 auto;
 }
 
@@ -437,10 +437,6 @@ h-100 {
   opacity: 1;
 }
 
-.has-scrollbar {
-  padding: 5px;
-}
-
 .has-scrollbar::-webkit-scrollbar {
   width: 10px;
   /* for vertical scroll */
@@ -533,6 +529,10 @@ h-100 {
 .modal .modal-content.big-video-modal-content .video iframe {
   width: 100%;
   height: 100%;
+}
+.modal .modal-content.big-video-modal-content .video {
+  width: calc(100% - 45px);
+  height: calc(100% - 25px);
 }
 .modal .modal-content.video-modal-content {
   background-color: #1e1e1e;
@@ -2068,8 +2068,8 @@ h-100 {
   position: sticky;
   background-color: #fff;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
-  width: 350px;
-  height: fit-content;
+  width: 320px;
+  max-height: 700px;
   z-index: 3;
   margin-left: auto;
   margin-right: 30px;
@@ -2082,7 +2082,7 @@ h-100 {
   margin-top: 0;
 }
 .c-banner .price-cart-wrapper .price-cart .border {
-  margin: 30px 20px;
+  margin: 20px 20px;
   border-top: 1px solid #faeeee;
 }
 .c-banner .price-cart-wrapper .price-cart .head {
@@ -2119,7 +2119,7 @@ h-100 {
 }
 .c-banner .price-cart-wrapper .price-cart .advantages .advantages-items {
   padding: 0 25px;
-  font-size: 18px;
+  font-size: 17px;
 }
 .c-banner .price-cart-wrapper .price-cart .advantages .advantages-items li.flex-start {
   align-items: flex-start;
@@ -2148,7 +2148,7 @@ h-100 {
 }
 .c-banner .teacher {
   display: grid;
-  grid-template-columns: 180px 350px 200px 200px;
+  grid-template-columns: 180px 350px 150px 150px;
   color: #1e1e1e;
   padding-bottom: 25px;
   border-bottom: 1px solid #faeeee;
@@ -2218,7 +2218,7 @@ h-100 {
 }
 .course-desc .course-desc-area .course-desc-items .course-desc-item p,
 .course-desc .course-desc-area .course-desc-items .course-desc-item li {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
   padding: 20px;
 }
@@ -2239,7 +2239,7 @@ h-100 {
 ****  Course Playlist  *****
 ***************************/
 .course-playlist .course-playlist-area {
-  width: 920px;
+  width: 850px;
   border: 1px solid #e9e6ed;
   background-color: #fff;
   border-radius: 10px;
@@ -2298,7 +2298,7 @@ h-100 {
 .course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos .playlist-video {
   padding: 30px 0;
   border-bottom: 1px solid #e9e6ed;
-  font-size: 18px;
+  font-size: 17px;
   cursor: pointer;
 }
 .course-playlist .course-playlist-area .course-playlist-items .course-playlist-item .playlist-videos .playlist-video .left {
@@ -2340,7 +2340,7 @@ h-100 {
 ****  Teacher Instructs  *****
 ***************************/
 .instructor .instructor-area {
-  width: 920px;
+  width: 850px;
   border: 1px solid #e9e6ed;
   background-color: #fff;
   border-radius: 10px;
@@ -2383,7 +2383,7 @@ h-100 {
   background-color: #1e1e1e;
 }
 .instructor .instructor-area .instructor-body .right-area p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
 }
 
@@ -2391,7 +2391,7 @@ h-100 {
 **** Review Section  *****
 *************************/
 .review .review-area {
-  width: 920px;
+  width: 850px;
   border: 1px solid #e9e6ed;
   background-color: #fff;
   border-radius: 10px;
@@ -2436,7 +2436,7 @@ h-100 {
 }
 .review .review-area .head .head-right ul .star-name {
   width: 70px;
-  font-size: 20px;
+  font-size: 18px;
   color: #1e1e1e;
 }
 .review .review-area .head .head-right ul .color {
@@ -2503,11 +2503,15 @@ h-100 {
 .review .review-area .review-body .review-items .review-item .star i {
   margin-left: -5px;
   color: #ffba00;
+  font-size: 17px;
 }
 .review .review-area .review-body .review-items .review-item .title {
   color: #1e1e1e;
   font-style: italic;
-  font-size: 20px;
+  font-size: 18px;
+}
+.review .review-area .review-body .review-items .review-item .desc {
+  font-size: 17px;
 }
 .review .review-area .review-body .load-more {
   width: fit-content !important;
@@ -2518,7 +2522,7 @@ h-100 {
 ****  Related Course  *****
 ***************************/
 .related-course .related-course-area {
-  width: 920px;
+  width: 850px;
   border: 1px solid #e9e6ed;
   background-color: #fff;
   border-radius: 10px;
@@ -2526,10 +2530,17 @@ h-100 {
   padding: 35px;
   font-size: 18px;
   padding: 30px 15px;
+  position: relative;
 }
 .related-course .related-course-area .head {
   border-bottom: 1px solid #e9e6ed;
   height: 60px;
+}
+.related-course .related-course-area .body {
+  position: relative;
+}
+.related-course .related-course-area .body .related-items.swiper-wrapper {
+  display: flex;
 }
 .related-course .related-course-area .body .related-items .featured-item {
   background-color: #fff;
@@ -2618,6 +2629,26 @@ h-100 {
 .related-course .related-course-area .body .related-items .featured-item:hover {
   outline: 3px solid #faeeee;
 }
+.related-course .related-course-area .body .swiper-button-prev,
+.related-course .related-course-area .body .swiper-button-next {
+  color: #fff;
+  background-color: #1e1e1e;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 24px;
+}
+.related-course .related-course-area .body .swiper-button-next {
+  right: 10px;
+}
+.related-course .related-course-area .body .swiper-button-prev {
+  left: 10px;
+}
 
 .course-header-bottom {
   position: fixed;
@@ -2626,7 +2657,7 @@ h-100 {
   width: 100%;
   height: 65px;
   background-color: #fff;
-  z-index: 6;
+  z-index: 4;
   border-top: 1px solid #e9e6ed;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
 }
@@ -2659,6 +2690,226 @@ h-100 {
   font-size: 29px;
   color: #d22121;
   font-weight: 600;
+}
+
+.playlist-header {
+  padding: 5px 20px;
+  background-color: #d22121;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 4;
+}
+.playlist-header .search {
+  padding: 10px;
+  width: 450px;
+}
+.playlist-header .search input {
+  font-size: 18px;
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 1px solid #f47e49;
+  padding: 8px 4px;
+}
+.playlist-header .search input::placeholder {
+  color: inherit;
+}
+.playlist-header .search input:focus {
+  border-bottom: 1px solid #ffba00;
+}
+.playlist-header .search button {
+  font-size: 20px;
+}
+.playlist-header .right {
+  gap: 200px;
+}
+.playlist-header .right .logo img {
+  width: 400px;
+}
+.playlist-header .right .buttons button {
+  font-size: 24px;
+}
+.playlist-header .right .buttons button i {
+  font-weight: 600;
+}
+.playlist-header button:hover {
+  opacity: 0.8;
+}
+
+.playlist-main {
+  margin-top: 68px;
+  gap: 80px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.playlist-main .all-playlist {
+  height: calc(100dvh - 70px);
+  width: 480px;
+  overflow-y: auto;
+}
+.playlist-main .all-playlist.active {
+  display: none;
+}
+.playlist-main .all-playlist.has-scrollbar::-webkit-scrollbar {
+  background-color: #f8f8f8;
+  border: 2px solid #e9e6ed;
+  border-radius: 15px;
+}
+.playlist-main .all-playlist.has-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #e9e6ed;
+  border: 3px solid var(--white);
+  border-radius: 20px;
+}
+.playlist-main .all-playlist .head {
+  background-color: #faeeee;
+  padding: 25px 15px;
+}
+.playlist-main .all-playlist .head a {
+  font-weight: 500;
+  color: #bb7878;
+}
+.playlist-main .all-playlist .head a:hover {
+  color: #b3af54;
+}
+.playlist-main .all-playlist .head .title {
+  color: #1e1e1e;
+  line-height: 25px;
+  font-size: 17px;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item {
+  user-select: none;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-head {
+  padding: 25px 15px;
+  border-top: 1px solid #e9e6ed;
+  cursor: pointer;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-head i {
+  transition: 0.3s ease;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-head i.active {
+  transform: rotate(180deg);
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-videos {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-videos::-webkit-scrollbar {
+  display: none;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-videos.active {
+  max-height: 400px;
+  overflow: auto;
+  transition: 0.3s ease;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-videos .playlist-video {
+  padding: 20px 25px;
+  padding-right: 15px;
+  border-top: 1px solid #e9e6ed;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-videos .playlist-video .left .video-name {
+  line-height: 28px;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-videos .playlist-video .left .video-name:hover {
+  color: #b3af54;
+  transition: 0.2s ease;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-videos .playlist-video.active {
+  background-color: #faeeee;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-videos .playlist-video:hover {
+  background-color: #f8f8f8;
+  transition: 0.2s ease;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-videos .playlist-video .right .preview {
+  padding: 5px 10px;
+  background-color: #d22121;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-videos .playlist-video .right .lock {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #e9e6ed;
+}
+.playlist-main .all-playlist .playlist-items .playlist-item .playlist-videos .playlist-video:hover .lock {
+  border-color: #d22121;
+  transition: 0.2s ease;
+}
+.playlist-main .video-area {
+  width: calc(100% - 500px);
+  padding-right: 40px;
+  height: calc(100dvh - 68px);
+  overflow-y: auto;
+  padding-bottom: 125px;
+}
+.playlist-main .video-area.active {
+  width: 90%;
+  margin: 0 auto;
+  padding-right: 0px;
+  height: calc(100dvh - 68px);
+  overflow-y: hidden;
+}
+.playlist-main .video-area.active .video {
+  width: 100%;
+}
+.playlist-main .video-area .sub-title {
+  margin: 25px 0;
+  font-size: 24px;
+}
+.playlist-main .video-area .video {
+  width: 95%;
+  height: 72dvh;
+  border: 2px solid #e9e6ed;
+}
+.playlist-main .video-area .video iframe {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+.playlist-main .video-area .video .buttons .btn-fill-dark {
+  padding: 12px;
+  width: 100px;
+  border-radius: 4px;
+}
+
+.similer-main-header {
+  background-image: linear-gradient(to right, rgba(177, 148, 148, 0.847), rgba(243, 59, 59, 0.853)) !important;
+}
+
+.semilarCourse-banner {
+  margin-top: 80px;
+  background-image: url("https://img.freepik.com/premium-photo/blue-white-abstract-background-with-line-triangles-sky_1278706-43724.jpg?w=826");
+  height: 450px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.semilarCourse-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(236, 192, 192, 0.1098039216);
+}
+.semilarCourse-banner .content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.semilarCourse-banner .content .desc {
+  line-height: 28px;
 }
 
 /*# sourceMappingURL=main.css.map */

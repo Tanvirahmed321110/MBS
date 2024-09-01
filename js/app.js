@@ -37,9 +37,11 @@ const notification = document.getElementById('notification')
 const notificationClose = document.getElementById('close-notification')
 
 
-notificationClose.addEventListener('click', function () {
-    notification.classList.add('hide')
-})
+if (notification) {
+    notificationClose.addEventListener('click', function () {
+        notification.classList.add('hide')
+    })
+}
 
 
 
@@ -100,19 +102,21 @@ const seeMoreButtons = document.querySelectorAll('.students-reviews-item .see-mo
 const closeButtons = document.querySelectorAll('.students-reviews-item .close-btn');
 
 
-seeMoreButtons.forEach(button => {
-    button.addEventListener('click', function () {
-        const modal = this.closest('.students-reviews-item').querySelector('.modal-message');
-        modal.classList.add('active')
+if (seeMoreButtons && closeButtons) {
+    seeMoreButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const modal = this.closest('.students-reviews-item').querySelector('.modal-message');
+            modal.classList.add('active')
+        })
     })
-})
 
-closeButtons.forEach(button => {
-    button.addEventListener('click', function () {
-        const modal = this.closest('.students-reviews-item').querySelector('.modal-message');
-        modal.classList.remove('active')
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const modal = this.closest('.students-reviews-item').querySelector('.modal-message');
+            modal.classList.remove('active')
+        })
     })
-})
+}
 
 
 
@@ -121,14 +125,17 @@ closeButtons.forEach(button => {
 
 // big video modal
 const bigVideoModal = document.getElementById('big-video-modal')
-const bigVidePlayBtn = document.getElementById('big-video-play-btn');
-const bigVideoElement = bigVideoModal.querySelector('video');
 
-if (bigVidePlayBtn) {
-    bigVidePlayBtn.addEventListener('click', function () {
-        bigVideoModal.classList.add('active')
-        bigVideoElement.play()
-    })
+if (bigVideoModal) {
+    const bigVidePlayBtn = document.getElementById('big-video-play-btn');
+    const bigVideoElement = bigVideoModal.querySelector('video');
+
+    if (bigVidePlayBtn) {
+        bigVidePlayBtn.addEventListener('click', function () {
+            bigVideoModal.classList.add('active')
+            bigVideoElement.play()
+        })
+    }
 }
 
 
@@ -153,24 +160,28 @@ messageVideoBtns.forEach(button => {
 
 
 // students reviews video
-const playButtons = document.querySelectorAll('.students-reviews-items .play-btn');
 const videoModal = document.querySelector('.video-modal');
-const videoElement = videoModal.querySelector('video');
 
-playButtons.forEach(button => {
-    button.addEventListener('click', function () {
-        const videoSrc = this.closest('.video').querySelector('video source').src;
+if (videoModal) {
 
-        // set video in the modal
-        videoElement.querySelector('source').src = videoSrc;
+    const playButtons = document.querySelectorAll('.students-reviews-items .play-btn');
+    const videoElement = videoModal.querySelector('video');
 
-        // load and play
-        videoElement.load()
-        videoElement.play()
+    playButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const videoSrc = this.closest('.video').querySelector('video source').src;
 
-        videoModal.classList.add('active')
+            // set video in the modal
+            videoElement.querySelector('source').src = videoSrc;
+
+            // load and play
+            videoElement.load()
+            videoElement.play()
+
+            videoModal.classList.add('active')
+        })
     })
-})
+}
 
 
 // modal close

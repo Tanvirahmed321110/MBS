@@ -1,4 +1,5 @@
 import('./app.js')
+import('./slider.js')
 // Select elements
 const courseBannerBtn = document.getElementById("course-banner-video");
 const bannerVideoIframe = document.querySelector('.banner-video iframe');
@@ -21,16 +22,29 @@ courseBannerBtn.addEventListener("click", function () {
 
 // scroll in the page
 window.addEventListener('scroll', function () {
-    const element = document.querySelector('.price-cart-wrapper')
+    const element = document.querySelector('.price-cart-wrapper');
+    const priceCart = document.querySelector('.price-cart');
+    const footer = document.querySelector('footer');
+    const footerTop = footer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
     if (element) {
+        // Toggle the 'active' class based on scroll position
         if (window.scrollY >= 900) {
-            element.classList.add('active')
-        }
-        else {
-            element.classList.remove('active')
+            element.classList.add('active');
+        } else {
+            element.classList.remove('active');
         }
     }
-})
+
+    // Hide price cart when the footer is in view
+    if (footerTop <= windowHeight) {
+        priceCart.style.display = 'none';
+    } else {
+        priceCart.style.display = 'block';
+    }
+});
+
 
 
 

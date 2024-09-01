@@ -1,0 +1,276 @@
+.playlist-header {
+    padding: 5px 20px;
+    background-color: $red;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: $white;
+    z-index: 4;
+
+    // search
+
+    .search {
+        // background-color: white;
+        padding: 10px;
+        width: 450px;
+
+        input {
+            font-size: $font-xl;
+            background-color: transparent;
+            color: $white;
+            border-bottom: 1px solid $green;
+            padding: 8px 4px;
+
+            &::placeholder {
+                color: inherit;
+                // font-style: italic;
+            }
+
+            &:focus {
+                border-bottom: 1px solid $orange;
+            }
+        }
+
+        button {
+            font-size: $font-2xl;
+        }
+    }
+
+
+    // right
+    .right {
+        gap: 200px;
+
+        .logo {
+            img {
+                width: 400px;
+            }
+        }
+
+        // buttons
+        .buttons {
+            button {
+                font-size: $font-4xl;
+
+                i {
+                    font-weight: $fw-600;
+                }
+            }
+        }
+    }
+
+    // hover in all button
+    button:hover {
+        opacity: .8;
+    }
+}
+
+
+
+
+
+// playlist main
+.playlist-main {
+    margin-top: 68px;
+    gap: 80px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    // All Playlist
+    .all-playlist {
+        height: calc(100dvh - 70px);
+        width: 480px;
+        overflow-y: auto;
+
+        &.active {
+            display: none;
+        }
+
+        // scroll bar
+        &.has-scrollbar::-webkit-scrollbar {
+            background-color: $white-off;
+            border: 2px solid $dark-white;
+            border-radius: 15px;
+        }
+
+        &.has-scrollbar::-webkit-scrollbar-thumb {
+            background-color: $dark-white;
+            border: 3px solid var(--white);
+            border-radius: 20px;
+        }
+
+
+        .head {
+            background-color: $white-off2;
+            padding: 25px 15px;
+
+            a {
+                font-weight: $fw-500;
+                color: $gray-off;
+
+                &:hover {
+                    color: $khaki;
+                }
+            }
+
+            .title {
+                color: $dark;
+                line-height: 25px;
+                font-size: $font-lg;
+            }
+
+        }
+
+        // playlist items
+        .playlist-items {
+
+
+            // single playlist item
+            .playlist-item {
+                user-select: none;
+
+                .playlist-head {
+                    padding: 25px 15px;
+                    border-top: 1px solid $dark-white;
+                    cursor: pointer;
+
+                    i {
+                        transition: .3s ease;
+
+                        &.active {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                // playlist-videos
+                .playlist-videos {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: .3s ease;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+
+                    &.active {
+                        max-height: 400px;
+                        overflow: auto;
+                        transition: .3s ease;
+                    }
+
+                    // single playlist video
+                    .playlist-video {
+                        padding: 20px 25px;
+                        padding-right: 15px;
+                        border-top: 1px solid $dark-white;
+
+
+                        // left
+                        .left {
+                            .video-name {
+                                line-height: 28px;
+
+                                &:hover {
+                                    color: $khaki;
+                                    transition: .2s ease;
+                                }
+                            }
+                        }
+
+                        &.active {
+                            background-color: $white-off2;
+                        }
+
+                        &:hover {
+                            background-color: $white-off;
+                            transition: .2s ease;
+                        }
+
+
+
+                        // right
+                        .right {
+                            .preview {
+                                padding: 5px 10px;
+                                background-color: $red;
+                                color: $white;
+                                border-radius: 25px;
+                                font-size: $font-md;
+                                margin-left: 10px;
+                                cursor: pointer;
+                            }
+
+                            // lock
+                            .lock {
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                border: 2px solid $dark-white;
+                            }
+                        }
+
+
+                        // hover playlist video
+                        &:hover .lock {
+                            border-color: $red;
+                            transition: .2s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    // Video area
+    .video-area {
+        width: calc(100% - 500px);
+        padding-right: 40px;
+        height: calc(100dvh - 68px);
+        overflow-y: auto;
+
+
+        &.active {
+            width: calc(90%);
+            margin: 0 auto;
+            padding-right: 0px;
+            height: calc(100dvh - 68px);
+            overflow-y: hidden;
+
+            .video {
+                width: 100%;
+            }
+        }
+
+        .sub-title {
+            margin: 25px 0;
+            font-size: $font-4xl;
+        }
+
+        .video {
+            width: 95%;
+            height: 72dvh;
+            border: 2px solid $dark-white;
+
+            iframe {
+                padding: 5px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .buttons {
+                .btn-fill-dark {
+                    padding: 12px;
+                    width: 100px;
+                    border-radius: 4px;
+                }
+            }
+
+        }
+
+        padding-bottom: 125px;
+    }
+}

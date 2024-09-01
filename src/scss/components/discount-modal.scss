@@ -45,6 +45,15 @@
         // big video modal content
         &.big-video-modal-content {
             @include modalRepeat($dark);
+
+            .video {
+                width: calc(100% - 45px);
+                height: calc(100% - 25px);
+
+                iframe {
+                    // width: 90%;
+                }
+            }
         }
 
         // Video modal content
