@@ -529,4 +529,24 @@ h-100 {
 
 
 
-// Responsive
+// =============  pagination  =============
+.pagination {
+    .page-btn {
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        border: 1px solid $dark-white;
+        background-color: $white;
+
+        &.active {
+            background-color: $red;
+            color: $white;
+        }
+
+
+        &:hover {
+            background-color: $red;
+            color: $white;
+        }
+    }
+}

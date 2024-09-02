@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All_Courses_</title>
+        <link rel="stylesheet" href="../dist/css/main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <div class="header-area">
+                    <!-- Header Top -->
+                    <div class="header-top">
+                        <div class="container">
+                            <div class="header-top-area flex-between ">
+                                <!--============  Header Top Left  ============ -->
+                                <div class="header-top-left flex-start gap-15">
+                                    <p>Have any Question?</p>
+                                    <a href="#">📲 0155-6677-23</a>
+                                    <a href="#">📧 msbsupport@gmail.com</a>
+                                </div>
+
+                                <!--============  Header Top Right  ============-->
+                                <div class="header-top-right flex-center gap-20">
+                                    <!-- Login Pages -->
+                                    <div class="flex-center gap-5 pages">
+                                        <a href="../pages/register.html">Register</a> <span>|</span>
+                                        <a href="../pages/login.html">Login</a>
+                                    </div>
+
+                                    <!-- Search -->
+                                    <div class="search flex-start">
+                                        <div class="search-frield-area flex-center">
+                                            <input type="search" placeholder="Search courses">
+                                        </div>
+
+                                        <button class="search-btn">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- Cart Button -->
+                                    <div class="cart-btn-area">
+                                        <button class="cart-btn" id="cart-btn">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+
+                                        <div class="cart-dropdown" id="cart-dropdown">
+                                            <div class="empty-cart">No product in this cart</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> <!-- Header Top End-->
+
+                    <!--=============  Header Main  =============-->
+                    <div class="header-main similer-main-header">
+                        <div class="container">
+                            <div class="header-main-area flex-between">
+                                <!-- Header main Logo -->
+                                <div class="logo">
+                                    <a href="../index.html">
+                                        <img height="50px" src="../src/image/logo.png" alt="Logo">
+                                    </a>
+                                </div>
+
+                                <!-- Header main menu -->
+                                <div class="header-main-menu">
+                                    <ul class="menu-items flex-between gap-35">
+
+                                        <!-- All courses Item -->
+                                        <li class="menu-item courses">
+                                            <a class="courses-btn" href="./pages/courses.html">
+                                                ALL COURSES <span><i class="fa-solid fa-caret-down"></i></span>
+                                            </a>
+
+                                            <!-- Courses Dropdown -->
+                                            <div class="courses-dropdown dropdown">
+                                                <ul>
+                                                    <li><a href="./pages/courses.html">Development</a></li>
+                                                    <li><a href="./pages/courses.html">Business</a></li>
+                                                    <li><a href="./pages/courses.html">Online Learning</a></li>
+                                                    <li><a href="./pages/courses.html">Web Design</a></li>
+                                                    <li><a href="./pages/courses.html">UI Design</a></li>
+                                                    <li><a href="./pages/courses.html">Marketing</a></li>
+                                                    <li><a href="./pages/courses.html">Hacking</a></li>
+                                                </ul>
+                                                <a href="./pages/courses.html" class="justify-start gap-5 view-all">
+                                                    <div>View all courses</div> <i class='bx bxs-send'></i>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="menu-item blog">
+                                            <a href="./pages/blog.html">BLOG</a>
+                                        </li>
+
+                                        <!-- Resource -->
+                                        <li class="menu-item">
+                                            <a class="resource-btn" href="./pages/resource.html">
+                                                <div class="d-flex gap-10">
+                                                    RESOURCE
+                                                    <span><i class="fa-solid fa-caret-down"></i></span>
+                                                </div>
+                                            </a>
+
+                                            <!-- Resource dropdown -->
+                                            <div class="resource-dropdown dropdown">
+                                                <ul>
+                                                    <li><a href="./pages/resource.html">Software & Tool</a></li>
+                                                    <li><a href="./pages/resource.html">Mdn TV</a></li>
+                                                    <li><a href="./pages/resource.html">Free Courses</a></li>
+                                                    <li><a href="./pages/resource.html">Learning</a></li>
+                                                    <li><a href="./pages/resource.html">Teachers</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="what-new menu-item " id="what-new">
+                                            <button class="what-new-btn" id="what-new-btn">WHAT'S NEW <span
+                                                    id="tag">1</span>
+                                            </button>
+
+                                            <!-- Modal in What the new -->
+                                            <div class="what-new-modal " id="what-new-modal">
+                                                <div class="modal-content">
+
+                                                    <!-- Header -->
+                                                    <div class="head color-white flex-between">
+                                                        <div class="xl-font">What is new on Our Academy</div>
+                                                        <button class="close-btn btn" id="what-new-close">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                        </button>
+                                                    </div>
+
+                                                    <!-- body -->
+                                                    <div class="body  has-scrollbar">
+                                                        <div class="body-items flex-column   gap-30">
+                                                            <!-- body item -->
+                                                            <div class="body-item">
+                                                                <div class="top">
+                                                                    <!-- Top -->
+                                                                    <div class="date-area justify-start gap-10">
+                                                                        <div class="tag uppercase">New Course</div>
+                                                                        <div class="date">Aug 25, 2024</div>
+                                                                    </div>
+                                                                    <!-- title -->
+                                                                    <h3 class="body-item-title mt-2">
+                                                                        <a href="./pages/courses.html">
+                                                                            কোডিং ছাড়াই গেইম
+                                                                            ডেভেলপ করে $2000/Month আয় করুন
+                                                                        </a>
+                                                                    </h3>
+                                                                </div>
+
+                                                                <!-- Desc -->
+                                                                <div class="desc mt-3 flex-column gap-15">
+                                                                    <p>বাংলাদেশে এই প্রথম কোডিং ছাড়াই প্রজেক্ট
+                                                                        ভিত্তিক
+                                                                        গেইম ডেভেলপমেন্ট কোর্স নিয়ে আসল MSB
+                                                                        Academy!!
+                                                                        <strong>কোন রকম পূর্ব অভিজ্ঞতা এবং
+                                                                            প্রোগ্রামিং নলেজ ছাড়াই আপনি এই কোর্সটি
+                                                                            শেখা
+                                                                            শুরু
+                                                                            করতে পারবেন এবং কোর্স শেষে নিজের মত
+                                                                            প্রফেশনাল
+                                                                            মানের PC + Mobile গেইম
+                                                                            ডেভেলপ করতে পারবেন।
+                                                                        </strong>
+                                                                    </p>
+                                                                    <p>
+                                                                        <strong>
+                                                                            কোন রকম পূর্ব অভিজ্ঞতা এবং
+                                                                            প্রোগ্রামিং নলেজ ছাড়াই আপনি এই কোর্সটি
+                                                                            শেখা
+                                                                            শুরু
+                                                                            করতে পারবেন এবং কোর্স শেষে নিজের মত
+                                                                            প্রফেশনাল
+                                                                            মানের PC + Mobile গেইম
+                                                                            ডেভেলপ করতে পারবেন।
+                                                                        </strong>
+                                                                    </p>
+
+                                                                    <div>
+                                                                        <div class="link-text">কোর্সের লিংক চেক
+                                                                            করুন,
+                                                                            কোর্স সম্পর্কে বিস্তারিত জানার জন্যঃ
+                                                                        </div>
+                                                                        <a class="mt-1 course-link"
+                                                                            href="https://www.msbacademy.com/course/game-development-masterclass">https://www.msbacademy.com/course/game-development-masterclass</a>
+                                                                    </div>
+
+                                                                    <!-- Video -->
+                                                                    <div class="video">
+                                                                        <div class="video-area">
+                                                                            <iframe width="100%" height="200"
+                                                                                src="https://www.youtube.com/embed/W4326cPpe2w"
+                                                                                title="YouTube video player"
+                                                                                frameborder="0"
+                                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                                allowfullscreen>
+                                                                            </iframe>
+                                                                        </div>
+                                                                        <a href="your-page-link"
+                                                                            class="video-title">Project Based
+                                                                            No-Code
+                                                                            Game Development Masterclass in Bangla
+                                                                        </a>
+
+                                                                        <div class="icons flex-center gap-10">
+                                                                            <div class="icon">🤎</div>
+                                                                            <div class="icon">😃</div>
+                                                                            <div class="icon">😐</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Feedback -->
+                                                                <div class="feedback">
+                                                                    <div class="feedback-area">
+                                                                        <input type="text" placeholder="Send Feedback">
+                                                                        <button><i class="bx bxs-send"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- body item -->
+                                                            <div class="body-item">
+                                                                <div class="top">
+                                                                    <!-- Top -->
+                                                                    <div class="date-area justify-start gap-10">
+                                                                        <div class="tag uppercase">New Course</div>
+                                                                        <div class="date">Aug 25, 2024</div>
+                                                                    </div>
+                                                                    <!-- title -->
+                                                                    <h3 class="body-item-title mt-2">
+                                                                        <a href="./pages/courses.html">
+                                                                            কোডিং ছাড়াই গেইম
+                                                                            ডেভেলপ করে $2000/Month আয় করুন
+                                                                        </a>
+                                                                    </h3>
+                                                                </div>
+
+                                                                <!-- Desc -->
+                                                                <div class="desc mt-3 flex-column gap-15">
+                                                                    <p>বাংলাদেশে এই প্রথম কোডিং ছাড়াই প্রজেক্ট
+                                                                        ভিত্তিক
+                                                                        গেইম ডেভেলপমেন্ট কোর্স নিয়ে আসল MSB
+                                                                        Academy!!
+                                                                        <strong>কোন রকম পূর্ব অভিজ্ঞতা এবং
+                                                                            প্রোগ্রামিং নলেজ ছাড়াই আপনি এই কোর্সটি
+                                                                            শেখা
+                                                                            শুরু
+                                                                            করতে পারবেন এবং কোর্স শেষে নিজের মত
+                                                                            প্রফেশনাল
+                                                                            মানের PC + Mobile গেইম
+                                                                            ডেভেলপ করতে পারবেন।
+                                                                        </strong>
+                                                                    </p>
+                                                                    <p>
+                                                                        <strong>
+                                                                            কোন রকম পূর্ব অভিজ্ঞতা এবং
+                                                                            প্রোগ্রামিং নলেজ ছাড়াই আপনি এই কোর্সটি
+                                                                            শেখা
+                                                                            শুরু
+                                                                            করতে পারবেন এবং কোর্স শেষে নিজের মত
+                                                                            প্রফেশনাল
+                                                                            মানের PC + Mobile গেইম
+                                                                            ডেভেলপ করতে পারবেন।
+                                                                        </strong>
+                                                                    </p>
+
+                                                                    <div>
+                                                                        <div class="link-text">কোর্সের লিংক চেক
+                                                                            করুন,
+                                                                            কোর্স সম্পর্কে বিস্তারিত জানার জন্যঃ
+                                                                        </div>
+                                                                        <a class="mt-1 course-link"
+                                                                            href="https://www.msbacademy.com/course/game-development-masterclass">https://www.msbacademy.com/course/game-development-masterclass</a>
+                                                                    </div>
+
+                                                                    <!-- Video -->
+                                                                    <div class="video">
+                                                                        <div class="video-area">
+                                                                            <iframe width="100%" height="200"
+                                                                                src="https://www.youtube.com/embed/W4326cPpe2w"
+                                                                                title="YouTube video player"
+                                                                                frameborder="0"
+                                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                                allowfullscreen>
+                                                                            </iframe>
+                                                                        </div>
+                                                                        <a href="your-page-link"
+                                                                            class="video-title">Project Based
+                                                                            No-Code
+                                                                            Game Development Masterclass in Bangla
+                                                                        </a>
+
+                                                                        <div class="icons flex-center gap-10">
+                                                                            <div class="icon">🤎</div>
+                                                                            <div class="icon">😃</div>
+                                                                            <div class="icon">😐</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Feedback -->
+                                                                <div class="feedback">
+                                                                    <div class="feedback-area">
+                                                                        <input type="text" placeholder="Send Feedback">
+                                                                        <button><i class="bx bxs-send"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- footer -->
+                                                    <div class="footer flex-center">
+                                                        We are ⚡ by Beamer.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+
+        <main>
+            <div class="allCourses">
+
+                <!-- =================   Banner   ================= -->
+                <section>
+                    <div class="allCourse-banner  color-white">
+                        <!-- Banner Top -->
+                        <div class="banner-top">
+                            <div class="flex-center top-content gap-35">
+                                <!-- Left -->
+                                <div class="left">
+                                    <h1 class="color-white">Courses </h1>
+                                </div>
+
+                                <!-- Border -->
+                                <div class="border"></div>
+
+                                <!-- Right -->
+                                <div class="right">
+                                    <div class="mt-2  sub-title uppercase">World Class bangla courses </div>
+                                    <p class="mt-1">Learn Anything in Bangla</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Banner Bottom -->
+                        <div class="banner-bottom">
+                            <div class="banner-bottom-area">
+                                <h2 class="after color-white">Popular Courses</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!-- =================   Courses   ================= -->
+                <section>
+                    <div class="featured-courses  popular-courses">
+                        <div class="container">
+                            <div class="featured-area">
+                                <div class="featured-items grid-3 gap-25 mt-4 ">
+
+                                    <!-- Single Feature item -->
+                                    <div class="featured-item">
+                                        <!-- Top -->
+                                        <div class="top">
+                                            <a href="#" class="img-area">
+                                                <img src="https://www.msbacademy.com/storage/2024/05/Artificial-Intelligence-Cover-1000x550.jpg"
+                                                    alt="">
+                                            </a>
+                                            <!-- Tag -->
+                                            <div class="tag">sale</div>
+                                            <!-- Absolute -->
+                                            <div class="absulate">
+                                                <div class="flex-between">
+                                                    <!-- Price -->
+                                                    <div class="price flex-start gap-15">
+                                                        <div class="new-price">
+                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 4,500
+                                                        </div>
+                                                        <div class="old-price">
+                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 9,400
+                                                        </div>
+                                                    </div>
+                                                    <!-- Rating -->
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- body -->
+                                        <div class="body">
+                                            <a href="#" class="title">
+                                                Latest Master in Artificial Intelligence (AI) and Earn Money $$$ From
+                                                Online
+                                            </a>
+                                            <div class="bottom justify-start gap-5">
+                                                <a href="#">Rasel Ahmed</a> /
+                                                <div> 300 students</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat similar structure for each item with different content -->
+
+                                    <!-- Feature Item 2 -->
+                                    <div class="featured-item">
+                                        <!-- Top -->
+                                        <div class="top">
+                                            <a href="#" class="img-area">
+                                                <img src="https://www.msbacademy.com/storage/2019/11/Print-on-Demand-Course-Cover-1000x550.jpg"
+                                                    alt="">
+                                            </a>
+                                            <!-- Tag -->
+                                            <div class="tag">new</div>
+                                            <!-- Absolute -->
+                                            <div class="absulate">
+                                                <div class="flex-between">
+                                                    <!-- Price -->
+                                                    <div class="price flex-start gap-15">
+                                                        <div class="new-price">
+                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 6,000
+                                                        </div>
+                                                        <div class="old-price">
+                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 10,000
+                                                        </div>
+                                                    </div>
+                                                    <!-- Rating -->
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- body -->
+                                        <div class="body">
+                                            <a href="#" class="title">
+                                                Comprehensive Data Science Bootcamp
+                                            </a>
+                                            <div class="bottom justify-start gap-5">
+                                                <a href="#">John Doe</a> /
+                                                <div> 250 students</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Feature Item 2 -->
+                                    <div class="featured-item">
+                                        <!-- Top -->
+                                        <div class="top">
+                                            <a href="#" class="img-area">
+                                                <img src="https://www.msbacademy.com/storage/2019/11/Print-on-Demand-Course-Cover-1000x550.jpg"
+                                                    alt="">
+                                            </a>
+                                            <!-- Tag -->
+                                            <div class="tag">new</div>
+                                            <!-- Absolute -->
+                                            <div class="absulate">
+                                                <div class="flex-between">
+                                                    <!-- Price -->
+                                                    <div class="price flex-start gap-15">
+                                                        <div class="new-price">
+                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 6,000
+                                                        </div>
+                                                        <div class="old-price">
+                                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 10,000
+                                                        </div>
+                                                    </div>
+                                                    <!-- Rating -->
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- body -->
+                                        <div class="body">
+                                            <a href="#" class="title">
+                                                Comprehensive Data Science Bootcamp
+                                            </a>
+                                            <div class="bottom justify-start gap-5">
+                                                <a href="#">John Doe</a> /
+                                                <div> 250 students</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+                <!-- ============  filter  ============ -->
+                <section>
+                    <div class="filter mt-80">
+                        <div class="container">
+                            <div class="filter-area flex-between gap-35">
+
+                                <!-- Left -->
+                                <div class="left">
+
+                                    <!-- Head -->
+                                    <div class="head justify-start gap-35">
+                                        <!-- head left -->
+                                        <div class="header-left flex-center gap-20">
+                                            <div class="flex-center gap-10">
+                                                <button><i class="fa-solid fa-table-cells-large"></i></button>
+                                                <button><i class="fa-solid fa-list-check"></i></button>
+                                            </div>
+                                            <div class="show-result">
+                                                Showing 1-22 of 30 results
+                                            </div>
+                                        </div>
+
+                                        <!-- head right -->
+                                        <div class="header-right flex-center gap-20">
+
+                                            <!-- Dropdown -->
+                                            <select name="" id="">
+                                                <option value="">
+                                                    Newly published <i class="fa-solid fa-chevron-down"></i>
+                                                </option>
+                                                <option value="">
+                                                    Popular
+                                                </option>
+                                                <option value="">
+                                                    Most Members
+                                                </option>
+                                            </select>
+
+                                            <!-- search -->
+                                            <div class="search flex-between">
+                                                <input type="text" placeholder="Search our course ">
+                                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- course items -->
+                                    <div class="featured-courses allCourses-items mt-50">
+                                        <div class="featured-area">
+
+                                            <div class="featured-items grid-3 gap-15 mt-4 ">
+
+                                                <!-- Single Feature item -->
+                                                <div class="featured-item">
+                                                    <!-- Top -->
+                                                    <div class="top">
+                                                        <a href="#" class="img-area">
+                                                            <img src="https://www.msbacademy.com/storage/2024/05/Artificial-Intelligence-Cover-1000x550.jpg"
+                                                                alt="">
+                                                        </a>
+                                                        <!-- Tag -->
+                                                        <div class="tag">sale</div>
+                                                        <!-- Absolute -->
+                                                        <div class="absulate">
+                                                            <div class="flex-between">
+                                                                <!-- Price -->
+                                                                <div class="price flex-start gap-15">
+                                                                    <div class="new-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        4,500
+                                                                    </div>
+                                                                    <div class="old-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        9,400
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Rating -->
+                                                                <div class="rating">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- body -->
+                                                    <div class="body">
+                                                        <a href="#" class="title">
+                                                            Latest Master in Artificial Intelligence (AI) and Earn Money
+                                                            $$$ From Online
+                                                        </a>
+                                                        <div class="bottom justify-start gap-5">
+                                                            <a href="#">Rasel Ahmed</a> /
+                                                            <div> 300 students</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Repeat similar structure for each item with different content -->
+
+                                                <!-- Feature Item 2 -->
+                                                <div class="featured-item">
+                                                    <!-- Top -->
+                                                    <div class="top">
+                                                        <a href="#" class="img-area">
+                                                            <img src="https://www.msbacademy.com/storage/2019/11/Print-on-Demand-Course-Cover-1000x550.jpg"
+                                                                alt="">
+                                                        </a>
+                                                        <!-- Tag -->
+                                                        <div class="tag">new</div>
+                                                        <!-- Absolute -->
+                                                        <div class="absulate">
+                                                            <div class="flex-between">
+                                                                <!-- Price -->
+                                                                <div class="price flex-start gap-15">
+                                                                    <div class="new-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        6,000
+                                                                    </div>
+                                                                    <div class="old-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        10,000
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Rating -->
+                                                                <div class="rating">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- body -->
+                                                    <div class="body">
+                                                        <a href="#" class="title">
+                                                            Comprehensive Data Science Bootcamp
+                                                        </a>
+                                                        <div class="bottom justify-start gap-5">
+                                                            <a href="#">John Doe</a> /
+                                                            <div> 250 students</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Feature Item 2 -->
+                                                <div class="featured-item">
+                                                    <!-- Top -->
+                                                    <div class="top">
+                                                        <a href="#" class="img-area">
+                                                            <img src="https://www.msbacademy.com/storage/2019/11/Print-on-Demand-Course-Cover-1000x550.jpg"
+                                                                alt="">
+                                                        </a>
+                                                        <!-- Tag -->
+                                                        <div class="tag">new</div>
+                                                        <!-- Absolute -->
+                                                        <div class="absulate">
+                                                            <div class="flex-between">
+                                                                <!-- Price -->
+                                                                <div class="price flex-start gap-15">
+                                                                    <div class="new-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        6,000
+                                                                    </div>
+                                                                    <div class="old-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        10,000
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Rating -->
+                                                                <div class="rating">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- body -->
+                                                    <div class="body">
+                                                        <a href="#" class="title">
+                                                            Comprehensive Data Science Bootcamp
+                                                        </a>
+                                                        <div class="bottom justify-start gap-5">
+                                                            <a href="#">John Doe</a> /
+                                                            <div> 250 students</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Feature Item 2 -->
+                                                <div class="featured-item">
+                                                    <!-- Top -->
+                                                    <div class="top">
+                                                        <a href="#" class="img-area">
+                                                            <img src="https://www.msbacademy.com/storage/2019/11/Print-on-Demand-Course-Cover-1000x550.jpg"
+                                                                alt="">
+                                                        </a>
+                                                        <!-- Tag -->
+                                                        <div class="tag">new</div>
+                                                        <!-- Absolute -->
+                                                        <div class="absulate">
+                                                            <div class="flex-between">
+                                                                <!-- Price -->
+                                                                <div class="price flex-start gap-15">
+                                                                    <div class="new-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        6,000
+                                                                    </div>
+                                                                    <div class="old-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        10,000
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Rating -->
+                                                                <div class="rating">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- body -->
+                                                    <div class="body">
+                                                        <a href="#" class="title">
+                                                            Comprehensive Data Science Bootcamp
+                                                        </a>
+                                                        <div class="bottom justify-start gap-5">
+                                                            <a href="#">John Doe</a> /
+                                                            <div> 250 students</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Feature Item 2 -->
+                                                <div class="featured-item">
+                                                    <!-- Top -->
+                                                    <div class="top">
+                                                        <a href="./pages/course.html" class="img-area">
+                                                            <img src="https://www.msbacademy.com/storage/2019/11/Print-on-Demand-Course-Cover-1000x550.jpg"
+                                                                alt="">
+                                                        </a>
+                                                        <!-- Tag -->
+                                                        <div class="tag">new</div>
+                                                        <!-- Absolute -->
+                                                        <div class="absulate">
+                                                            <div class="flex-between">
+                                                                <!-- Price -->
+                                                                <div class="price flex-start gap-15">
+                                                                    <div class="new-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        6,000
+                                                                    </div>
+                                                                    <div class="old-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        10,000
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Rating -->
+                                                                <div class="rating">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- body -->
+                                                    <div class="body">
+                                                        <a href="#" class="title">
+                                                            Comprehensive Data Science Bootcamp
+                                                        </a>
+                                                        <div class="bottom justify-start gap-5">
+                                                            <a href="#">John Doe</a> /
+                                                            <div> 250 students</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Feature Item 3 -->
+                                                <div class="featured-item">
+                                                    <!-- Top -->
+                                                    <div class="top">
+                                                        <a href="./pages/course.html" class="img-area">
+                                                            <img src="https://www.msbacademy.com/storage/2024/02/Blogging-with-AI-Cover-Photo-1000x550.jpg"
+                                                                alt="">
+                                                        </a>
+                                                        <!-- Tag -->
+                                                        <div class="tag">hot</div>
+                                                        <!-- Absolute -->
+                                                        <div class="absulate">
+                                                            <div class="flex-between">
+                                                                <!-- Price -->
+                                                                <div class="price flex-start gap-15">
+                                                                    <div class="new-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        5,500
+                                                                    </div>
+                                                                    <div class="old-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        9,000
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Rating -->
+                                                                <div class="rating">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- body -->
+                                                    <div class="body">
+                                                        <a href="./pages/course.html" class="title">
+                                                            Complete Web Development Masterclass
+                                                        </a>
+                                                        <div class="bottom justify-start gap-5">
+                                                            <a href="#">Jane Smith</a> /
+                                                            <div> 400 students</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Feature Item 4 -->
+                                                <div class="featured-item">
+                                                    <!-- Top -->
+                                                    <div class="top">
+                                                        <a href="#" class="img-area">
+                                                            <img src="https://www.msbacademy.com/storage/2023/06/YouTube-Animation-Course-1000x550.jpg"
+                                                                alt="">
+                                                        </a>
+                                                        <!-- Tag -->
+                                                        <div class="tag">sale</div>
+                                                        <!-- Absolute -->
+                                                        <div class="absulate">
+                                                            <div class="flex-between">
+                                                                <!-- Price -->
+                                                                <div class="price flex-start gap-15">
+                                                                    <div class="new-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        7,500
+                                                                    </div>
+                                                                    <div class="old-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        12,000
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Rating -->
+                                                                <div class="rating">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- body -->
+                                                    <div class="body">
+                                                        <a href="./pages/course.html" class="title">
+                                                            Advanced Cyber Security Certification
+                                                        </a>
+                                                        <div class="bottom justify-start gap-5">
+                                                            <a href="#">Michael Brown</a> /
+                                                            <div> 200 students</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Feature Item 5 -->
+                                                <div class="featured-item">
+                                                    <!-- Top -->
+                                                    <div class="top">
+                                                        <a href="./pages/course.html" class="img-area">
+                                                            <img src="https://www.msbacademy.com/storage/2023/05/Game-Development-Course-1000x550.jpg"
+                                                                alt="">
+                                                        </a>
+                                                        <!-- Tag -->
+                                                        <div class="tag">new</div>
+                                                        <!-- Absolute -->
+                                                        <div class="absulate">
+                                                            <div class="flex-between">
+                                                                <!-- Price -->
+                                                                <div class="price flex-start gap-15">
+                                                                    <div class="new-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        4,000
+                                                                    </div>
+                                                                    <div class="old-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        8,000
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Rating -->
+                                                                <div class="rating">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- body -->
+                                                    <div class="body">
+                                                        <a href="./pages/course.html" class="title">
+                                                            Professional Graphic Design Course
+                                                        </a>
+                                                        <div class="bottom justify-start gap-5">
+                                                            <a href="#">Emily Clark</a> /
+                                                            <div> 150 students</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Feature Item 5 -->
+                                                <div class="featured-item">
+                                                    <!-- Top -->
+                                                    <div class="top">
+                                                        <a href="./pages/course.html" class="img-area">
+                                                            <img src="https://www.msbacademy.com/storage/2019/11/Print-on-Demand-Course-Cover-1000x550.jpg"
+                                                                alt="">
+                                                        </a>
+                                                        <!-- Tag -->
+                                                        <div class="tag">new</div>
+                                                        <!-- Absolute -->
+                                                        <div class="absulate">
+                                                            <div class="flex-between">
+                                                                <!-- Price -->
+                                                                <div class="price flex-start gap-15">
+                                                                    <div class="new-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        4,000
+                                                                    </div>
+                                                                    <div class="old-price">
+                                                                        <i
+                                                                            class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                                        8,000
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Rating -->
+                                                                <div class="rating">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- body -->
+                                                    <div class="body">
+                                                        <a href="./pages/course.html" class="title">
+                                                            Professional Graphic Design Course
+                                                        </a>
+                                                        <div class="bottom justify-start gap-5">
+                                                            <a href="#">Emily Clark</a> /
+                                                            <div> 150 students</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="mt-50 pagination justify-start gap-10">
+                                        <div class="page-btn active flex-center">1</div>
+                                        <div class="page-btn flex-center">2</div>
+                                        <div class="page-btn flex-center"><i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <!--==============   right ==============-->
+                                <div class="right">
+                                    <div class="head uppercase xl-font">course categories</div>
+
+                                    <div class="course-catefories mt-5">
+                                        <ul class="flex-column gap-15">
+                                            <li><a href="../pages/similarCourse.html">3D & Animation</a></li>
+                                            <li><a href="../pages/similarCourse.html">Artificial Intelligence</a></li>
+                                            <li><a href="../pages/similarCourse.html">Business</a></li>
+                                            <li><a href="../pages/similarCourse.html">Design</a></li>
+                                            <li><a href="../pages/similarCourse.html">Web Development</a></li>
+                                            <li><a href="../pages/similarCourse.html">Graphic Design</a></li>
+                                            <li><a href="../pages/similarCourse.html">Hacking & Security</a></li>
+                                            <li><a href="../pages/similarCourse.html">IT & Software</a></li>
+                                            <li><a href="../pages/similarCourse.html">Lifestyle</a></li>
+                                            <li><a href="../pages/similarCourse.html">Online Income</a></li>
+                                            <li><a href="../pages/similarCourse.html">Office Productivity</a></li>
+                                            <li><a href="../pages/similarCourse.html">Marketing</a></li>
+                                            <li><a href="../pages/similarCourse.html">Programing</a></li>
+                                            <li><a href="../pages/similarCourse.html">Video Editing</a></li>
+                                            <li><a href="../pages/similarCourse.html">Office Productivity</a></li>
+                                            <li><a href="../pages/similarCourse.html">Marketing</a></li>
+                                            <li><a href="../pages/similarCourse.html">Programing</a></li>
+                                            <li><a href="../pages/similarCourse.html">Video Editing</a></li>
+                                        </ul>
+                                    </div>
+
+
+
+                                    <!-- Group -->
+                                    <div class="group mt-50 flex-column gap-25">
+                                        <div class="group-item">
+                                            <a href="#">
+                                                <img src="https://www.msbacademy.com/storage/2023/04/Join-in-MSB-Academy-Community-radious-20px-512x512.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="group-item">
+                                            <a href="#">
+                                                <img src="https://www.msbacademy.com/storage/2023/04/facebook-group-512x512.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+            </div>
+        </main>
+
+
+
+
+
+        <!--===============   Footer Section  ================ -->
+        <footer>
+            <div class="footer mt-80">
+
+                <!-- Footer Top -->
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="footer-top-area">
+
+                            <!-- Single Footer Top Item -->
+                            <div class="footer-top-item">
+                                <div class="sub-title fw-bold uppercase">Community</div>
+                                <ul class="mt-6 flex-column gap-15">
+                                    <li><a href="#">Facebook Group</a></li>
+                                    <li><a href="#">Free Courses</a></li>
+                                    <li><a href="#">YouTube</a></li>
+                                    <li><a href="#">Ask Community</a></li>
+                                    <li><a href="#">Request New Course</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Single Footer Top Item -->
+                            <div class="footer-top-item">
+                                <div class="sub-title fw-bold uppercase">Community</div>
+                                <ul class="mt-6 flex-column gap-15">
+                                    <li><a href="#">Facebook Group</a></li>
+                                    <li><a href="#">Free Courses</a></li>
+                                    <li><a href="#">YouTube</a></li>
+                                    <li><a href="#">Ask Community</a></li>
+                                    <li><a href="#">Request New Course</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Single Footer Top Item -->
+                            <div class="footer-top-item">
+                                <div class="sub-title fw-bold uppercase">Help</div>
+                                <ul class="mt-6 flex-column gap-15">
+                                    <li><a href="#">Support Portal</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Refund Policy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Single Footer Top Item -->
+                            <div class="footer-top-item">
+                                <div class="sub-title fw-bold uppercase">Abouu Us</div>
+                                <ul class="mt-6 flex-column gap-15">
+                                    <li><a href="#">Sucess Stories</a></li>
+                                    <li><a href="#">Brand Assests</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Become An Instructor</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="flex-column btn-wrapper gap-20">
+                                <button class="btn btn-fill-dark">
+                                    <span><i class="fa-solid fa-video"></i> create course</span>
+                                </button>
+                                <button class="btn btn-fill-dark">
+                                    <span><i class="fa-solid fa-map-location"></i> affilate area</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="footer-bottom-area">
+                            <div class="footer-bottom-top  flex-center gap-5">
+                                <!-- Address -->
+                                <div class="address">
+                                    <div class="left">
+                                        <div>Offices Address: Cadet Plaza Floor 6, Block A</div>
+                                        <div class="text-right">Mirpure 12, Dhaka Bangladesh</div>
+                                    </div>
+                                </div>
+
+                                <!-- Logo -->
+                                <div class="logo">
+                                    <a href="../index.html">
+                                        <img src="../src/image/logo.png" alt="">
+                                    </a>
+                                </div>
+                                <!-- Right -->
+                                <div class="copy-right">
+                                    <div>Copyright &copy; 2024 <span>MSB Academy Dhaka</span></div>
+                                    <div>All rights reserved</div>
+                                </div>
+                            </div>
+
+                            <!-- Footer bottom bottom -->
+                            <div class="footer-bottom-social mt-50">
+                                <ul class="top flex-center gap-20">
+                                    <li><a href=" #">Directory </a></li>
+                                    <li><a href="#">Accessibilty </a></li>
+                                    <li><a href="#">Civil Rights Equity</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                </ul>
+
+                                <!-- Social Items -->
+                                <div class="social-items mt-6">
+                                    <ul class="flex-center gap-10">
+                                        <li class="social-item">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                        </li>
+                                        <li class="social-item last">
+                                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="mt-3 last-text text-center">social.msb.com</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+        <div class=" overlay" id="overlay"></div>
+
+
+        <!-- Message Button -->
+        <button class="message-btn active flex-center" id="message-btn">
+            <i class="fa-brands fa-facebook-messenger"></i>
+        </button>
+
+
+        <!--==============  Message Modal  ===============-->
+        <div class="message-modal  what-new-modal " id="message-modal">
+            <div class="message-modal-area">
+
+                <!-- Header -->
+                <div class="head message-head flex-between">
+
+                    <div class="flex-start gap-10">
+                        <img width="50px"
+                            src="https://s3.amazonaws.com/helpshelf-production/media/uploads/sites/msb-academy-1/MSB_READ_MAIN_LOGO.png"
+                            alt="">
+                        <div class="xxl-font">Looking for help?</div>
+                    </div>
+
+                    <button class="close-btn btn" id="message-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <!--==========  Message Modal Body  ============-->
+                <div class="body message-body">
+                    <!-- Message body items -->
+                    <div class="body-items">
+                        <div class="body-top">
+                            <div class="text">
+                                যেকোন প্রশ্ন থাকলে আমাদেরকে জানান। আমরা সবসময় আপনাকে হেল্প করার জন্য
+                                প্রস্তুত 🙋‍♂️
+                            </div>
+                            <div class="search mt-4 flex-between">
+                                <input type="text" placeholder="Looking for help? Search here...">
+                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- body resouces -->
+                        <div class="body-resources mt-7">
+                            <div class="sub-title text uppercase">Popular resources</div>
+
+                            <!-- body resources items -->
+                            <div class="body-resources-items flex-column gap-15 mt-1">
+
+                                <!-- Singe resource item -->
+                                <div class="body-resources-item message-course-video flex-between gap-20">
+                                    <div class="left flex-center"><i class="fa-solid fa-play"></i></div>
+                                    <div class="text fw-bold">কোর্স কিভাবে কিনবেন? কিভাবে দেখবেন?</div>
+
+                                    <!-- Video -->
+                                    <div class="d-none">
+                                        <video muted class="_1j3a3su7" controls="">
+                                            <source
+                                                src="https://d2fr8icwxgw12b.cloudfront.net/5e7825c2-6eae-4bf4-b742-6644c01746b0/kjlff2vc.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+
+                                <!-- Singe resource item -->
+                                <div class="body-resources-item flex-between gap-20" id="other-platfrom">
+                                    <div class="left flex-center"><i class="fa-solid fa-book"></i></div>
+                                    <div class="text fw-bold">আমাদের অন্যান্য প্লাটফর্মগুলোতে জয়েন করুন</div>
+                                </div>
+
+                                <!-- Singe resource item -->
+                                <a href="#" class="body-resources-item flex-between gap-20">
+                                    <div class="left flex-center"><i class="fa-solid fa-book"></i></div>
+                                    <div class="text fw-bold">কোর্স সম্পর্কে স্টুডেন্টদের রিভিউ দেখুন ⭐</div>
+                                </a>
+
+                                <!-- Singe resource item -->
+                                <div class="body-resources-item message-course-video flex-between gap-20">
+                                    <div class="left flex-center"><i class="fa-solid fa-play"></i></div>
+                                    <div class="text fw-bold">কোর্স কিভাবে কিনবেন? কিভাবে দেখবেন?</div>
+
+                                    <!-- Video -->
+                                    <div class="d-none">
+                                        <video muted class="_1j3a3su7" controls="">
+                                            <source
+                                                src="https://d2fr8icwxgw12b.cloudfront.net/5e7825c2-6eae-4bf4-b742-6644c01746b0/kjlff2vc.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <!-- Singe resource item -->
+                                <div class="body-resources-item message-course-video flex-between gap-20">
+                                    <div class="left flex-center"><i class="fa-solid fa-play"></i></div>
+                                    <div class="text fw-bold">কোর্স কিভাবে কিনবেন? কিভাবে দেখবেন?</div>
+
+                                    <!-- Video -->
+                                    <div class="d-none">
+                                        <video muted class="_1j3a3su7" controls="">
+                                            <source
+                                                src="https://d2fr8icwxgw12b.cloudfront.net/5e7825c2-6eae-4bf4-b742-6644c01746b0/kjlff2vc.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- platfrom boyd -->
+                    <div class="platfrom-body">
+                        <div class="top sub-title fw-bold">আমাদের অন্যান্য প্লাটফর্মগুলোতে জয়েন করুন</div>
+                        <ul class="flex-column gap-20 mt-4">
+                            <li>
+                                MSB একটি আস্থার নাম। বাংলাদেশের সব বড় বড় অনলাইন প্লাটফর্ম এবং কমিউনিটি এই MSB
+                                ব্র্যান্ডের অধীনে। তাই আপনি আমাদের
+                                অনান্য প্লাটফর্মগুলোতেও জয়েন করে ফেলুন, সবসময় কানেক্টেড থাকার জন্য।
+                            </li>
+                            <li>
+                                <a href="#">🎬 ইউটিউব চ্যানেল #১</a> এবং <a href="#"> ইউটিউব চ্যানেল #২</a> এখনই
+                                সাবস্ক্রাইব
+                                করুন, ফ্রিতে
+                                ভালো কিছু শিখার
+                                জন্য।
+                            </li>
+                            <li>
+                                <a href="#">🏫 MSB Academy Skills</a> সাইটে পাবেন আমাদের সব ফ্রি অনলাইন কোর্স। যেখানে
+                                ইন্ডাস্ট্রি
+                                এক্সপার্টরা নতুনদের ক্যারিয়ার
+                                গাইডলাইন দিয়ে থাকে।
+                            </li>
+                            <li>
+                                <a href="#">💼 MSB Jobs</a> চাকরি খোঁজা এবং কোম্পানিতে যোগ্য কর্মী নিয়োগ দেয়ার জন্য এক
+                                বিশ্বস্ত মাধ্যম।
+                            </li>
+                            <li>
+                                <a href="#">📺 MSB TV</a> একটি এডুকেশনাল টিভি চ্যানেল, যেখানে ২৪/৭ শিক্ষামূলক প্রোগ্রাম
+                                সম্প্রচার করা
+                                হয়।
+                            </li>
+                            <li>
+                                🎧 Podcast শুনুন সম্পূর্ণ ফ্রিতে আর প্রতিদিন নতুন কিছু জানুন। Also available on Google
+                                Podcasts, Apple Podcasts, and
+                                Spotify!!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="footer" id="message-footer">
+                    <button class="btn btn-fill-dark w-100" id="chat-btn">
+                        <span class="xl-font flex-center gap-10"><i class="fa-regular fa-message"></i> Live
+                            Chat
+                        </span>
+
+                    </button>
+                    <!-- hover toltip -->
+                    <div class="chat-toltip flex-column  gap-15" id="chat-toltip">
+                        <a class="option" href="https://wa.me/01701957294?text=Hello" target="_blank">What
+                            APP</a>
+                        <a class="option" href="https://facebook.com/tanvir321110" target="_blank">Messenger</a>
+                    </div>
+                </div>
+
+                <!-- Platfrom Footer  -->
+                <div class="platfrom-footer footer">
+                    <button class="btn btn-fill-dark" id="platfrom-back-btn">
+                        <span class="flex-center gap-10"><i class="fa-solid fa-backward-step"></i> Back</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="../js/app.js"></script>
+    </body>
+
+</html>
