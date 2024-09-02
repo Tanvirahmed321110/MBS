@@ -538,6 +538,10 @@ h-100 {
         border: 1px solid $dark-white;
         background-color: $white;
 
+        &.round {
+            border-radius: 50%;
+        }
+
         &.active {
             background-color: $red;
             color: $white;

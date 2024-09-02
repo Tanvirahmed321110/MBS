@@ -1,0 +1,97 @@
+// ==============  Blog Banner  ===============
+
+.semilarCourse-banner {
+    &.blogs-banner {
+        background-image: url('https://www.msbacademy.com/storage/2022/05/blog-background-mac.jpg');
+        background-position: right;
+
+        &::after {
+            background-color: $rgba-3;
+        }
+    }
+}
+
+
+
+
+
+// ==============  Recent Blogs  ===============
+.recent-blogs {
+    .recent-blogs-area {
+
+        // Head
+        .head {
+
+            // left
+            .left {
+                .sub-title {
+                    font-size: $font-5xl;
+                    color: $dark;
+                }
+            }
+
+            // right
+            .right {
+                .search {
+                    @include search;
+                    min-width: 300px;
+
+                }
+
+                // button
+                .buttons {
+                    button {
+                        padding: 4px 7px;
+                        background-color: $white-off2;
+                        font-size: $font-xl;
+
+                        &.active {
+                            background-color: $dark-white;
+                        }
+                    }
+                }
+            }
+        }
+
+        // ========  Blogs   =======
+        .blogs-items {
+            @include grid(1fr 1fr 1fr 1fr, 25px, 30px);
+
+            .blog-item {
+                padding: 5px;
+                padding-bottom: 15px;
+                border-radius: 4px;
+                border: 1px solid $white-off2;
+                overflow: hidden;
+
+                .img-area {
+                    width: calc(100% - 2px);
+                    overflow: hidden;
+                    margin: 0 auto;
+                    display: block;
+
+                    img {
+                        transition: .3s ease-in-out;
+                    }
+                }
+
+
+                // title
+                .title {
+                    font-weight: $fw-600;
+                    font-size: $font-xl;
+                    padding-left: 5px;
+                    transition: .2s ease;
+
+                    &:hover {
+                        color: $khaki;
+                    }
+                }
+
+                &:hover img {
+                    transform: scale(1.09);
+                }
+            }
+        }
+    }
+}

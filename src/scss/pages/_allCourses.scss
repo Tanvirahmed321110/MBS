@@ -138,29 +138,7 @@
                     }
 
                     .search {
-                        width: 100%;
-                        position: relative;
-
-                        input {
-                            background-color: transparent;
-                            border-bottom: 1px solid $dark-white;
-                            width: 100%;
-                            padding: 5px 0;
-                            font-size: inherit;
-
-                            &:focus {
-                                border-color: $dark;
-                            }
-                        }
-
-                        button {
-                            // margin-left: 15px;
-                            position: absolute;
-                            right: 5px;
-                        }
-
-
-
+                        @include search;
                     }
                 }
             }
@@ -211,7 +189,7 @@
         // ==============  right =============
         .right {
             width: 600px;
-            position: relative;
+            overflow: auto;
 
             .head {
                 color: $dark;
@@ -247,10 +225,11 @@
 
             //group
             .group {
-                // position: sticky;
-                // top: 500px;
-                // left: 0;
-                // z-index: 4;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                left: 0;
+                z-index: 5;
             }
         }
     }

@@ -480,6 +480,9 @@ h-100 {
   border: 1px solid #e9e6ed;
   background-color: #fff;
 }
+.pagination .page-btn.round {
+  border-radius: 50%;
+}
 .pagination .page-btn.active {
   background-color: #d22121;
   color: #fff;
@@ -3059,7 +3062,7 @@ h-100 {
 }
 .filter .filter-area .right {
   width: 600px;
-  position: relative;
+  overflow: auto;
 }
 .filter .filter-area .right .head {
   color: #1e1e1e;
@@ -3081,6 +3084,87 @@ h-100 {
 }
 .filter .filter-area .right .course-catefories ul li a:hover {
   color: #b3af54;
+}
+.filter .filter-area .right .group {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.semilarCourse-banner.blogs-banner {
+  background-image: url("https://www.msbacademy.com/storage/2022/05/blog-background-mac.jpg");
+  background-position: right;
+}
+.semilarCourse-banner.blogs-banner::after {
+  background-color: rgba(26, 4, 4, 0.6862745098);
+}
+
+.recent-blogs .recent-blogs-area .head .left .sub-title {
+  font-size: 36px;
+  color: #1e1e1e;
+}
+.recent-blogs .recent-blogs-area .head .right .search {
+  width: 100%;
+  position: relative;
+  min-width: 300px;
+}
+.recent-blogs .recent-blogs-area .head .right .search input {
+  background-color: transparent;
+  border-bottom: 1px solid #e9e6ed;
+  width: 100%;
+  padding: 5px 0;
+  font-size: inherit;
+}
+.recent-blogs .recent-blogs-area .head .right .search input:focus {
+  border-color: #1e1e1e;
+}
+.recent-blogs .recent-blogs-area .head .right .search button {
+  position: absolute;
+  right: 5px;
+}
+.recent-blogs .recent-blogs-area .head .right .buttons button {
+  padding: 4px 7px;
+  background-color: #faeeee;
+  font-size: 18px;
+}
+.recent-blogs .recent-blogs-area .head .right .buttons button.active {
+  background-color: #e9e6ed;
+}
+.recent-blogs .recent-blogs-area .blogs-items {
+  display: grid;
+  row-gap: 30px;
+  column-gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.recent-blogs .recent-blogs-area .blogs-items .blog-item {
+  padding: 5px;
+  padding-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #faeeee;
+  overflow: hidden;
+}
+.recent-blogs .recent-blogs-area .blogs-items .blog-item .img-area {
+  width: calc(100% - 2px);
+  overflow: hidden;
+  margin: 0 auto;
+  display: block;
+}
+.recent-blogs .recent-blogs-area .blogs-items .blog-item .img-area img {
+  transition: 0.3s ease-in-out;
+}
+.recent-blogs .recent-blogs-area .blogs-items .blog-item .title {
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 5px;
+  transition: 0.2s ease;
+}
+.recent-blogs .recent-blogs-area .blogs-items .blog-item .title:hover {
+  color: #b3af54;
+}
+.recent-blogs .recent-blogs-area .blogs-items .blog-item:hover img {
+  transform: scale(1.09);
 }
 
 /*# sourceMappingURL=main.css.map */
