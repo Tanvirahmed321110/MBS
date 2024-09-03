@@ -157,6 +157,10 @@
             background-image: linear-gradient(to right, rgba(247, 199, 199, 0.507), rgba(241, 210, 210, 0.556));
             color: $white;
 
+            &.to-right {
+                background-image: linear-gradient(to right, rgba(130, 167, 80, 0.655), rgba(250, 220, 220, 0.724)) !important;
+            }
+
             .header-main-area {
                 padding: 10px 0;
 

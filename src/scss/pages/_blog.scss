@@ -1,0 +1,238 @@
+//==============  blog page  ===============
+.blog-page {
+    margin-top: 180px;
+
+    .blog {
+
+        .blog-area {
+            align-items: flex-start;
+
+            // =============   Blog Data  ============
+            .blog-data {
+                width: calc(100% - 300px);
+
+                // head
+                .head {
+                    .britcamp {
+                        a {
+                            color: $gray;
+                            display: inline-flex;
+                            padding: 2px;
+                            font-size: $font-md;
+
+                            &:hover {
+                                color: $khaki;
+                            }
+                        }
+
+                        .name {
+                            color: $khaki;
+                        }
+                    }
+                }
+
+
+                // blog-desc
+                .blog-desc {
+                    ul {
+                        padding: 0 25px 0 100px;
+
+                        li {
+                            .sub-title {
+                                font-weight: $fw-600;
+                                font-size: $font-4xl;
+                            }
+
+                            .list {
+                                list-style: disc;
+                                padding: 0 50px;
+
+                                li {
+                                    margin: 5px 0;
+                                }
+                            }
+                        }
+                    }
+
+
+                    // =========== advice  ===========
+                    .advice {
+                        border: 1px solid $dark-white;
+                        align-items: stretch;
+
+                        .left,
+                        .right {
+                            padding: 50px 40px;
+
+                            .arrow {
+                                display: block;
+                                padding: 20px 22px;
+                                background-color: $dark-white;
+                                border-radius: 50%;
+
+                                &:hover {
+                                    transition: .3s ease;
+                                    background-color: $red;
+                                    color: $white;
+                                }
+                            }
+
+                            a:hover {
+                                color: $khaki;
+                            }
+                        }
+
+                        .border {
+                            // height:;
+                            width: 1px;
+                            background-color: $dark-white;
+                        }
+                    }
+                }
+
+
+                // ==========  comments  ===========
+                .comments {
+                    padding: 20px 100px;
+                    padding-right: 20px;
+
+                    .sub-title {
+                        font-size: $font-4xl;
+                        color: $dark;
+                        font-weight: $fw-500;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid $dark-white;
+                    }
+
+                    .comments-items {
+                        width: 100%;
+                        padding: 0;
+
+                        // single comment item
+                        .comment-item {
+                            width: 100%;
+
+                            .profile {
+                                flex-grow: 1;
+                                justify-content: flex-start;
+                                padding: 15px 0;
+
+                                img {
+                                    width: 100px;
+                                    height: 100px;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            // login btn
+                            .reply-btn {
+                                width: 150px;
+                                text-align: right;
+                                color: $gray;
+
+                                &:hover {
+                                    color: $khaki;
+                                }
+                            }
+
+                            // user comment
+                            .user-comment,
+                            .reply-comment {
+                                border-bottom: 1px solid $dark-white;
+                            }
+
+                            // reply comment
+                            .reply-comment {
+                                width: 80%;
+                                margin-left: auto;
+
+                                .profile {
+                                    img {
+                                        height: 70px;
+                                        width: 70px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                    // Login option
+                    .login-option {
+                        .head {
+                            h2 {
+                                font-size: $font-4xl;
+                                padding-bottom: 20px;
+                                border-bottom: 1px solid $dark-white;
+                            }
+
+                            p {
+                                span {
+                                    color: $khaki
+                                }
+                            }
+                        }
+
+                        // buttons
+                        .buttons {
+                            align-items: flex-start;
+
+                            button {
+                                padding: 10px 10px;
+                                border-radius: 4px;
+                                width: 250px;
+                                display: flex;
+                                align-items: flex-start;
+                                text-align: center;
+
+                                i {
+                                    font-size: $font-2xl;
+                                    margin-right: 15px;
+                                    display: inline-block;
+                                    width: 3 30px;
+                                }
+                            }
+
+                            .facebook {
+                                background-color: $blue;
+                                color: $white;
+                            }
+
+                            .google {
+                                box-shadow: $shadow-2;
+                            }
+                        }
+                    }
+
+
+                    // suggest-blog-area
+                    .suggest-blog-area {
+                        h2 {
+                            border-bottom: 1px solid $dark-white;
+                            padding-bottom: 20px;
+                        }
+
+                        .title {
+                            font-size: $font-xl;
+                            font-weight: $fw-600;
+
+                            &:hover {
+                                color: $khaki;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // =============  Latest Course  ============
+            .online-course {
+                width: 300px;
+                background-color: $white-off2;
+            }
+
+
+        }
+
+
+    }
+}

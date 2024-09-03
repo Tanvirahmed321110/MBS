@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Single Blog_</title>
+        <link rel="stylesheet" href="../dist/css/main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <div class="header-area">
+                    <!-- Header Top -->
+                    <div class="header-top">
+                        <div class="container">
+                            <div class="header-top-area flex-between ">
+                                <!--============  Header Top Left  ============ -->
+                                <div class="header-top-left flex-start gap-15">
+                                    <p>Have any Question?</p>
+                                    <a href="#">📲 0155-6677-23</a>
+                                    <a href="#">📧 msbsupport@gmail.com</a>
+                                </div>
+
+                                <!--============  Header Top Right  ============-->
+                                <div class="header-top-right flex-center gap-20">
+                                    <!-- Login Pages -->
+                                    <div class="flex-center gap-5 pages">
+                                        <a href="../pages/register.html">Register</a> <span>|</span>
+                                        <a href="../pages/login.html">Login</a>
+                                    </div>
+
+                                    <!-- Search -->
+                                    <div class="search flex-start">
+                                        <div class="search-frield-area flex-center">
+                                            <input type="search" placeholder="Search courses">
+                                        </div>
+
+                                        <button class="search-btn">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- Cart Button -->
+                                    <div class="cart-btn-area">
+                                        <button class="cart-btn" id="cart-btn">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+
+                                        <div class="cart-dropdown" id="cart-dropdown">
+                                            <div class="empty-cart">No product in this cart</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> <!-- Header Top End-->
+
+                    <!--=============  Header Main  =============-->
+                    <div class="header-main to-right">
+                        <div class="container">
+                            <div class="header-main-area flex-between">
+                                <!-- Header main Logo -->
+                                <div class="logo">
+                                    <a href="../index.html">
+                                        <img height="50px" src="../src/image/logo.png" alt="Logo">
+                                    </a>
+                                </div>
+
+                                <!-- Header main menu -->
+                                <div class="header-main-menu">
+                                    <ul class="menu-items flex-between gap-35">
+
+                                        <!-- All courses Item -->
+                                        <li class="menu-item courses">
+                                            <a class="courses-btn" href="./pages/courses.html">
+                                                ALL COURSES <span><i class="fa-solid fa-caret-down"></i></span>
+                                            </a>
+
+                                            <!-- Courses Dropdown -->
+                                            <div class="courses-dropdown dropdown">
+                                                <ul>
+                                                    <li><a href="./pages/courses.html">Development</a></li>
+                                                    <li><a href="./pages/courses.html">Business</a></li>
+                                                    <li><a href="./pages/courses.html">Online Learning</a></li>
+                                                    <li><a href="./pages/courses.html">Web Design</a></li>
+                                                    <li><a href="./pages/courses.html">UI Design</a></li>
+                                                    <li><a href="./pages/courses.html">Marketing</a></li>
+                                                    <li><a href="./pages/courses.html">Hacking</a></li>
+                                                </ul>
+                                                <a href="./pages/courses.html" class="justify-start gap-5 view-all">
+                                                    <div>View all courses</div> <i class='bx bxs-send'></i>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="menu-item blog">
+                                            <a href="./pages/blog.html">BLOG</a>
+                                        </li>
+
+                                        <!-- Resource -->
+                                        <li class="menu-item">
+                                            <a class="resource-btn" href="./pages/resource.html">
+                                                <div class="d-flex gap-10">
+                                                    RESOURCE
+                                                    <span><i class="fa-solid fa-caret-down"></i></span>
+                                                </div>
+                                            </a>
+
+                                            <!-- Resource dropdown -->
+                                            <div class="resource-dropdown dropdown">
+                                                <ul>
+                                                    <li><a href="./pages/resource.html">Software & Tool</a></li>
+                                                    <li><a href="./pages/resource.html">Mdn TV</a></li>
+                                                    <li><a href="./pages/resource.html">Free Courses</a></li>
+                                                    <li><a href="./pages/resource.html">Learning</a></li>
+                                                    <li><a href="./pages/resource.html">Teachers</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="what-new menu-item " id="what-new">
+                                            <button class="what-new-btn" id="what-new-btn">WHAT'S NEW <span
+                                                    id="tag">1</span>
+                                            </button>
+
+                                            <!-- Modal in What the new -->
+                                            <div class="what-new-modal " id="what-new-modal">
+                                                <div class="modal-content">
+
+                                                    <!-- Header -->
+                                                    <div class="head color-white flex-between">
+                                                        <div class="xl-font">What is new on Our Academy</div>
+                                                        <button class="close-btn btn" id="what-new-close">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                        </button>
+                                                    </div>
+
+                                                    <!-- body -->
+                                                    <div class="body  has-scrollbar">
+                                                        <div class="body-items flex-column   gap-30">
+                                                            <!-- body item -->
+                                                            <div class="body-item">
+                                                                <div class="top">
+                                                                    <!-- Top -->
+                                                                    <div class="date-area justify-start gap-10">
+                                                                        <div class="tag uppercase">New Course</div>
+                                                                        <div class="date">Aug 25, 2024</div>
+                                                                    </div>
+                                                                    <!-- title -->
+                                                                    <h3 class="body-item-title mt-2">
+                                                                        <a href="./pages/courses.html">
+                                                                            কোডিং ছাড়াই গেইম
+                                                                            ডেভেলপ করে $2000/Month আয় করুন
+                                                                        </a>
+                                                                    </h3>
+                                                                </div>
+
+                                                                <!-- Desc -->
+                                                                <div class="desc mt-3 flex-column gap-15">
+                                                                    <p>বাংলাদেশে এই প্রথম কোডিং ছাড়াই প্রজেক্ট
+                                                                        ভিত্তিক
+                                                                        গেইম ডেভেলপমেন্ট কোর্স নিয়ে আসল MSB
+                                                                        Academy!!
+                                                                        <strong>কোন রকম পূর্ব অভিজ্ঞতা এবং
+                                                                            প্রোগ্রামিং নলেজ ছাড়াই আপনি এই কোর্সটি
+                                                                            শেখা
+                                                                            শুরু
+                                                                            করতে পারবেন এবং কোর্স শেষে নিজের মত
+                                                                            প্রফেশনাল
+                                                                            মানের PC + Mobile গেইম
+                                                                            ডেভেলপ করতে পারবেন।
+                                                                        </strong>
+                                                                    </p>
+                                                                    <p>
+                                                                        <strong>
+                                                                            কোন রকম পূর্ব অভিজ্ঞতা এবং
+                                                                            প্রোগ্রামিং নলেজ ছাড়াই আপনি এই কোর্সটি
+                                                                            শেখা
+                                                                            শুরু
+                                                                            করতে পারবেন এবং কোর্স শেষে নিজের মত
+                                                                            প্রফেশনাল
+                                                                            মানের PC + Mobile গেইম
+                                                                            ডেভেলপ করতে পারবেন।
+                                                                        </strong>
+                                                                    </p>
+
+                                                                    <div>
+                                                                        <div class="link-text">কোর্সের লিংক চেক
+                                                                            করুন,
+                                                                            কোর্স সম্পর্কে বিস্তারিত জানার জন্যঃ
+                                                                        </div>
+                                                                        <a class="mt-1 course-link"
+                                                                            href="https://www.msbacademy.com/course/game-development-masterclass">https://www.msbacademy.com/course/game-development-masterclass</a>
+                                                                    </div>
+
+                                                                    <!-- Video -->
+                                                                    <div class="video">
+                                                                        <div class="video-area">
+                                                                            <iframe width="100%" height="200"
+                                                                                src="https://www.youtube.com/embed/W4326cPpe2w"
+                                                                                title="YouTube video player"
+                                                                                frameborder="0"
+                                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                                allowfullscreen>
+                                                                            </iframe>
+                                                                        </div>
+                                                                        <a href="your-page-link"
+                                                                            class="video-title">Project Based
+                                                                            No-Code
+                                                                            Game Development Masterclass in Bangla
+                                                                        </a>
+
+                                                                        <div class="icons flex-center gap-10">
+                                                                            <div class="icon">🤎</div>
+                                                                            <div class="icon">😃</div>
+                                                                            <div class="icon">😐</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Feedback -->
+                                                                <div class="feedback">
+                                                                    <div class="feedback-area">
+                                                                        <input type="text" placeholder="Send Feedback">
+                                                                        <button><i class="bx bxs-send"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- body item -->
+                                                            <div class="body-item">
+                                                                <div class="top">
+                                                                    <!-- Top -->
+                                                                    <div class="date-area justify-start gap-10">
+                                                                        <div class="tag uppercase">New Course</div>
+                                                                        <div class="date">Aug 25, 2024</div>
+                                                                    </div>
+                                                                    <!-- title -->
+                                                                    <h3 class="body-item-title mt-2">
+                                                                        <a href="./pages/courses.html">
+                                                                            কোডিং ছাড়াই গেইম
+                                                                            ডেভেলপ করে $2000/Month আয় করুন
+                                                                        </a>
+                                                                    </h3>
+                                                                </div>
+
+                                                                <!-- Desc -->
+                                                                <div class="desc mt-3 flex-column gap-15">
+                                                                    <p>বাংলাদেশে এই প্রথম কোডিং ছাড়াই প্রজেক্ট
+                                                                        ভিত্তিক
+                                                                        গেইম ডেভেলপমেন্ট কোর্স নিয়ে আসল MSB
+                                                                        Academy!!
+                                                                        <strong>কোন রকম পূর্ব অভিজ্ঞতা এবং
+                                                                            প্রোগ্রামিং নলেজ ছাড়াই আপনি এই কোর্সটি
+                                                                            শেখা
+                                                                            শুরু
+                                                                            করতে পারবেন এবং কোর্স শেষে নিজের মত
+                                                                            প্রফেশনাল
+                                                                            মানের PC + Mobile গেইম
+                                                                            ডেভেলপ করতে পারবেন।
+                                                                        </strong>
+                                                                    </p>
+                                                                    <p>
+                                                                        <strong>
+                                                                            কোন রকম পূর্ব অভিজ্ঞতা এবং
+                                                                            প্রোগ্রামিং নলেজ ছাড়াই আপনি এই কোর্সটি
+                                                                            শেখা
+                                                                            শুরু
+                                                                            করতে পারবেন এবং কোর্স শেষে নিজের মত
+                                                                            প্রফেশনাল
+                                                                            মানের PC + Mobile গেইম
+                                                                            ডেভেলপ করতে পারবেন।
+                                                                        </strong>
+                                                                    </p>
+
+                                                                    <div>
+                                                                        <div class="link-text">কোর্সের লিংক চেক
+                                                                            করুন,
+                                                                            কোর্স সম্পর্কে বিস্তারিত জানার জন্যঃ
+                                                                        </div>
+                                                                        <a class="mt-1 course-link"
+                                                                            href="https://www.msbacademy.com/course/game-development-masterclass">https://www.msbacademy.com/course/game-development-masterclass</a>
+                                                                    </div>
+
+                                                                    <!-- Video -->
+                                                                    <div class="video">
+                                                                        <div class="video-area">
+                                                                            <iframe width="100%" height="200"
+                                                                                src="https://www.youtube.com/embed/W4326cPpe2w"
+                                                                                title="YouTube video player"
+                                                                                frameborder="0"
+                                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                                allowfullscreen>
+                                                                            </iframe>
+                                                                        </div>
+                                                                        <a href="your-page-link"
+                                                                            class="video-title">Project Based
+                                                                            No-Code
+                                                                            Game Development Masterclass in Bangla
+                                                                        </a>
+
+                                                                        <div class="icons flex-center gap-10">
+                                                                            <div class="icon">🤎</div>
+                                                                            <div class="icon">😃</div>
+                                                                            <div class="icon">😐</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Feedback -->
+                                                                <div class="feedback">
+                                                                    <div class="feedback-area">
+                                                                        <input type="text" placeholder="Send Feedback">
+                                                                        <button><i class="bx bxs-send"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- footer -->
+                                                    <div class="footer flex-center">
+                                                        We are ⚡ by Beamer.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+
+        <main>
+            <div class="blog-page">
+
+                <!-- =============  blog area  ============ -->
+                <section>
+                    <div class="blog mt-80">
+                        <div class="container">
+                            <div class="blog-area flex-between gap-35">
+                                <!-- ==========  blog data  ========== -->
+                                <div class="blog-data">
+
+                                    <!-- Head -->
+                                    <div class="head">
+                                        <h1 class="fw-normal">পাইথন প্রোগ্রামিং কি? কেন পাইথন শিখা উচিৎ? এবং ক্যারিয়ার
+                                            টিপস</h1>
+
+                                        <div class="britcamp flex-center gap-5 mt-2">
+                                            <a href="./course.html" class="name">Nijum Mojumdar</a> <span> / </span>
+                                            <a href="#devlopment">Development </a><span> /</span>
+                                            <a href="#comment"> 4 Comments </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- blog img -->
+                                    <div class="blog-img my-50">
+                                        <img src="https://www.msbacademy.com/storage/2022/01/Python-Bangla.jpg" alt="">
+                                    </div>
+
+
+                                    <!-- blog desc -->
+                                    <div class="blog-desc">
+                                        <ul class="flex-column gap-30">
+                                            <!-- single blog desc -->
+                                            <li>
+                                                <div class="sub-title">কেন পাইথন শিখা উচিত?</div>
+                                                <p class="mt-3">
+                                                    আপনি যদি কম্পিউটার সাইন্স সাবজেক্টের শিক্ষার্থী হয়ে
+                                                    থাকেন তাহলে পাইথন প্রোগ্রামিং (Python Programming) বা পাইথন
+                                                    ল্যাঙ্গুয়েজ (Python Language) শব্দটি অবশ্যই শুনে থাকবেন। CS বা CSE
+                                                    সাবজেক্টের শিক্ষার্থী ছাড়াও আরোও অনেক সাবজেক্ট রয়েছে
+                                                    যেখানে একাডেমিক কাজে প্রোগ্রামিং করতে হয়। যে কোনো ল্যাঙ্গুয়েজ দিয়ে
+                                                    প্রোগ্রামিং করা হলেও, অন্য দশটি ল্যাঙ্গুয়েজের তুলনায়
+                                                    পাইথন দিয়ে প্রোগ্রামিং করা অধিক জনপ্রিয়। পাইথন ল্যাঙ্গুয়েজ নিয়ে
+                                                    ভালোভাবে জানতে হলে পড়তে হবে পুরো ব্লগটি।
+                                                </p>
+                                            </li>
+
+                                            <!-- single blog desc -->
+                                            <li>
+                                                <div class="sub-title">পাইথন কি?</div>
+                                                <p class="mt-3">
+                                                    পাইথন একটি হাই-লেভেল প্রোগ্রামিং ল্যাঙ্গুয়েজ। এটি দিয়ে কম্পিউটারে
+                                                    বিভিন্ন সমস্যা সমাধান করা হয়, বিভিন্ন সিস্টেম ডেভেলপ
+                                                    করা হয়, বিভিন্ন ডিভাইসের জন্য এপ্লিকেশন তৈরি করে ইউজারদের সার্ভিস
+                                                    প্রোভাইড করা হয়। পাইথন ল্যাঙ্গুয়েজটি হাই-লেভেলের
+                                                    হওয়াতে এর সিনটেক্সগুলো মানুষের ভাষার কাছাকাছি। অর্থাৎ যেকোনো
+                                                    প্রোগ্রামার সহজেই পাইথন ভাষাকে পড়লেই বুঝতে পারবে ও লিখতে
+                                                    পারবে।
+                                                </p>
+                                            </li>
+
+                                            <!-- single blog desc -->
+                                            <li>
+                                                <div class="sub-title">পাইথন নামকরণ কিভাবে হলো?</div>
+                                                <p class="mt-3">
+                                                    পাইথন একটি হাই-লেভেল প্রোগ্রামিং ল্যাঙ্গুয়েজ। এটি দিয়ে কম্পিউটারে
+                                                    বিভিন্ন সমস্যা সমাধান করা হয়, বিভিন্ন সিস্টেম ডেভেলপ
+                                                    করা হয়, বিভিন্ন ডিভাইসের জন্য এপ্লিকেশন তৈরি করে ইউজারদের সার্ভিস
+                                                    প্রোভাইড করা হয়। পাইথন ল্যাঙ্গুয়েজটি হাই-লেভেলের
+                                                    হওয়াতে এর সিনটেক্সগুলো মানুষের ভাষার কাছাকাছি। অর্থাৎ যেকোনো
+                                                    প্রোগ্রামার সহজেই পাইথন ভাষাকে পড়লেই বুঝতে পারবে ও লিখতে
+                                                    পারবে।
+                                                </p>
+                                            </li>
+
+                                            <!-- single blog desc -->
+                                            <li>
+                                                <div class="sub-title">পাইথন কি?</div>
+                                                <p class="mt-3">
+                                                    ১৯৯১ সালে নেদারল্যান্ডের Guido Van Rossum একটি কমেডি সিরিজ Monty
+                                                    Python’s Flying Circus থেকে অনুপ্রাণিত হয়ে নিজের বানানো
+                                                    প্রোগ্রামিং ল্যাঙ্গুয়েজের নাম Python রাখেন।
+                                                </p>
+                                            </li>
+
+                                            <!-- single blog desc -->
+                                            <li>
+                                                <div class="sub-title">পাইথন কেমন ধরণের প্রোগ্রামিং ল্যাঙ্গুয়েজ?</div>
+                                                <p class="mt-3">
+                                                    প্রোগ্রামিং ল্যাঙ্গুয়েজ সাধরণত দুই ধরণের হয়ে থাকে। ইন্টারপ্রেটেড
+                                                    ল্যাঙ্গুয়েজ (Interpreted Language) এবং কম্পাইলড
+                                                    ল্যাঙ্গুয়েজ (Compiled Language) । পাইথন একটি ইন্টারপ্রেটেড
+                                                    ল্যাঙ্গুয়েজ। কম্পাইলড ল্যাঙ্গুয়েজগুলো পুরা সোর্স কোড কম্পাইল
+                                                    করা শেষ দিয়ে তারপর এক্সিকিউট করে। যেমন- জাভা, সি++। আর ইন্টারপ্রেটেড
+                                                    ল্যাঙ্গুয়েজগুলো একটি একটি করে লাইন এক্সিকিউট করে।
+                                                    যেমন- পাইথন।
+                                                </p>
+                                            </li>
+
+                                            <!-- single blog desc -->
+                                            <li>
+                                                <div class="sub-title">কেন পাইথন এত জনপ্রিয়?</div>
+                                                <p class="mt-3">
+                                                    জাভা, সি# এইসব ল্যাঙ্গুয়েজে কোনো একটা প্রোগ্রাম তৈরি করতে যদি ১০
+                                                    ঘন্টা সময় লাগে, তাহলে পাইথনে লাগবে ২ থেকে ৩ ঘন্টা। কি
+                                                    অবাক হলেন তো? এর কারণ অনেকগুলো। পাইথন ভাষার সিনটেক্সগুলো খুবই ছোট
+                                                    ছোট। আর এই ছোট ছোট সিনটেক্স দিয়েই বড় বড় কাজ সেরে ফেলা
+                                                    হয়। আর লাইব্রেরিগুলো এতভালো সাপোর্ট দেয় যে ছোট ছোট প্রোগ্রাম লিখেই
+                                                    বড় বড় আউটপুট পাওয়া যায়। ডেটা এনালাইসিস নিয়ে যারা কাজ
+                                                    করেছেন তারাই সবচেয়ে বেশি উপকৃত হয়েছেন এই পাইথন ল্যাঙ্গুয়েজ ব্যবহার
+                                                    করে। এছাড়াও ওয়েব ডেভেলপমেন্ট, সফটওয়্যার ডেভেলপমেন্ট
+                                                    এর মত জটিল জটিল ফিল্ডে পাইথন ব্যবহার হচ্ছে।
+                                                </p>
+                                            </li>
+
+                                            <!-- single blog desc -->
+                                            <li>
+                                                <div class="sub-title">কেন পাইথন এত জনপ্রিয়?</div>
+                                                <p class="mt-3">
+                                                    জাভা, সি# এইসব ল্যাঙ্গুয়েজে কোনো একটা প্রোগ্রাম তৈরি করতে যদি ১০
+                                                    ঘন্টা সময় লাগে, তাহলে পাইথনে লাগবে ২ থেকে ৩ ঘন্টা। কি
+                                                    অবাক হলেন তো? এর কারণ অনেকগুলো। পাইথন ভাষার সিনটেক্সগুলো খুবই ছোট
+                                                    ছোট। আর এই ছোট ছোট সিনটেক্স দিয়েই বড় বড় কাজ সেরে ফেলা
+                                                    হয়। আর লাইব্রেরিগুলো এতভালো সাপোর্ট দেয় যে ছোট ছোট প্রোগ্রাম লিখেই
+                                                    বড় বড় আউটপুট পাওয়া যায়। ডেটা এনালাইসিস নিয়ে যারা কাজ
+                                                    করেছেন তারাই সবচেয়ে বেশি উপকৃত হয়েছেন এই পাইথন ল্যাঙ্গুয়েজ ব্যবহার
+                                                    করে। এছাড়াও ওয়েব ডেভেলপমেন্ট, সফটওয়্যার ডেভেলপমেন্ট
+                                                    এর মত জটিল জটিল ফিল্ডে পাইথন ব্যবহার হচ্ছে।
+                                                </p>
+                                            </li>
+
+                                            <!-- single blog desc -->
+                                            <li>
+                                                <div class="sub-title">পাইথন কি?</div>
+                                                <p class="mt-3">
+                                                    ১৯৯১ সালে নেদারল্যান্ডের Guido Van Rossum একটি কমেডি সিরিজ Monty
+                                                    Python’s Flying Circus থেকে অনুপ্রাণিত হয়ে নিজের বানানো
+                                                    প্রোগ্রামিং ল্যাঙ্গুয়েজের নাম Python রাখেন।
+                                                </p>
+                                            </li>
+                                            <!-- single blog desc -->
+                                            <li>
+                                                <div class="sub-title">
+                                                    পাইথন প্রোগ্রামিং ল্যাঙ্গুয়েজের সুবিধা কি কি?
+                                                </div>
+
+                                                <!-- List -->
+                                                <ul class="list mt-3">
+                                                    <li>পাইথনের সিনটেক্স ছোট ছোট</li>
+                                                    <li>সিনটেক্সগুলো পড়লেই কি প্রোগ্রাম করা হয়েছে তা সহজেই বুঝে ফেলা
+                                                        যায়</li>
+                                                    <li>- একই সোর্স কোড সকল প্ল্যাটফর্মে কাজ করে</li>
+                                                    <li>ডেটা টাইপ কাস্টিং করে প্রোগ্রাম করা খুবই সহজ</li>
+                                                    <li>পাইথন একটি ওপেন সোর্স ল্যাঙ্গুয়েজ</li>
+                                                    <li>প্রযুক্তি পরিমাণ লাইব্রেরি এবং বিল্ট-ইন ফাংশন থাকায় বড় বড়
+                                                        প্রোগ্রামকে অল্প প্রোগ্রামে শেষ করা যায়</li>
+                                                    <li>ভুল হলে সহজেই ডিবাগিং করা যায়</li>
+                                                </ul>
+                                            </li>
+
+                                            <!-- single blog desc -->
+                                            <li>
+                                                <a href="#">
+                                                    <img src="https://www.msbacademy.com/storage/2022/01/python.png"
+                                                        alt="">
+                                                </a>
+                                            </li>
+
+
+                                            <!-- single blog desc -->
+                                            <li>
+                                                <div class="sub-title">
+                                                    পাইথনের জয়প্রিয় কিছু ফ্রেমওয়ার্কঃ
+                                                </div>
+                                                <p class="mt-3">
+                                                    ওয়েব ডেভেলপমেন্ট করার জন্য জ্যাঙ্গো (Django) এবং ফ্লাস্ক (Flask) এই
+                                                    দুটি জনপ্রিয় ফ্রেমওয়ার্ক রয়েছে। ছোট ছোট কাজের জন্য
+                                                    ফ্লাস্ক ব্যবহার করা হয়। আর বড় এপ্লিকেশন ডেভেলপ
+                                                </p>
+
+                                                <p class="mt-4">
+                                                    মোবাইল এপ্লিকেশন তৈরির জন্য কিভি (Kivy) রয়েছে। কিন্তু
+                                                    মোবাইল এপের জন্য পাইথন খুব ভালো মানের নয়।
+                                                </p>
+
+                                                <p class="mt-4">
+                                                    ডেস্কটপ এপ্লিকেশন তৈরির জন্য রয়েছে PyQT, Tkinter, Kivy, Bottle,
+                                                    wxPython
+                                                </p>
+                                            </li>
+
+                                            <!-- single blog desc -->
+                                            <li>
+                                                <div class="sub-title">
+                                                    পাইথনের জয়প্রিয় কিছু ফ্রেমওয়ার্কঃ
+                                                </div>
+                                                <p class="mt-3">
+                                                    ওয়েব ডেভেলপমেন্ট করার জন্য জ্যাঙ্গো (Django) এবং ফ্লাস্ক (Flask) এই
+                                                    দুটি জনপ্রিয় ফ্রেমওয়ার্ক রয়েছে। ছোট ছোট কাজের জন্য
+                                                    ফ্লাস্ক ব্যবহার করা হয়। আর বড় এপ্লিকেশন ডেভেলপ
+                                                </p>
+
+                                                <p class="mt-4">
+                                                    মোবাইল এপ্লিকেশন তৈরির জন্য কিভি (Kivy) রয়েছে। কিন্তু
+                                                    মোবাইল এপের জন্য পাইথন খুব ভালো মানের নয়।
+                                                </p>
+
+                                                <p class="mt-4">
+                                                    ডেস্কটপ এপ্লিকেশন তৈরির জন্য রয়েছে PyQT, Tkinter, Kivy, Bottle,
+                                                    wxPython
+                                                </p>
+                                            </li>
+
+
+
+                                            <!-- ======  advice ===== -->
+                                            <li class="my-50">
+                                                <div class="advice flex-between ">
+
+                                                    <!-- Left -->
+                                                    <div class="left flex-center gap-25 w-50">
+                                                        <a class="arrow" href="#">
+                                                            <i class="fa-solid fa-arrow-left"></i>
+                                                        </a>
+
+                                                        <div class="text-right ">
+                                                            <a href="#">PREVIOUS</a>
+                                                            <p class="mt-3">
+                                                                সফল ফ্রিল্যান্সার হতে হলে যেই ১০টি কাজ করা যাবে না
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="border"></div>
+
+                                                    <!-- Right -->
+                                                    <div class="right flex-center gap-25  w-50">
+                                                        <a class="arrow" href="#">
+                                                            <i class="fa-solid fa-arrow-right"></i>
+                                                        </a>
+
+                                                        <div class="text-left">
+                                                            <a href="#">NEXT</a>
+                                                            <p class="mt-3">
+                                                                সফল ফ্রিল্যান্সার হতে হলে যেই ১০টি কাজ করা যাবে না
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+
+                                        <!-- =========== Comments  =========== -->
+                                        <div class="comments w-100">
+                                            <div class="sub-title">Comments</div>
+
+                                            <!-- comments items -->
+                                            <ul class="comments-items w-100">
+
+                                                <!-- Single Comment Item -->
+                                                <li class="comment-item w-100">
+
+                                                    <!--======= user comment ======-->
+                                                    <div class="user-comment w-100 flex-between">
+
+                                                        <!-- profile -->
+                                                        <div class="profile flex-center gap-15 w-50">
+                                                            <a href="#">
+                                                                <img src="https://secure.gravatar.com/avatar/0cf4740a2cb88d4b0c50ece27cc73db1?s=96&d=retro&r=g"
+                                                                    alt="">
+                                                            </a>
+                                                            <div>
+                                                                <div class="name xl-font">Tanvir Ahmed</div>
+                                                                <div class="text mt-2">Nice Blog Thanks</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Login Btn -->
+                                                        <a href="#" class="reply-btn">
+                                                            Login To Reply
+                                                        </a>
+                                                    </div>
+
+                                                    <!--======= reply  comment =======-->
+                                                    <div class="reply-comment flex-between">
+                                                        <!-- Profile -->
+                                                        <div class="profile flex-start gap-10 w-50">
+                                                            <div class="reply-text fw-bold">Reply- </div>
+                                                            <div class="flex-center gap-15">
+                                                                <a href="#">
+                                                                    <img src="https://www.msbacademy.com/storage//learn-press-profile/1/46f9250ae27ff2d0be5dc1519a641270.jpeg"
+                                                                        alt="">
+                                                                </a>
+                                                                <div>
+                                                                    <div class="name xl-font">Author </div>
+                                                                    <div class="text mt-2">Thanks</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Login Btn -->
+                                                        <a href="#" class="reply-btn">
+                                                            Login To Reply
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <!-- Single Comment Item -->
+                                                <li class="comment-item w-100">
+
+                                                    <!--======= user comment ======-->
+                                                    <div class="user-comment w-100 flex-between">
+
+                                                        <!-- profile -->
+                                                        <div class="profile flex-center gap-15 w-50">
+                                                            <a href="#">
+                                                                <img src="https://secure.gravatar.com/avatar/0cf4740a2cb88d4b0c50ece27cc73db1?s=96&d=retro&r=g"
+                                                                    alt="">
+                                                            </a>
+                                                            <div>
+                                                                <div class="name xl-font">Tanvir Ahmed</div>
+                                                                <div class="text mt-2">Nice Blog Thanks</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Login Btn -->
+                                                        <a href="#" class="reply-btn">
+                                                            Login To Reply
+                                                        </a>
+                                                    </div>
+
+                                                    <!--======= reply  comment =======-->
+                                                    <div class="reply-comment flex-between">
+                                                        <!-- Profile -->
+                                                        <div class="profile flex-start gap-15 w-50">
+                                                            <div class="reply-text fw-bold">Reply- </div>
+                                                            <div class="flex-center gap-15">
+                                                                <a href="#">
+                                                                    <img src="https://www.msbacademy.com/storage//learn-press-profile/1/46f9250ae27ff2d0be5dc1519a641270.jpeg"
+                                                                        alt="">
+                                                                </a>
+                                                                <div>
+                                                                    <div class="name xl-font">Author </div>
+                                                                    <div class="text mt-2">Thanks</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Login Btn -->
+                                                        <a href="#" class="reply-btn">
+                                                            Login To Reply
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+
+
+                                            <!-- Leave a Reply  -->
+                                            <div class="login-option my-50">
+                                                <div class="head">
+                                                    <h2 class="text-left">Leave A Reply</h2>
+                                                    <p class="mt-3">You must be <span>logged in</span> to post a comment
+                                                    </p>
+                                                </div>
+                                                <div class="mt-5 buttons flex-column gap-15">
+                                                    <button class="login-item facebook">
+                                                        <span><i class="fa-brands fa-facebook"></i></span>
+                                                        <span class="text-center">Continue with
+                                                            <strong>Facebook</strong></span>
+                                                    </button>
+                                                    <button class=" login-item google">
+                                                        <span><i class="fa-brands fa-google"></i></span>
+                                                        <span class="text-center">Continue with
+                                                            <strong>Google</strong></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+
+
+                                            <!-- suggest blogs -->
+                                            <div class="suggest-blog-area mt-80">
+
+                                                <h2 class="text-left">You Might Also Like</h2>
+
+                                                <div class="suggest-blogs grid-3 gap-10 mt-7">
+                                                    <!-- Single Blog item -->
+                                                    <div class="blog-item">
+                                                        <!-- image -->
+                                                        <a class="img-area" href="../pages/blog.html">
+                                                            <img src="https://www.msbacademy.com/storage/2024/07/User-Generated-Content-485x291.jpg"
+                                                                alt="">
+                                                        </a>
+
+                                                        <!-- Title -->
+                                                        <div class="title mt-4">
+                                                            <a href="../pages/blog.html">
+                                                                Amazon Affiliate Marketing কি? কিভাবে শুরু করবেন
+                                                                অ্যামাজন
+                                                                অ্যাফিলিয়েট
+                                                                মার্কেটিং?
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Single Blog item -->
+                                                    <div class="blog-item">
+                                                        <!-- image -->
+                                                        <a class="img-area" href="../pages/blog.html">
+                                                            <img src="https://www.msbacademy.com/storage/2024/07/Write-Article-485x291.jpg"
+                                                                alt="">
+                                                        </a>
+
+                                                        <!-- Title -->
+                                                        <div class="title mt-4">
+                                                            <a href="../pages/blog.html">
+                                                                Diigital markign কিভাবে শুরু করবেন অ্যামাজন অ্যাফিলিয়েট
+                                                                মার্কেটিং?
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Single Blog item -->
+                                                    <div class="blog-item">
+                                                        <!-- image -->
+                                                        <a class="img-area" href="../pages/blog.html">
+                                                            <img src="https://www.msbacademy.com/storage/2024/07/Influencer-Marketing-485x291.jpg"
+                                                                alt="">
+                                                        </a>
+
+                                                        <!-- Title -->
+                                                        <div class="title mt-4">
+                                                            <a href="../pages/blog.html">
+                                                                কিভাবে শুরু করবেন অ্যামাজন অ্যাফিলিয়েট
+                                                                মার্কেটিং?
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <!-- ==========  online courses  ========== -->
+                                <div class="online-course">
+                                    lastext online coursr
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+            </div>
+        </main>
+
+
+
+
+
+        <!--===============   Footer Section  ================ -->
+        <footer>
+            <div class="footer mt-80">
+
+                <!-- Footer Top -->
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="footer-top-area">
+
+                            <!-- Single Footer Top Item -->
+                            <div class="footer-top-item">
+                                <div class="sub-title fw-bold uppercase">Community</div>
+                                <ul class="mt-6 flex-column gap-15">
+                                    <li><a href="#">Facebook Group</a></li>
+                                    <li><a href="#">Free Courses</a></li>
+                                    <li><a href="#">YouTube</a></li>
+                                    <li><a href="#">Ask Community</a></li>
+                                    <li><a href="#">Request New Course</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Single Footer Top Item -->
+                            <div class="footer-top-item">
+                                <div class="sub-title fw-bold uppercase">Community</div>
+                                <ul class="mt-6 flex-column gap-15">
+                                    <li><a href="#">Facebook Group</a></li>
+                                    <li><a href="#">Free Courses</a></li>
+                                    <li><a href="#">YouTube</a></li>
+                                    <li><a href="#">Ask Community</a></li>
+                                    <li><a href="#">Request New Course</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Single Footer Top Item -->
+                            <div class="footer-top-item">
+                                <div class="sub-title fw-bold uppercase">Help</div>
+                                <ul class="mt-6 flex-column gap-15">
+                                    <li><a href="#">Support Portal</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Refund Policy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Single Footer Top Item -->
+                            <div class="footer-top-item">
+                                <div class="sub-title fw-bold uppercase">Abouu Us</div>
+                                <ul class="mt-6 flex-column gap-15">
+                                    <li><a href="#">Sucess Stories</a></li>
+                                    <li><a href="#">Brand Assests</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Become An Instructor</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="flex-column btn-wrapper gap-20">
+                                <button class="btn btn-fill-dark">
+                                    <span><i class="fa-solid fa-video"></i> create course</span>
+                                </button>
+                                <button class="btn btn-fill-dark">
+                                    <span><i class="fa-solid fa-map-location"></i> affilate area</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="footer-bottom-area">
+                            <div class="footer-bottom-top  flex-center gap-5">
+                                <!-- Address -->
+                                <div class="address">
+                                    <div class="left">
+                                        <div>Offices Address: Cadet Plaza Floor 6, Block A</div>
+                                        <div class="text-right">Mirpure 12, Dhaka Bangladesh</div>
+                                    </div>
+                                </div>
+
+                                <!-- Logo -->
+                                <div class="logo">
+                                    <a href="../index.html">
+                                        <img src="../src/image/logo.png" alt="">
+                                    </a>
+                                </div>
+                                <!-- Right -->
+                                <div class="copy-right">
+                                    <div>Copyright &copy; 2024 <span>MSB Academy Dhaka</span></div>
+                                    <div>All rights reserved</div>
+                                </div>
+                            </div>
+
+                            <!-- Footer bottom bottom -->
+                            <div class="footer-bottom-social mt-50">
+                                <ul class="top flex-center gap-20">
+                                    <li><a href=" #">Directory </a></li>
+                                    <li><a href="#">Accessibilty </a></li>
+                                    <li><a href="#">Civil Rights Equity</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                </ul>
+
+                                <!-- Social Items -->
+                                <div class="social-items mt-6">
+                                    <ul class="flex-center gap-10">
+                                        <li class="social-item">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                        </li>
+                                        <li class="social-item last">
+                                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="mt-3 last-text text-center">social.msb.com</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+        <div class=" overlay" id="overlay"></div>
+
+
+        <!-- Message Button -->
+        <button class="message-btn active flex-center" id="message-btn">
+            <i class="fa-brands fa-facebook-messenger"></i>
+        </button>
+
+
+        <!--==============  Message Modal  ===============-->
+        <div class="message-modal  what-new-modal " id="message-modal">
+            <div class="message-modal-area">
+
+                <!-- Header -->
+                <div class="head message-head flex-between">
+
+                    <div class="flex-start gap-10">
+                        <img width="50px"
+                            src="https://s3.amazonaws.com/helpshelf-production/media/uploads/sites/msb-academy-1/MSB_READ_MAIN_LOGO.png"
+                            alt="">
+                        <div class="xxl-font">Looking for help?</div>
+                    </div>
+
+                    <button class="close-btn btn" id="message-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <!--==========  Message Modal Body  ============-->
+                <div class="body message-body">
+                    <!-- Message body items -->
+                    <div class="body-items">
+                        <div class="body-top">
+                            <div class="text">
+                                যেকোন প্রশ্ন থাকলে আমাদেরকে জানান। আমরা সবসময় আপনাকে হেল্প করার জন্য
+                                প্রস্তুত 🙋‍♂️
+                            </div>
+                            <div class="search mt-4 flex-between">
+                                <input type="text" placeholder="Looking for help? Search here...">
+                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- body resouces -->
+                        <div class="body-resources mt-7">
+                            <div class="sub-title text uppercase">Popular resources</div>
+
+                            <!-- body resources items -->
+                            <div class="body-resources-items flex-column gap-15 mt-1">
+
+                                <!-- Singe resource item -->
+                                <div class="body-resources-item message-course-video flex-between gap-20">
+                                    <div class="left flex-center"><i class="fa-solid fa-play"></i></div>
+                                    <div class="text fw-bold">কোর্স কিভাবে কিনবেন? কিভাবে দেখবেন?</div>
+
+                                    <!-- Video -->
+                                    <div class="d-none">
+                                        <video muted class="_1j3a3su7" controls="">
+                                            <source
+                                                src="https://d2fr8icwxgw12b.cloudfront.net/5e7825c2-6eae-4bf4-b742-6644c01746b0/kjlff2vc.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+
+                                <!-- Singe resource item -->
+                                <div class="body-resources-item flex-between gap-20" id="other-platfrom">
+                                    <div class="left flex-center"><i class="fa-solid fa-book"></i></div>
+                                    <div class="text fw-bold">আমাদের অন্যান্য প্লাটফর্মগুলোতে জয়েন করুন</div>
+                                </div>
+
+                                <!-- Singe resource item -->
+                                <a href="#" class="body-resources-item flex-between gap-20">
+                                    <div class="left flex-center"><i class="fa-solid fa-book"></i></div>
+                                    <div class="text fw-bold">কোর্স সম্পর্কে স্টুডেন্টদের রিভিউ দেখুন ⭐</div>
+                                </a>
+
+                                <!-- Singe resource item -->
+                                <div class="body-resources-item message-course-video flex-between gap-20">
+                                    <div class="left flex-center"><i class="fa-solid fa-play"></i></div>
+                                    <div class="text fw-bold">কোর্স কিভাবে কিনবেন? কিভাবে দেখবেন?</div>
+
+                                    <!-- Video -->
+                                    <div class="d-none">
+                                        <video muted class="_1j3a3su7" controls="">
+                                            <source
+                                                src="https://d2fr8icwxgw12b.cloudfront.net/5e7825c2-6eae-4bf4-b742-6644c01746b0/kjlff2vc.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <!-- Singe resource item -->
+                                <div class="body-resources-item message-course-video flex-between gap-20">
+                                    <div class="left flex-center"><i class="fa-solid fa-play"></i></div>
+                                    <div class="text fw-bold">কোর্স কিভাবে কিনবেন? কিভাবে দেখবেন?</div>
+
+                                    <!-- Video -->
+                                    <div class="d-none">
+                                        <video muted class="_1j3a3su7" controls="">
+                                            <source
+                                                src="https://d2fr8icwxgw12b.cloudfront.net/5e7825c2-6eae-4bf4-b742-6644c01746b0/kjlff2vc.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- platfrom boyd -->
+                    <div class="platfrom-body">
+                        <div class="top sub-title fw-bold">আমাদের অন্যান্য প্লাটফর্মগুলোতে জয়েন করুন</div>
+                        <ul class="flex-column gap-20 mt-4">
+                            <li>
+                                MSB একটি আস্থার নাম। বাংলাদেশের সব বড় বড় অনলাইন প্লাটফর্ম এবং কমিউনিটি এই MSB
+                                ব্র্যান্ডের অধীনে। তাই আপনি আমাদের
+                                অনান্য প্লাটফর্মগুলোতেও জয়েন করে ফেলুন, সবসময় কানেক্টেড থাকার জন্য।
+                            </li>
+                            <li>
+                                <a href="#">🎬 ইউটিউব চ্যানেল #১</a> এবং <a href="#"> ইউটিউব চ্যানেল #২</a> এখনই
+                                সাবস্ক্রাইব
+                                করুন, ফ্রিতে
+                                ভালো কিছু শিখার
+                                জন্য।
+                            </li>
+                            <li>
+                                <a href="#">🏫 MSB Academy Skills</a> সাইটে পাবেন আমাদের সব ফ্রি অনলাইন কোর্স। যেখানে
+                                ইন্ডাস্ট্রি
+                                এক্সপার্টরা নতুনদের ক্যারিয়ার
+                                গাইডলাইন দিয়ে থাকে।
+                            </li>
+                            <li>
+                                <a href="#">💼 MSB Jobs</a> চাকরি খোঁজা এবং কোম্পানিতে যোগ্য কর্মী নিয়োগ দেয়ার জন্য এক
+                                বিশ্বস্ত মাধ্যম।
+                            </li>
+                            <li>
+                                <a href="#">📺 MSB TV</a> একটি এডুকেশনাল টিভি চ্যানেল, যেখানে ২৪/৭ শিক্ষামূলক প্রোগ্রাম
+                                সম্প্রচার করা
+                                হয়।
+                            </li>
+                            <li>
+                                🎧 Podcast শুনুন সম্পূর্ণ ফ্রিতে আর প্রতিদিন নতুন কিছু জানুন। Also available on Google
+                                Podcasts, Apple Podcasts, and
+                                Spotify!!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="footer" id="message-footer">
+                    <button class="btn btn-fill-dark w-100" id="chat-btn">
+                        <span class="xl-font flex-center gap-10"><i class="fa-regular fa-message"></i> Live
+                            Chat
+                        </span>
+
+                    </button>
+                    <!-- hover toltip -->
+                    <div class="chat-toltip flex-column  gap-15" id="chat-toltip">
+                        <a class="option" href="https://wa.me/01701957294?text=Hello" target="_blank">What
+                            APP</a>
+                        <a class="option" href="https://facebook.com/tanvir321110" target="_blank">Messenger</a>
+                    </div>
+                </div>
+
+                <!-- Platfrom Footer  -->
+                <div class="platfrom-footer footer">
+                    <button class="btn btn-fill-dark" id="platfrom-back-btn">
+                        <span class="flex-center gap-10"><i class="fa-solid fa-backward-step"></i> Back</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="../js/app.js"></script>
+    </body>
+
+</html>
