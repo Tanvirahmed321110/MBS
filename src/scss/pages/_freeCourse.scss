@@ -1,0 +1,273 @@
+.free-header {
+    background-color: $white-off2;
+    padding: 10px 65px;
+
+
+    // Logo
+    .logo {
+        img {
+            width: 60px;
+        }
+    }
+
+    // Search
+    .search {
+        background-color: $white;
+        padding: 15px;
+        width: 350px;
+        border: 1px solid $white-off2;
+
+        button {
+            font-size: $font-2xl;
+        }
+
+        button:hover i {
+            transition: .2s ease;
+            transform: scale(1.1);
+        }
+    }
+
+    // right
+    .right {
+        a {
+            color: $dark;
+            font-weight: $fw-500;
+            font-size: $font-md;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            i {
+                font-size: $font-2xl;
+            }
+        }
+
+        .login-btn {
+            background-color: $red;
+            color: $white;
+            padding: 12px 25px;
+            font-size: $font-lg;
+            border-radius: 4px;
+
+            &:hover {
+                background-color: $dark;
+                transition: .2s linear;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+.free-course-main {
+
+
+    .free-container {
+        // background-color: $white;
+        width: 1100px;
+        margin: 0 auto;
+        font-family: $font-mon !important;
+    }
+
+    button {
+        background-color: $red;
+        color: $white;
+        padding: 15px 25px;
+        font-size: $font-xl;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: $dark;
+            transition: .2s ease;
+        }
+    }
+
+    // ============== banner =============
+    .free-banner {
+        background-color: $white ;
+
+
+        .right {
+            align-items: flex-start;
+
+            h1 {
+                color: $dark;
+            }
+        }
+    }
+
+
+
+
+    // ============== free courses items  ===============
+    .free-courses {
+        background-color: $white-off2;
+        padding: 80px 0;
+
+        .head {
+            h2 {
+                text-align: left;
+                color: $dark;
+                font-weight: $fw-600;
+            }
+        }
+
+        // items
+        .items {
+            .item {
+                img {
+                    border-radius: 15px;
+                }
+
+                .title {
+                    letter-spacing: .5px;
+                    color: $dark ;
+                    font-weight: $fw-600;
+                    font-size: $font-2xl;
+                }
+            }
+        }
+    }
+
+
+
+
+    // =============  video  ===============
+    .free-course-video {
+        padding: 80px 0;
+        background-color: $dark;
+
+        .video {
+            margin: 0 auto;
+            text-align: center;
+
+            iframe {
+                margin: 0 auto;
+                width: 900px;
+                height: 500px;
+            }
+        }
+    }
+
+    .free-app {
+        margin: 0 auto;
+        padding: 80px 0;
+        width: 940px;
+        gap: 100px;
+        justify-content: flex-start;
+    }
+
+
+
+
+
+
+
+    // ======== more banner ==========
+    .more-banner {
+        background-image: url('https://img.freepik.com/free-vector/geometric-shapes-neon-lights-background_23-2148422966.jpg?t=st=1725463887~exp=1725467487~hmac=095861b846cb71d79622bbab6ad3f33ab611da052afa6251143e9afed66bf01d&w=740');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        // z-index: 1;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            // z-index: 3;
+            background-color: $rgba-3;
+        }
+
+
+        .free-container {
+            position: relative;
+            z-index: 3;
+
+            &.flex-center {
+                justify-content: flex-start;
+                color: $white;
+                height: 100%;
+            }
+
+
+            // content
+            .content {
+                width: 400px;
+            }
+        }
+    }
+
+}
+
+
+
+// ==============  footer  ==============
+
+
+
+.free-footer {
+    padding: 80px 0;
+    color: $dark;
+    background-color: $white-off2;
+
+    .footer-area {
+
+        .graphy {
+            a {
+                text-decoration: underlinemn;
+            }
+        }
+
+        .lunch-btn {
+            background-color: $dark;
+            color: $white;
+            padding: 15px 25px;
+            width: fit-content;
+            border-radius: 4px;
+        }
+
+        .social {
+            li {
+                width: 30px;
+                height: 30px;
+                border: 1px solid $dark-white;
+
+                a {
+                    width: inherit;
+                    height: inherit;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        background-color: $white-off2;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            font-weight: $fw-600;
+
+            ul {
+                li {
+                    a {
+                        text-decoration: underline;
+                        font-size: $font-sm;
+                    }
+                }
+            }
+        }
+    }
+}

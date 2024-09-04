@@ -9,7 +9,7 @@
 
             // =============   Blog Data  ============
             .blog-data {
-                width: calc(100% - 300px);
+                width: calc(100% - 370px);
 
                 // head
                 .head {
@@ -34,8 +34,45 @@
 
                 // blog-desc
                 .blog-desc {
+                    height: fit-content;
+
+                    //======== social-media =======
+                    .social-media-sticky {
+                        height: 5000px;
+
+                        .social-media {
+                            position: sticky;
+                            top: 10px;
+                            z-index: 4;
+                            padding-left: 15px;
+                            box-shadow: $shadow-1;
+                            border: 1px solid $white-off;
+                            padding: 15px;
+                            border-radius: 10px;
+                            align-items: center;
+
+                            .item {
+                                height: 50px;
+                                width: 50px;
+                                cursor: pointer;
+                                border-radius: 50%;
+
+                                border: 2px solid $dark-white;
+
+                                &:hover {
+                                    background-color: $red;
+                                    color: $white;
+                                }
+                            }
+                        }
+
+                    }
+
+
+
+                    // desc items
                     ul {
-                        padding: 0 25px 0 100px;
+                        padding-right: 20px;
 
                         li {
                             .sub-title {
@@ -93,7 +130,6 @@
 
                 // ==========  comments  ===========
                 .comments {
-                    padding: 20px 100px;
                     padding-right: 20px;
 
                     .sub-title {
@@ -143,13 +179,13 @@
 
                             // reply comment
                             .reply-comment {
-                                width: 80%;
+                                width: 84%;
                                 margin-left: auto;
 
                                 .profile {
                                     img {
-                                        height: 70px;
-                                        width: 70px;
+                                        height: 60px;
+                                        width: 60px;
                                     }
                                 }
                             }
@@ -159,49 +195,7 @@
 
                     // Login option
                     .login-option {
-                        .head {
-                            h2 {
-                                font-size: $font-4xl;
-                                padding-bottom: 20px;
-                                border-bottom: 1px solid $dark-white;
-                            }
-
-                            p {
-                                span {
-                                    color: $khaki
-                                }
-                            }
-                        }
-
-                        // buttons
-                        .buttons {
-                            align-items: flex-start;
-
-                            button {
-                                padding: 10px 10px;
-                                border-radius: 4px;
-                                width: 250px;
-                                display: flex;
-                                align-items: flex-start;
-                                text-align: center;
-
-                                i {
-                                    font-size: $font-2xl;
-                                    margin-right: 15px;
-                                    display: inline-block;
-                                    width: 3 30px;
-                                }
-                            }
-
-                            .facebook {
-                                background-color: $blue;
-                                color: $white;
-                            }
-
-                            .google {
-                                box-shadow: $shadow-2;
-                            }
-                        }
+                        @include facebookGoogleLogin;
                     }
 
 
@@ -224,12 +218,81 @@
                 }
             }
 
-            // =============  Latest Course  ============
-            .online-course {
-                width: 300px;
-                background-color: $white-off2;
-            }
 
+
+            // =============  Right  ============
+            .right {
+                width: 300px;
+
+                // sub title
+                .sub-title {
+                    position: relative;
+                    color: $dark;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -10px;
+                        width: 50px;
+                        height: 2px;
+                        background-color: $dark;
+                    }
+                }
+
+                // Online courses
+                .online-course {
+                    width: 300px;
+
+                    .online-course-items {
+                        .online-course-item {
+                            .img-area {
+                                img {
+                                    border-radius: 4px;
+                                    height: 100px;
+                                }
+                            }
+
+                            // data
+                            .data {
+                                a {
+                                    &:hover {
+                                        color: $khaki;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                // blog categories
+                .blog-categories {
+                    .blog-categorie-items {
+                        padding-left: 30px;
+
+                        li {
+                            list-style: disc;
+
+                            a:hover {
+                                color: $khaki;
+                            }
+                        }
+                    }
+                }
+
+
+                // group
+                .group {
+                    height: 3500px;
+
+                    .group-sticky {
+                        position: sticky;
+                        top: 0;
+
+                    }
+                }
+            }
 
         }
 

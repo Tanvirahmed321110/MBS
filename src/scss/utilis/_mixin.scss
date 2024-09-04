@@ -291,3 +291,53 @@
         outline: 3px solid $white-off2;
     }
 }
+
+
+
+//  Facebook and google login
+@mixin facebookGoogleLogin {
+    .head {
+        h2 {
+            font-size: $font-4xl;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $dark-white;
+        }
+
+        p {
+            span {
+                color: $khaki
+            }
+        }
+    }
+
+    // buttons
+    .buttons {
+        align-items: flex-start;
+
+        button {
+            padding: 10px 10px;
+            border-radius: 4px;
+            width: 250px;
+            display: flex;
+            align-items: flex-start;
+            text-align: center;
+
+            i {
+                font-size: $font-2xl;
+                margin-right: 15px;
+                display: inline-block;
+                width: 3 30px;
+            }
+        }
+
+        .facebook {
+            background-color: $blue;
+            color: $white;
+        }
+
+        .google {
+            box-shadow: $shadow-2;
+        }
+    }
+
+}

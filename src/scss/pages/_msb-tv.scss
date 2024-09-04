@@ -1,0 +1,121 @@
+.tv-page {
+
+    // =============  banner page  ============
+    .msb-tv-banner {
+        margin-top: 80px;
+        position: relative;
+        width: 100%;
+        height: 500px;
+        padding: 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $rgba-1;
+        }
+
+        video {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // ensure this
+
+        }
+
+
+        .area {
+            text-align: center;
+
+            .content {
+                padding: 25px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 3;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                background-color: rgba(0, 0, 0, 0.362);
+
+
+                // live text
+                .live {
+                    border: 1px solid $red;
+                    padding: 3px 10px;
+                    color: $red;
+                    width: fit-content;
+                    border-radius: 4px;
+
+                    span {
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background-color: $red;
+                    }
+                }
+
+
+                // h1
+                h1,
+                p {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+
+
+    //========    tv-video   ========
+    .tv-video {
+        .area {
+            width: 100%;
+            height: 600px;
+            background-color: oldlace;
+            position: relative;
+
+            video {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 2;
+                object-fit: cover;
+            }
+
+            .play-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                height: 100px;
+                width: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                font-size: $font-6xl;
+                color: $white;
+                cursor: pointer;
+                background-color: $dark;
+            }
+
+            &:hover .play-btn {
+                background-color: $white-off2;
+                transition: .3s ease;
+                color: $dark;
+            }
+        }
+    }
+}

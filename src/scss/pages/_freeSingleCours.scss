@@ -1,0 +1,62 @@
+.free-single-course {
+
+
+    // banner
+    .free-banner {
+        .right {
+            .free-btn {
+                width: fit-content;
+            }
+        }
+    }
+
+
+    // details
+    .details {
+        background-color: $white-off2;
+        padding: 80px 0;
+
+        p {
+            font-size: $font-2xl;
+            line-height: 40px;
+        }
+
+        ul {
+            padding-left: 40px;
+
+            li {
+                list-style: disc;
+                font-size: $font-2xl;
+                padding-left: 25px;
+            }
+        }
+    }
+
+
+
+    //==========  join  ===========
+    .join {
+        .join-cart {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 30px;
+            box-shadow: $shadow-2;
+
+            .img-area {
+                img {
+                    border-radius: 50%;
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+
+            .title {
+                font-weight: $fw-600;
+                color: $dark;
+                font-size: $font-2xl;
+            }
+        }
+    }
+
+}

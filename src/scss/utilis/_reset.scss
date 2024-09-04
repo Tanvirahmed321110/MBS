@@ -1,5 +1,6 @@
 /*____________  Google Font  ____________*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 // Font Awesome
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
@@ -145,6 +146,11 @@ h3 {
     // @include responsive(lg) {
     //     max-width: 1240px;
     // }
+}
+
+.free-container {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 
@@ -328,6 +334,15 @@ h-100 {
     margin-top: 110px;
 }
 
+
+.my-3 {
+    margin: 15px 0;
+}
+
+.my-4 {
+    margin: 20px 0;
+}
+
 .my-5 {
     margin: 28px 0;
 }
@@ -363,8 +378,8 @@ h-100 {
     font-size: $font-2xl;
 }
 
-.xxx-font {
-    font-size: $font-3xl;
+.xxxl-font {
+    font-size: $font-4xl;
 }
 
 /* Flex */
@@ -476,6 +491,25 @@ h-100 {
     &:hover .hover-toltip {
         display: block;
         opacity: 1;
+    }
+}
+
+// free btn
+.free-btn {
+    padding: 15px 25px;
+    border-radius: 4px;
+    background-color: $red;
+    color: $white;
+    font-size: $font-xl;
+    transition: .3s ease;
+
+    &.dark {
+        background-color: $dark;
+    }
+
+
+    &:hover {
+        background-color: $green;
     }
 }
 

@@ -1,0 +1,88 @@
+.login-register {
+    .login-register-area {
+        background-color: $white;
+        box-shadow: $shadow-2;
+        max-width: 400px;
+        width: 100%;
+        margin: 50px auto;
+        padding: 40px 30px;
+        color: $gray;
+        font-family: $font-mon;
+
+        // head
+        .head {
+            h2 {
+                color: $gray;
+            }
+        }
+
+        // label
+        label {
+            font-weight: $fw-600;
+            color: $gray-off;
+            font-size: $font-md;
+        }
+
+        // inputs
+        .inputs {
+            .input {
+                input {
+                    width: 100%;
+                    border: 1px solid $white-off2;
+                    padding: 12px;
+                    border-radius: 4px;
+                    font-size: $font-md;
+                }
+            }
+        }
+
+        // remember
+        .remember {
+            align-items: center;
+
+            label {
+                font-size: $font-sm;
+                font-weight: $fw-500;
+            }
+
+            input {
+                width: fit-content;
+            }
+        }
+
+        // or
+        .or {
+
+            .left,
+            .right {
+                width: 45%;
+                border: 1px solid $white-off2;
+            }
+        }
+
+        // login option
+        .login-option {
+            @include facebookGoogleLogin;
+
+            .buttons {
+                align-items: center;
+            }
+
+        }
+
+        // bottom
+        .bottom {
+            .pages {
+                a {
+                    text-decoration: underline;
+                    font-size: $font-sm;
+
+                    &:hover {
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+
+}
