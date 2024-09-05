@@ -43,7 +43,7 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 20px;
-                background-color: rgba(0, 0, 0, 0.362);
+                background-color: rgba(0, 0, 0, 0.555);
 
 
                 // live text
@@ -117,5 +117,32 @@
                 color: $dark;
             }
         }
+    }
+
+
+
+    //==========  tv-lists ===========
+    .tv-lists {
+        .item {
+            box-shadow: $shadow-2;
+
+            .sub-title {
+                padding: 25px 15px;
+                font-size: $font-xl;
+            }
+
+            .btn {
+                background-color: $red;
+                color: $white;
+                width: 100%;
+                font-weight: $fw-600;
+            }
+
+            &:hover {
+                box-shadow: $shadow-1;
+            }
+        }
+
+
     }
 }
