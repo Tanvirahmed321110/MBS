@@ -1,0 +1,347 @@
+.p-header {
+    background-color: $rgba-1;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+
+    // Logo
+    .logo {
+        max-width: 300px;
+    }
+
+    // right nav
+    .right-nav {
+        width: fit-content;
+        font-family: $font-mon;
+
+        ul {
+            li {
+                a {
+                    color: $white;
+                    font-size: $font-md;
+                    font-weight: $fw-400;
+
+                    i {
+                        transition: .1s ease-in-out;
+                    }
+
+                    &:hover {
+                        transition: .1s ease-in-out;
+                        color: $red;
+                        transform: scale(.98);
+                    }
+                }
+            }
+        }
+
+        // navs
+        .navs {
+            align-items: flex-start;
+            height: 100%;
+            margin-top: -5px;
+
+        }
+
+        // socials
+        .socials {
+            li {
+                a {
+                    font-size: $font-4xl;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.podcast-page {
+    background-color: $white-off2;
+    font-family: $font-mon;
+
+    // buttons
+    .podcast-btn {
+        background-color: $red;
+        color: $white;
+        padding: 12px 15px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        &:hover {
+            transition: .2s linear;
+            background-color: $green;
+        }
+    }
+
+    //=========  banner  ===========
+    .p-banner {
+        width: 100%;
+        height: 550px;
+        background-image: url('https://img.freepik.com/premium-photo/radiant-royal-purple-background-with-light-pattern-purple-background-design-purple-texture-wallpaper_1020697-707624.jpg?w=740');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $white;
+        font-family: $font-mon;
+
+
+
+        .banner-area {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0;
+
+            .left {
+                img {
+                    width: 250px;
+                    border-radius: 4px;
+                }
+            }
+
+            // right
+            .right {}
+        }
+    }
+
+
+
+    // ============  main cart  ============
+    .main-cart {
+        position: relative;
+        z-index: 5;
+        margin: 50px auto;
+        max-width: 800px;
+        width: 100%;
+        box-shadow: $shadow-2;
+        border-radius: 12px;
+        background-color: $white;
+        margin-top: -50px;
+
+        .head {
+            padding: 25px 20px;
+
+            .search {
+                border: 1px solid $dark-white;
+                border-radius: 4px;
+                width: 300px;
+
+                input {
+                    padding: 12px;
+
+                    &:focus {
+                        outline: $red 2px solid;
+                    }
+                }
+
+                .podcast-btn {
+                    background-color: $red;
+                    padding: 13px 14px;
+                    color: white;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        .cart-items {
+            .item {
+                padding: 25px;
+                border-top: 1px solid $dark-white;
+
+
+                // left
+                .left {
+                    .podcast-btn {
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        font-size: $font-4xl;
+
+                    }
+
+                    a:hover {
+                        color: $red;
+                        transition: .2s ease;
+                    }
+                }
+
+                // right
+                .right {
+                    .info-btn {
+                        font-size: $font-4xl;
+                        cursor: pointer;
+                        position: relative;
+
+                        .info-dropdown {
+                            background-color: $white;
+                            box-shadow: 0px 12px 40px $rgba-3;
+                            padding: 20px;
+                            position: absolute;
+                            top: 40px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            z-index: 4;
+                            width: 350px;
+
+
+                            .box {
+                                position: absolute;
+                                z-index: 5;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                height: 25px;
+                                width: 25px;
+                                top: -24px;
+                                clip-path: polygon(48% 30%, 0% 100%, 100% 100%);
+                                background-color: white;
+                            }
+
+                            p {
+                                font-size: $font-xs;
+                            }
+
+                            a {
+                                font-size: $font-md;
+                                font-weight: $fw-600;
+                            }
+
+
+                        }
+
+                        &:hover .info-dropdown {
+                            display: block;
+                            transition: .1s ease;
+                        }
+                    }
+
+                }
+            }
+
+            // load-btn
+            .load-btn {
+                border-top: 1px solid $dark-white;
+                padding: 15px 25px;
+
+                button {
+                    font-size: $font-xl;
+                }
+            }
+        }
+    }
+
+
+    // ========= about ==========
+    .about {
+        width: 700px;
+        margin: 0 auto;
+
+
+        .about-item {
+            .head {
+                img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+
+                }
+            }
+
+            .desc {
+                .desc-item {
+                    .socials {
+                        i {
+                            font-size: $font-4xl;
+                        }
+
+                    }
+
+                    .post-socials {
+                        border-bottom: 1px solid $dark-white;
+                        padding: 5px;
+                    }
+                }
+            }
+
+            p {
+                a {
+                    text-decoration: underline;
+                    color: $green;
+                }
+            }
+        }
+
+        // support-us
+        .support-us {
+            padding-bottom: 50px;
+
+            .buttons {
+                padding: 0 40px;
+
+                button {
+                    padding: 20px;
+                }
+
+
+                .donate {
+                    background-color: $white;
+                    gap: 20px;
+                    border-radius: 6px;
+
+                    img {
+                        width: 100px;
+                    }
+
+                    &:hover {
+                        background-color: $red;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// ========= footer =========
+.podcast-footer {
+    background-color: $white-off2;
+    font-family: $font-mon;
+    padding: 50px 0;
+
+
+    .footer-top {
+        background-color: $red;
+        color: $white;
+        padding: 40px 0;
+    }
+
+    .footer-bottom {
+        padding-bottom: 50px;
+
+        .item {
+            width: 33%;
+            gap: 1%;
+        }
+
+        .socials {
+            justify-content: center;
+            gap: 20px;
+
+            i {
+                font-size: $font-4xl;
+            }
+        }
+    }
+}
