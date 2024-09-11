@@ -1,5 +1,6 @@
 import('./app.js')
 import('./slider.js')
+
 // Select elements
 const courseBannerBtn = document.getElementById("course-banner-video");
 const bannerVideoIframe = document.querySelector('.banner-video iframe');

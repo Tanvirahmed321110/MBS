@@ -154,11 +154,11 @@
             left: 0;
             z-index: 5;
             width: 100%;
-            background-image: linear-gradient(to right, rgba(247, 199, 199, 0.507), rgba(241, 210, 210, 0.556));
+            background-image: linear-gradient(to right, rgba(247, 199, 199, 0.507), rgba(241, 210, 210, 0.612));
             color: $white;
 
             &.to-right {
-                background-image: linear-gradient(to right, rgba(130, 167, 80, 0.655), rgba(250, 220, 220, 0.724)) !important;
+                background-image: linear-gradient(to right, rgba(254, 255, 253, 0.655), rgba(250, 220, 220, 0.724)) !important;
             }
 
             .header-main-area {

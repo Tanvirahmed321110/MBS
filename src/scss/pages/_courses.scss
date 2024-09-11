@@ -211,6 +211,7 @@
         padding-bottom: 25px;
         border-bottom: 1px solid $white-off2;
         max-width: calc(100% - 400px);
+        margin-top: 75px;
 
         .item {
             position: relative;
@@ -401,7 +402,6 @@
                     &.active {
                         // overflow: hidden;
                         max-height: 0;
-
                     }
 
 
