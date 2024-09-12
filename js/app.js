@@ -197,9 +197,20 @@ modalClose.forEach(button => {
         }
         bigVideoModal.classList.remove('active')
         videoModal.classList.remove('active')
-        modal.classList.remove('active')
+        // modal.classList.remove('active')
     })
 })
+
+
+
+// discount modal
+const discountModal = document.getElementById("discount-modal");
+
+if (discountModal) {
+    document.querySelector('#discount-modal .close-btn').addEventListener('click', function () {
+        discountModal.classList.remove('active');
+    });
+}
 
 
 
